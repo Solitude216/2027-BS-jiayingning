@@ -1,17 +1,17 @@
-- 1.	SUTTON R S, BARTO A G, 2018. Reinforcement learning: an introduction[M]. 2nd ed. Cambridge: MIT Press.
-  2.	WATKINS C J C H, DAYAN P, 1992. Q-learning[J]. Machine learning.
-  3.	MNIH V, KAVUKCUOGLU K, SILVER D, et al., 2015. Human-level control through deep reinforcement learning[J]. Nature.
-  4.	VAN HASSELT H, GUEZ A, SILVER D, 2016. Deep reinforcement learning with double Q-learning[C]//AAAI.
-  5.	WANG Z, SCHAUL T, HESSEL M, et al., 2016. Dueling network architectures for deep reinforcement learning[C]//ICML.
-  6.	SCHAUL T, QUAN J, ANTONOGLOU I, et al., 2016. Prioritized experience replay[C]//ICLR.
-  7.	AUER P, CESA-BIANCHI N, FISCHER P, 2002. Finite-time analysis of the multiarmed bandit problem[J]. Machine learning.
-  8.	LAI T L, ROBBINS H, 1985. Asymptotically efficient adaptive allocation rules[J]. Advances in applied mathematics.
-  9.	HAYKIN S, 2005. Cognitive radio: brain-empowered wireless communications[J]. IEEE journal on selected areas in communications.
-  10.	ZHAO Q, SADLER B M, 2007. A survey of dynamic spectrum access[J]. IEEE signal processing magazine.
-  11.	WANG S, LIU H, GOMES P H, et al., 2018. Deep reinforcement learning for dynamic multichannel access in wireless networks[J]. IEEE transactions on cognitive communications and networking.
-  12.	NAPARSTEK O, COHEN K, 2019. Deep multi-user reinforcement learning for distributed dynamic spectrum access[J]. IEEE transactions on wireless communications.
-  13.	LUONG N C, HOANG D T, GONG S, et al., 2019. Applications of deep reinforcement learning in communications and networking: a survey[J]. IEEE communications surveys & tutorials.
-  14.	HENDERSON P, ISLAM R, BACHMAN P, et al., 2018. Deep reinforcement learning that matters[C]//AAAI.
-  15.	GILBERT E N, 1960. Capacity of a burst-noise channel[J]. Bell system technical journal.
-  16.	ELLIOTT E O, 1963. Estimates of error rates for codes on burst-noise channels[J]. Bell system technical journal.
-  17.	TOWERS M, TERRY J K, KWIATKOWSKI A, et al., 2023. Gymnasium[CP/OL]. Farama Foundation.
+1.	LEWIS P, PEREZ E, PIKTUS A, et al., 2020. Retrieval-augmented generation for knowledge-intensive NLP tasks[C]//NeurIPS.
+2.	GAO Y, XIONG Y, GAO X, et al., 2023. Retrieval-augmented generation for large language models: a survey[EB/OL]. arXiv.
+3.	KARPUKHIN V, OĞUZ B, MIN S, et al., 2020. Dense passage retrieval for open-domain question answering[C]//EMNLP.
+4.	ROBERTSON S, ZARAGOZA H, 2009. The probabilistic relevance framework: BM25 and beyond[J]. Foundations and trends in information retrieval.
+5.	REIMERS N, GUREVYCH I, 2019. Sentence-BERT: sentence embeddings using Siamese BERT-networks[C]//EMNLP-IJCNLP.
+6.	DEVLIN J, CHANG M W, LEE K, et al., 2019. BERT: pre-training of deep bidirectional transformers for language understanding[C]//NAACL-HLT.
+7.	VASWANI A, SHAZEER N, PARMAR N, et al., 2017. Attention is all you need[C]//NeurIPS.
+8.	BROWN T B, MANN B, RYDER N, et al., 2020. Language models are few-shot learners[C]//NeurIPS.
+9.	OUYANG L, WU J, JIANG X, et al., 2022. Training language models to follow instructions with human feedback[C]//NeurIPS.
+10.	WEI J, WANG X, SCHUURMANS D, et al., 2022. Chain-of-thought prompting elicits reasoning in large language models[C]//NeurIPS.
+11.	JI Z, LEE N, FRIESKE R, et al., 2023. Survey of hallucination in natural language generation[J]. ACM computing surveys.
+12.	ES S, JAMES J, ESPINOSA ANKE L, et al., 2024. RAGAs: automated evaluation of retrieval augmented generation[C]//Proceedings of the 18th Conference of the European Chapter of the Association for Computational Linguistics: System Demonstrations. St. Julians: ACL: 150-158.
+13.	CHEN J, LIN H, HAN X, et al., 2024. Benchmarking large language models in retrieval-augmented generation[C]//AAAI.
+14.	PARK J S, O’BRIEN J C, CAI C J, et al., 2023. Generative agents: interactive simulacra of human behavior[C]//UIST.
+15.	WANG G, XIE Y, JIANG Y, et al., 2023. Voyager: an open-ended embodied agent with large language models[EB/OL]. arXiv.
+16.	RAJPURKAR P, ZHANG J, LOPYREV K, et al., 2016. SQuAD: 100,000+ questions for machine comprehension of text[C]//EMNLP.
+17.	LANGCHAIN, 2023. LangChain[CP/OL].
