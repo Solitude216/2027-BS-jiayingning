@@ -1,0 +1,50 @@
+# 2027-BS-game 基础 RAG 配置
+# 知识问答与辅助方法 - RAG 链路参数
+
+llm:
+  api_key_env: DEEPSEEK_API_KEY       # DeepSeek API Key 从环境变量读取
+  base_url: https://api.deepseek.com
+  model: deepseek-flash               # 可选 deepseek-v4-pro
+  temperature: 0.2
+  max_tokens: 512
+  timeout: 60
+
+retrieval:
+  method: vector                      # vector | bm25 | hybrid
+  top_k: 5
+  score_threshold: 0.0                # 低于该相似度视为"检索不到"（可回答判定用）
+  embedding_model: BAAI/bge-small-zh-v1.5
+  embedding_provider: local_onnx      # local_onnx(魔搭下载的ONNX) | fastembed(需HuggingFace)
+  model_dir: null                     # 为 null 时自动从本地缓存/魔搭加载
+
+chunking:
+  mode: field                      # row(整行) | field(字段级，字段类问题召回更好)
+  per_row: true                    # 每个 CSV 行独立成一个文档块
+  with_header: true                # 拼接表头，增强字段语义
+
+paths:
+  knowledge_base: knowledge_base/角色数据csv
+  index_dir: results/checkpoints/index
+  test_set: data/samples/testset_2027-BS_v1.json
+  out_dir: results
+
+rag:
+  prompt_template: |
+    你是一个《崩坏：星穹铁道》游戏知识问答助手。请仅依据下面提供的"检索片段"回答问题。
+    如果片段中没有相关信息，请明确回答"知识库中没有相关信息，无法回答"，不要编造。
+
+    【检索片段】
+    {context}
+
+    【问题】
+    {question}
+
+    请用中文简洁作答，并说明答案出自哪个片段。
+
+  no_rag_prompt_template: |
+    你是一个《崩坏：星穹铁道》游戏知识问答助手。请直接回答下面的问题。
+    请用中文简洁作答；如果你不确定，请如实说明。
+
+    【问题】
+    {question}
+
