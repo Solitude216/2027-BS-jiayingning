@@ -79,7 +79,7 @@ thesis/           论文（outline、drafts、figures、references、tables）
 - **数据**：手工整理《崩坏：星穹铁道》官方开放 Wiki 角色数据为 8 个 CSV（角色基础信息/光锥/遗器/配队/行迹/星魂/晋阶/故事）；设计并冻结 120 题三类测试集（可回答/不能回答/易混淆），参考答案逐条对照知识库核验。
 - **代码**：实现基础 RAG 全链路（`src/rag/`：CSV 字段级切分与去重、bge-small-zh-v1.5 本地嵌入、向量/BM25/混合检索、DeepSeek 生成、配置与提示词分离）；实现无RAG基线（`experiments/baseline/`）；编写建索引、交互问答、评测、测试集校验脚本。
 - **实验**：完成无RAG、RAG-BM25、RAG-向量三方案在冻结测试集上的完整评测与初步错误归因，产出 `results/summary.md` 与明细表。
-- **论文**：撰写实验设计文档（`docs/03-design/experiment_design.md`）与《Baseline 与问题分析报告》（`results/baseline_report.docx`）。
+- **论文**：撰写实验设计文档（`docs/03-design/experiment_design.md`）其他未完成
 
 ## 九、参考项目与第三方代码
 
