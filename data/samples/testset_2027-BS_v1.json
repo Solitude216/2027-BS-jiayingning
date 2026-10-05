@@ -1,0 +1,932 @@
+{
+  "testset_name": "2027-BS-game 游戏知识问答测试集 v1",
+  "version": "1.0",
+  "description": "基于《崩坏：星穹铁道》游戏知识库构建的知识问答测试集，用于评估 LLM/RAG 问答系统的答案正确性、知识命中率与引用准确性。",
+  "knowledge_base_note": "可检索知识源：knowledge_base/角色数据csv 下的 8 个 CSV（角色基础信息、光锥推荐、遗器推荐、配队推荐、角色行迹、角色星魂、角色晋阶、角色故事）。角色数据txt 不使用。",
+  "categories": {
+    "answerable": "可回答：知识库中存在对应知识，可给出确定答案。",
+    "unanswerable": "不能回答：知识库中没有相关内容，正确行为是拒答/说明无法回答。",
+    "confusable": "易混淆：知识点相近、容易混淆，测试检索与生成能否正确区分相似实体。"
+  },
+  "frozen": true,
+  "frozen_date": "2026-10-05",
+  "freeze_policy": "本测试集已冻结（v1.0）。测试完成后不得回头修改任何题目、答案或类别，以保证评测结果可复现。",
+  "total": 120,
+  "counts": {
+    "answerable": 45,
+    "unanswerable": 40,
+    "confusable": 35
+  },
+  "questions": [
+    {
+      "id": "A001",
+      "category": "answerable",
+      "question": "Archer 的属性是什么？",
+      "expected_answer": "量子",
+      "ground_truth_source": "角色基础信息.csv, 角色名=Archer, 字段=属性"
+    },
+    {
+      "id": "A002",
+      "category": "answerable",
+      "question": "Saber 的命途是什么？",
+      "expected_answer": "毁灭",
+      "ground_truth_source": "角色基础信息.csv, 角色名=Saber, 字段=命途"
+    },
+    {
+      "id": "A003",
+      "category": "answerable",
+      "question": "万敌 属于哪个阵营？",
+      "expected_answer": "悬锋城",
+      "ground_truth_source": "角色基础信息.csv, 角色名=万敌, 字段=阵营"
+    },
+    {
+      "id": "A004",
+      "category": "answerable",
+      "question": "三月七 的星级是多少？",
+      "expected_answer": "四星",
+      "ground_truth_source": "角色基础信息.csv, 角色名=三月七, 字段=星级"
+    },
+    {
+      "id": "A005",
+      "category": "answerable",
+      "question": "卡芙卡 的属性与命途分别是什么？",
+      "expected_answer": "属性为雷，命途为虚无",
+      "ground_truth_source": "角色基础信息.csv, 角色名=卡芙卡, 字段=属性/命途"
+    },
+    {
+      "id": "A006",
+      "category": "answerable",
+      "question": "黑塔 的命途是什么？",
+      "expected_answer": "智识",
+      "ground_truth_source": "角色基础信息.csv, 角色名=黑塔, 字段=命途"
+    },
+    {
+      "id": "A007",
+      "category": "answerable",
+      "question": "黄泉 的属性是什么？",
+      "expected_answer": "雷",
+      "ground_truth_source": "角色基础信息.csv, 角色名=黄泉, 字段=属性"
+    },
+    {
+      "id": "A008",
+      "category": "answerable",
+      "question": "景元 的命途是什么？",
+      "expected_answer": "智识",
+      "ground_truth_source": "角色基础信息.csv, 角色名=景元, 字段=命途"
+    },
+    {
+      "id": "A009",
+      "category": "answerable",
+      "question": "希儿 的角色定位是什么？",
+      "expected_answer": "通过击杀目标触发【再现】、多次行动的量子属性角色",
+      "ground_truth_source": "角色基础信息.csv, 角色名=希儿, 字段=角色定位"
+    },
+    {
+      "id": "A010",
+      "category": "answerable",
+      "question": "万敌 的神权是什么？",
+      "expected_answer": "「天谴之矛，尼卡多利」",
+      "ground_truth_source": "角色基础信息.csv, 角色名=万敌, 字段=神权"
+    },
+    {
+      "id": "A011",
+      "category": "answerable",
+      "question": "阿格莱雅 的神权是什么？",
+      "expected_answer": "「黄金之茧，墨涅塔」",
+      "ground_truth_source": "角色基础信息.csv, 角色名=阿格莱雅, 字段=神权"
+    },
+    {
+      "id": "A012",
+      "category": "answerable",
+      "question": "长夜月 的神权是什么？",
+      "expected_answer": "「永夜之帷，欧洛尼斯」",
+      "ground_truth_source": "角色基础信息.csv, 角色名=长夜月, 字段=神权"
+    },
+    {
+      "id": "A013",
+      "category": "answerable",
+      "question": "银狼 属于哪个阵营？",
+      "expected_answer": "星核猎手",
+      "ground_truth_source": "角色基础信息.csv, 角色名=银狼, 字段=阵营"
+    },
+    {
+      "id": "A014",
+      "category": "answerable",
+      "question": "佩拉 的实装日期是哪天？",
+      "expected_answer": "2023/04/26",
+      "ground_truth_source": "角色基础信息.csv, 角色名=佩拉, 字段=实装日期"
+    },
+    {
+      "id": "A015",
+      "category": "answerable",
+      "question": "白厄 的角色定位是什么？",
+      "expected_answer": "可以变身为卡厄斯兰那并拥有多个强力技能的输出型角色",
+      "ground_truth_source": "角色基础信息.csv, 角色名=白厄, 字段=角色定位"
+    },
+    {
+      "id": "A016",
+      "category": "answerable",
+      "question": "开拓者•记忆 的命途是什么？",
+      "expected_answer": "记忆",
+      "ground_truth_source": "角色基础信息.csv, 角色名=开拓者•记忆, 字段=命途"
+    },
+    {
+      "id": "A017",
+      "category": "answerable",
+      "question": "知更鸟•晴歌 的属性是什么？",
+      "expected_answer": "风",
+      "ground_truth_source": "角色基础信息.csv, 角色名=知更鸟•晴歌, 字段=属性"
+    },
+    {
+      "id": "A018",
+      "category": "answerable",
+      "question": "Archer 推荐的四件套隧洞遗器是什么？",
+      "expected_answer": "繁星璀璨的天才 四件套 或 识海迷坠的学者 四件套",
+      "ground_truth_source": "遗器推荐.csv, 角色名=Archer, 方案1, 隧洞遗器"
+    },
+    {
+      "id": "A019",
+      "category": "answerable",
+      "question": "Archer 推荐的位面饰品是什么？",
+      "expected_answer": "繁星竞技场 或 太空封印站",
+      "ground_truth_source": "遗器推荐.csv, 角色名=Archer, 方案1, 位面饰品"
+    },
+    {
+      "id": "A020",
+      "category": "answerable",
+      "question": "Archer 有哪些推荐光锥？",
+      "expected_answer": "理想燃烧的地狱、如泥酣眠、我将，巡征追猎、星海巡航",
+      "ground_truth_source": "光锥推荐.csv, 角色名=Archer, 光锥名称"
+    },
+    {
+      "id": "A021",
+      "category": "answerable",
+      "question": "万敌 方案1 推荐的隧洞遗器是什么？",
+      "expected_answer": "识海迷坠的学者 四件套",
+      "ground_truth_source": "遗器推荐.csv, 角色名=万敌, 方案1, 隧洞遗器"
+    },
+    {
+      "id": "A022",
+      "category": "answerable",
+      "question": "三月七 的角色定位是什么？",
+      "expected_answer": "能够提供单体护盾、解除负面效果的防御型角色",
+      "ground_truth_source": "角色基础信息.csv, 角色名=三月七, 字段=角色定位"
+    },
+    {
+      "id": "A023",
+      "category": "answerable",
+      "question": "布洛妮娅 的命途是什么？",
+      "expected_answer": "同谐",
+      "ground_truth_source": "角色基础信息.csv, 角色名=布洛妮娅, 字段=命途"
+    },
+    {
+      "id": "A024",
+      "category": "answerable",
+      "question": "花火 的属性是什么？",
+      "expected_answer": "量子",
+      "ground_truth_source": "角色基础信息.csv, 角色名=花火, 字段=属性"
+    },
+    {
+      "id": "A025",
+      "category": "answerable",
+      "question": "停云 属于哪个阵营？",
+      "expected_answer": "仙舟「罗浮」",
+      "ground_truth_source": "角色基础信息.csv, 角色名=停云, 字段=阵营"
+    },
+    {
+      "id": "A026",
+      "category": "answerable",
+      "question": "Archer 配队中的主C是谁？",
+      "expected_answer": "Archer",
+      "ground_truth_source": "配队推荐.csv, 角色名=Archer, 位置=主C"
+    },
+    {
+      "id": "A027",
+      "category": "answerable",
+      "question": "Archer 配队中的辅助位推荐是谁？",
+      "expected_answer": "花火",
+      "ground_truth_source": "配队推荐.csv, 角色名=Archer, 位置=辅助"
+    },
+    {
+      "id": "A028",
+      "category": "answerable",
+      "question": "加拉赫 的命途是什么？",
+      "expected_answer": "丰饶",
+      "ground_truth_source": "角色基础信息.csv, 角色名=加拉赫, 字段=命途"
+    },
+    {
+      "id": "A029",
+      "category": "answerable",
+      "question": "镜流 的属性是什么？",
+      "expected_answer": "冰",
+      "ground_truth_source": "角色基础信息.csv, 角色名=镜流, 字段=属性"
+    },
+    {
+      "id": "A030",
+      "category": "answerable",
+      "question": "阮•梅 的角色定位是什么？",
+      "expected_answer": "提高击破效率、速度和全属性抗性穿透的辅助型角色",
+      "ground_truth_source": "角色基础信息.csv, 角色名=阮•梅, 字段=角色定位"
+    },
+    {
+      "id": "A031",
+      "category": "answerable",
+      "question": "托帕&账账 属于哪个阵营？",
+      "expected_answer": "星际和平公司",
+      "ground_truth_source": "角色基础信息.csv, 角色名=托帕&账账, 字段=阵营"
+    },
+    {
+      "id": "A032",
+      "category": "answerable",
+      "question": "真理医生 的命途是什么？",
+      "expected_answer": "巡猎",
+      "ground_truth_source": "角色基础信息.csv, 角色名=真理医生, 字段=命途"
+    },
+    {
+      "id": "A033",
+      "category": "answerable",
+      "question": "符玄 的角色定位是什么？",
+      "expected_answer": "能够替我方全体分摊伤害并提供增益的防御型角色",
+      "ground_truth_source": "角色基础信息.csv, 角色名=符玄, 字段=角色定位"
+    },
+    {
+      "id": "A034",
+      "category": "answerable",
+      "question": "灵砂 召唤什么来支援队友？",
+      "expected_answer": "烟兽",
+      "ground_truth_source": "角色基础信息.csv, 角色名=灵砂, 字段=角色定位"
+    },
+    {
+      "id": "A035",
+      "category": "answerable",
+      "question": "遐蝶 的神权是什么？",
+      "expected_answer": "「灰黯之手，塞纳托斯」",
+      "ground_truth_source": "角色基础信息.csv, 角色名=遐蝶, 字段=神权"
+    },
+    {
+      "id": "A036",
+      "category": "answerable",
+      "question": "赛飞儿 的神权是什么？",
+      "expected_answer": "「翻飞之币，扎格列斯」",
+      "ground_truth_source": "角色基础信息.csv, 角色名=赛飞儿, 字段=神权"
+    },
+    {
+      "id": "A037",
+      "category": "answerable",
+      "question": "那刻夏 的神权是什么？",
+      "expected_answer": "「裂分之枝，瑟希斯」",
+      "ground_truth_source": "角色基础信息.csv, 角色名=那刻夏, 字段=神权"
+    },
+    {
+      "id": "A038",
+      "category": "answerable",
+      "question": "缇宝 的神权是什么？",
+      "expected_answer": "「万径之门，雅努斯」",
+      "ground_truth_source": "角色基础信息.csv, 角色名=缇宝, 字段=神权"
+    },
+    {
+      "id": "A039",
+      "category": "answerable",
+      "question": "刻律德菈 的神权是什么？",
+      "expected_answer": "「公正之秤，塔兰顿」",
+      "ground_truth_source": "角色基础信息.csv, 角色名=刻律德菈, 字段=神权"
+    },
+    {
+      "id": "A040",
+      "category": "answerable",
+      "question": "丹恒•腾荒 的神权是什么？",
+      "expected_answer": "「磐岩之脊，吉奥里亚」",
+      "ground_truth_source": "角色基础信息.csv, 角色名=丹恒•腾荒, 字段=神权"
+    },
+    {
+      "id": "A041",
+      "category": "answerable",
+      "question": "海瑟音 的神权是什么？",
+      "expected_answer": "「满溢之杯，法吉娜」",
+      "ground_truth_source": "角色基础信息.csv, 角色名=海瑟音, 字段=神权"
+    },
+    {
+      "id": "A042",
+      "category": "answerable",
+      "question": "风堇 的神权是什么？",
+      "expected_answer": "「晨昏之眼，艾格勒」…？",
+      "ground_truth_source": "角色基础信息.csv, 角色名=风堇, 字段=神权"
+    },
+    {
+      "id": "A043",
+      "category": "answerable",
+      "question": "开拓者•存护 的属性是什么？",
+      "expected_answer": "火",
+      "ground_truth_source": "角色基础信息.csv, 角色名=开拓者•存护, 字段=属性"
+    },
+    {
+      "id": "A044",
+      "category": "answerable",
+      "question": "砂金 的命途是什么？",
+      "expected_answer": "存护",
+      "ground_truth_source": "角色基础信息.csv, 角色名=砂金, 字段=命途"
+    },
+    {
+      "id": "A045",
+      "category": "answerable",
+      "question": "黑天鹅 的角色定位是什么？",
+      "expected_answer": "多种方式给敌方目标施加【奥迹】的输出型角色",
+      "ground_truth_source": "角色基础信息.csv, 角色名=黑天鹅, 字段=角色定位"
+    },
+    {
+      "id": "U001",
+      "category": "unanswerable",
+      "question": "黄泉 的身高是多少？",
+      "expected_answer": null,
+      "notes": "知识库未收录角色身高信息，应拒答。"
+    },
+    {
+      "id": "U002",
+      "category": "unanswerable",
+      "question": "卡芙卡 的声优（CV）是谁？",
+      "expected_answer": null,
+      "notes": "知识库未收录配音演员信息，应拒答。"
+    },
+    {
+      "id": "U003",
+      "category": "unanswerable",
+      "question": "希儿 的生日是哪天？",
+      "expected_answer": null,
+      "notes": "知识库未收录角色生日信息，应拒答。"
+    },
+    {
+      "id": "U004",
+      "category": "unanswerable",
+      "question": "白露 的体重是多少？",
+      "expected_answer": null,
+      "notes": "知识库未收录角色体重信息，应拒答。"
+    },
+    {
+      "id": "U005",
+      "category": "unanswerable",
+      "question": "刃 的英文配音演员是谁？",
+      "expected_answer": null,
+      "notes": "知识库未收录配音信息，应拒答。"
+    },
+    {
+      "id": "U006",
+      "category": "unanswerable",
+      "question": "角色「梅芙」的属性是什么？",
+      "expected_answer": null,
+      "notes": "「梅芙」不在知识库角色名单中（不存在该角色），应拒答。"
+    },
+    {
+      "id": "U007",
+      "category": "unanswerable",
+      "question": "角色「黑刀」的命途是什么？",
+      "expected_answer": null,
+      "notes": "「黑刀」不在知识库角色名单中，应拒答。"
+    },
+    {
+      "id": "U008",
+      "category": "unanswerable",
+      "question": "光锥「永夜之灯」的效果是什么？",
+      "expected_answer": null,
+      "notes": "知识库未收录名为「永夜之灯」的光锥，应拒答。"
+    },
+    {
+      "id": "U009",
+      "category": "unanswerable",
+      "question": "遗器「烈焰之心」套装在哪获取？",
+      "expected_answer": null,
+      "notes": "知识库未收录「烈焰之心」遗器，应拒答。"
+    },
+    {
+      "id": "U010",
+      "category": "unanswerable",
+      "question": "角色「七酱」的推荐配队是什么？",
+      "expected_answer": null,
+      "notes": "「七酱」不在知识库角色名单中，应拒答。"
+    },
+    {
+      "id": "U011",
+      "category": "unanswerable",
+      "question": "星穹列车一共有多少节车厢？",
+      "expected_answer": null,
+      "notes": "知识库未收录该设定信息，应拒答。"
+    },
+    {
+      "id": "U012",
+      "category": "unanswerable",
+      "question": "贝洛伯格城的建立年份是多少？",
+      "expected_answer": null,
+      "notes": "知识库未收录该世界观信息，应拒答。"
+    },
+    {
+      "id": "U013",
+      "category": "unanswerable",
+      "question": "阿兰 的星座是什么？",
+      "expected_answer": null,
+      "notes": "知识库未收录角色星座信息，应拒答。"
+    },
+    {
+      "id": "U014",
+      "category": "unanswerable",
+      "question": "桑博 的血型是什么？",
+      "expected_answer": null,
+      "notes": "知识库未收录角色血型信息，应拒答。"
+    },
+    {
+      "id": "U015",
+      "category": "unanswerable",
+      "question": "银狼 的年龄是多少？",
+      "expected_answer": null,
+      "notes": "知识库未收录角色年龄信息，应拒答。"
+    },
+    {
+      "id": "U016",
+      "category": "unanswerable",
+      "question": "匹诺康尼星球的直径是多少？",
+      "expected_answer": null,
+      "notes": "知识库未收录该地理设定信息，应拒答。"
+    },
+    {
+      "id": "U017",
+      "category": "unanswerable",
+      "question": "角色「莱欧娜」的神权是什么？",
+      "expected_answer": null,
+      "notes": "「莱欧娜」不在知识库角色名单中，应拒答。"
+    },
+    {
+      "id": "U018",
+      "category": "unanswerable",
+      "question": "光锥「璀璨之夜」推荐给哪些角色？",
+      "expected_answer": null,
+      "notes": "知识库未收录「璀璨之夜」光锥，应拒答。"
+    },
+    {
+      "id": "U019",
+      "category": "unanswerable",
+      "question": "螺丝咕姆 的属性是什么？",
+      "expected_answer": null,
+      "notes": "「螺丝咕姆」不在知识库角色名单中，应拒答。"
+    },
+    {
+      "id": "U020",
+      "category": "unanswerable",
+      "question": "阮•梅 的师父是谁？",
+      "expected_answer": null,
+      "notes": "知识库未收录角色师承关系信息，应拒答。"
+    },
+    {
+      "id": "U021",
+      "category": "unanswerable",
+      "question": "阿格莱雅 的生日是哪天？",
+      "expected_answer": null,
+      "notes": "知识库未收录角色生日信息，应拒答。"
+    },
+    {
+      "id": "U022",
+      "category": "unanswerable",
+      "question": "开拓者（主角）的真名是什么？",
+      "expected_answer": null,
+      "notes": "知识库未收录主角真名设定，应拒答。"
+    },
+    {
+      "id": "U023",
+      "category": "unanswerable",
+      "question": "万敌 的英文名是什么？",
+      "expected_answer": null,
+      "notes": "知识库未收录角色外文名信息，应拒答。"
+    },
+    {
+      "id": "U024",
+      "category": "unanswerable",
+      "question": "遗器「忆庭学者的信」的套装效果是什么？",
+      "expected_answer": null,
+      "notes": "知识库未收录该遗器，应拒答。"
+    },
+    {
+      "id": "U025",
+      "category": "unanswerable",
+      "question": "角色「玲瓏」的命途是什么？",
+      "expected_answer": null,
+      "notes": "「玲瓏」不在知识库角色名单中，应拒答。"
+    },
+    {
+      "id": "U026",
+      "category": "unanswerable",
+      "question": "光锥「天穹之光」的推荐度是多少？",
+      "expected_answer": null,
+      "notes": "知识库未收录「天穹之光」光锥，应拒答。"
+    },
+    {
+      "id": "U027",
+      "category": "unanswerable",
+      "question": "三月七 的配音演员是谁？",
+      "expected_answer": null,
+      "notes": "知识库未收录配音信息，应拒答。"
+    },
+    {
+      "id": "U028",
+      "category": "unanswerable",
+      "question": "景元 的基础生命值是多少？",
+      "expected_answer": null,
+      "notes": "知识库未收录角色基础面板数值，应拒答。"
+    },
+    {
+      "id": "U029",
+      "category": "unanswerable",
+      "question": "银枝 对敌人能造成的最大伤害数值是多少？",
+      "expected_answer": null,
+      "notes": "知识库未收录此类战斗数值结论，应拒答。"
+    },
+    {
+      "id": "U030",
+      "category": "unanswerable",
+      "question": "贝洛伯格区域的隐藏任务怎么做？",
+      "expected_answer": null,
+      "notes": "知识库未收录任务攻略信息，应拒答。"
+    },
+    {
+      "id": "U031",
+      "category": "unanswerable",
+      "question": "角色「安娜」的属性是什么？",
+      "expected_answer": null,
+      "notes": "「安娜」不在知识库角色名单中，应拒答。"
+    },
+    {
+      "id": "U032",
+      "category": "unanswerable",
+      "question": "瓦尔特 的日语配音是谁？",
+      "expected_answer": null,
+      "notes": "知识库未收录配音信息，应拒答。"
+    },
+    {
+      "id": "U033",
+      "category": "unanswerable",
+      "question": "游戏版本 2.7 更新了什么内容？",
+      "expected_answer": null,
+      "notes": "知识库未收录版本更新公告类信息，应拒答。"
+    },
+    {
+      "id": "U034",
+      "category": "unanswerable",
+      "question": "佩拉 的爱好是什么？",
+      "expected_answer": null,
+      "notes": "知识库未收录角色爱好信息，应拒答。"
+    },
+    {
+      "id": "U035",
+      "category": "unanswerable",
+      "question": "光锥「醉梦之约」的效果是什么？",
+      "expected_answer": null,
+      "notes": "知识库未收录「醉梦之约」光锥，应拒答。"
+    },
+    {
+      "id": "U036",
+      "category": "unanswerable",
+      "question": "遗器「圣洁之翼」的主词条怎么选？",
+      "expected_answer": null,
+      "notes": "知识库未收录「圣洁之翼」遗器，应拒答。"
+    },
+    {
+      "id": "U037",
+      "category": "unanswerable",
+      "question": "寒鸦 的生日是哪天？",
+      "expected_answer": null,
+      "notes": "知识库未收录角色生日信息，应拒答。"
+    },
+    {
+      "id": "U038",
+      "category": "unanswerable",
+      "question": "星期日 的英文名是什么？",
+      "expected_answer": null,
+      "notes": "知识库未收录角色外文名信息，应拒答。"
+    },
+    {
+      "id": "U039",
+      "category": "unanswerable",
+      "question": "翡翠 在星际和平公司的职位编号是什么？",
+      "expected_answer": null,
+      "notes": "知识库未收录该信息，应拒答。"
+    },
+    {
+      "id": "U040",
+      "category": "unanswerable",
+      "question": "流光忆庭的创立时间是什么时候？",
+      "expected_answer": null,
+      "notes": "知识库未收录该组织设定信息，应拒答。"
+    },
+    {
+      "id": "C001",
+      "category": "confusable",
+      "question": "三月七 的属性是什么？",
+      "expected_answer": "冰",
+      "distractor": "仙舟三月七（虚数）",
+      "ground_truth_source": "角色基础信息.csv, 角色名=三月七, 字段=属性",
+      "notes": "三月七（冰/存护）与仙舟三月七（虚数/巡猎）为不同角色，检索易混淆。"
+    },
+    {
+      "id": "C002",
+      "category": "confusable",
+      "question": "仙舟三月七 的命途是什么？",
+      "expected_answer": "巡猎",
+      "distractor": "三月七（存护）",
+      "ground_truth_source": "角色基础信息.csv, 角色名=仙舟三月七, 字段=命途",
+      "notes": "仙舟三月七（虚数/巡猎）与三月七（冰/存护）为不同角色，检索易混淆。"
+    },
+    {
+      "id": "C003",
+      "category": "confusable",
+      "question": "黑塔 的星级是多少？",
+      "expected_answer": "四星",
+      "distractor": "大黑塔（五星）",
+      "ground_truth_source": "角色基础信息.csv, 角色名=黑塔, 字段=星级",
+      "notes": "黑塔（四星）与大黑塔（五星）名称相近，易混淆。"
+    },
+    {
+      "id": "C004",
+      "category": "confusable",
+      "question": "大黑塔 的星级是多少？",
+      "expected_answer": "五星",
+      "distractor": "黑塔（四星）",
+      "ground_truth_source": "角色基础信息.csv, 角色名=大黑塔, 字段=星级",
+      "notes": "大黑塔（五星）与黑塔（四星）名称相近，易混淆。"
+    },
+    {
+      "id": "C005",
+      "category": "confusable",
+      "question": "银狼 的属性是什么？",
+      "expected_answer": "量子",
+      "distractor": "银狼LV.999（虚数）",
+      "ground_truth_source": "角色基础信息.csv, 角色名=银狼, 字段=属性",
+      "notes": "银狼（量子/虚无）与银狼LV.999（虚数/欢愉）名称相近，易混淆。"
+    },
+    {
+      "id": "C006",
+      "category": "confusable",
+      "question": "银狼LV.999 的命途是什么？",
+      "expected_answer": "欢愉",
+      "distractor": "银狼（虚无）",
+      "ground_truth_source": "角色基础信息.csv, 角色名=银狼LV.999, 字段=命途",
+      "notes": "银狼LV.999（虚数/欢愉）与银狼（量子/虚无）名称相近，易混淆。"
+    },
+    {
+      "id": "C007",
+      "category": "confusable",
+      "question": "花火 的属性是什么？",
+      "expected_answer": "量子",
+      "distractor": "火花（火）",
+      "ground_truth_source": "角色基础信息.csv, 角色名=花火, 字段=属性",
+      "notes": "花火（量子/同谐）与火花（火/欢愉）读音与字形相近，易混淆。"
+    },
+    {
+      "id": "C008",
+      "category": "confusable",
+      "question": "火花 的命途是什么？",
+      "expected_answer": "欢愉",
+      "distractor": "花火（同谐）",
+      "ground_truth_source": "角色基础信息.csv, 角色名=火花, 字段=命途",
+      "notes": "火花（火/欢愉）与花火（量子/同谐）读音相近，易混淆。"
+    },
+    {
+      "id": "C009",
+      "category": "confusable",
+      "question": "知更鸟 的命途是什么？",
+      "expected_answer": "同谐",
+      "distractor": "知更鸟•晴歌（记忆）",
+      "ground_truth_source": "角色基础信息.csv, 角色名=知更鸟, 字段=命途",
+      "notes": "知更鸟（物理/同谐）与知更鸟•晴歌（风/记忆）名称相近，易混淆。"
+    },
+    {
+      "id": "C010",
+      "category": "confusable",
+      "question": "知更鸟•晴歌 的属性是什么？",
+      "expected_answer": "风",
+      "distractor": "知更鸟（物理）",
+      "ground_truth_source": "角色基础信息.csv, 角色名=知更鸟•晴歌, 字段=属性",
+      "notes": "知更鸟•晴歌（风/记忆）与知更鸟（物理/同谐）名称相近，易混淆。"
+    },
+    {
+      "id": "C011",
+      "category": "confusable",
+      "question": "刃 的属性是什么？",
+      "expected_answer": "风",
+      "distractor": "千冶•刃（火）",
+      "ground_truth_source": "角色基础信息.csv, 角色名=刃, 字段=属性",
+      "notes": "刃（风/毁灭）与千冶•刃（火/虚无）名称相近，易混淆。"
+    },
+    {
+      "id": "C012",
+      "category": "confusable",
+      "question": "千冶•刃 的命途是什么？",
+      "expected_answer": "虚无",
+      "distractor": "刃（毁灭）",
+      "ground_truth_source": "角色基础信息.csv, 角色名=千冶•刃, 字段=命途",
+      "notes": "千冶•刃（火/虚无）与刃（风/毁灭）名称相近，易混淆。"
+    },
+    {
+      "id": "C013",
+      "category": "confusable",
+      "question": "丹恒 的命途是什么？",
+      "expected_answer": "巡猎",
+      "distractor": "丹恒•饮月（毁灭）",
+      "ground_truth_source": "角色基础信息.csv, 角色名=丹恒, 字段=命途",
+      "notes": "丹恒（风/巡猎）与丹恒•饮月（虚数/毁灭）等形态名称相近，易混淆。"
+    },
+    {
+      "id": "C014",
+      "category": "confusable",
+      "question": "丹恒•饮月 的属性是什么？",
+      "expected_answer": "虚数",
+      "distractor": "丹恒（风）",
+      "ground_truth_source": "角色基础信息.csv, 角色名=丹恒•饮月, 字段=属性",
+      "notes": "丹恒•饮月（虚数/毁灭）与丹恒（风/巡猎）名称相近，易混淆。"
+    },
+    {
+      "id": "C015",
+      "category": "confusable",
+      "question": "丹恒•腾荒 的命途是什么？",
+      "expected_answer": "存护",
+      "distractor": "丹恒•饮月（毁灭）",
+      "ground_truth_source": "角色基础信息.csv, 角色名=丹恒•腾荒, 字段=命途",
+      "notes": "丹恒•腾荒（物理/存护）与丹恒•饮月（虚数/毁灭）等形态名称相近，易混淆。"
+    },
+    {
+      "id": "C016",
+      "category": "confusable",
+      "question": "砂金 的命途是什么？",
+      "expected_answer": "存护",
+      "distractor": "砂金•戏浪（欢愉）",
+      "ground_truth_source": "角色基础信息.csv, 角色名=砂金, 字段=命途",
+      "notes": "砂金（虚数/存护）与砂金•戏浪（量子/欢愉）名称相近，易混淆。"
+    },
+    {
+      "id": "C017",
+      "category": "confusable",
+      "question": "砂金•戏浪 的属性是什么？",
+      "expected_answer": "量子",
+      "distractor": "砂金（虚数）",
+      "ground_truth_source": "角色基础信息.csv, 角色名=砂金•戏浪, 字段=属性",
+      "notes": "砂金•戏浪（量子/欢愉）与砂金（虚数/存护）名称相近，易混淆。"
+    },
+    {
+      "id": "C018",
+      "category": "confusable",
+      "question": "开拓者•存护 的属性是什么？",
+      "expected_answer": "火",
+      "distractor": "开拓者•同谐（虚数）",
+      "ground_truth_source": "角色基础信息.csv, 角色名=开拓者•存护, 字段=属性",
+      "notes": "开拓者各形态（存护/同谐/记忆/毁灭/欢愉）名称相近，易混淆。"
+    },
+    {
+      "id": "C019",
+      "category": "confusable",
+      "question": "开拓者•记忆 的命途是什么？",
+      "expected_answer": "记忆",
+      "distractor": "开拓者•毁灭（毁灭）",
+      "ground_truth_source": "角色基础信息.csv, 角色名=开拓者•记忆, 字段=命途",
+      "notes": "开拓者各形态名称相近，易混淆。"
+    },
+    {
+      "id": "C020",
+      "category": "confusable",
+      "question": "开拓者•欢愉 的属性是什么？",
+      "expected_answer": "雷",
+      "distractor": "开拓者•记忆（冰）",
+      "ground_truth_source": "角色基础信息.csv, 角色名=开拓者•欢愉, 字段=属性",
+      "notes": "开拓者各形态名称相近，易混淆。"
+    },
+    {
+      "id": "C021",
+      "category": "confusable",
+      "question": "忘归人 的属性是什么？",
+      "expected_answer": "火",
+      "distractor": "停云（雷）",
+      "ground_truth_source": "角色基础信息.csv, 角色名=忘归人, 字段=属性",
+      "notes": "忘归人（火/虚无）与停云（雷/同谐）为同一角色不同形态，易混淆。"
+    },
+    {
+      "id": "C022",
+      "category": "confusable",
+      "question": "停云 的命途是什么？",
+      "expected_answer": "同谐",
+      "distractor": "忘归人（虚无）",
+      "ground_truth_source": "角色基础信息.csv, 角色名=停云, 字段=命途",
+      "notes": "停云（雷/同谐）与忘归人（火/虚无）为同一角色不同形态，易混淆。"
+    },
+    {
+      "id": "C023",
+      "category": "confusable",
+      "question": "玲可 的属性是什么？",
+      "expected_answer": "量子",
+      "distractor": "白露（雷）",
+      "ground_truth_source": "角色基础信息.csv, 角色名=玲可, 字段=属性",
+      "notes": "玲可（量子/丰饶）与白露（雷/丰饶）同为丰饶治疗角色，易混淆。"
+    },
+    {
+      "id": "C024",
+      "category": "confusable",
+      "question": "白露 的属性是什么？",
+      "expected_answer": "雷",
+      "distractor": "玲可（量子）",
+      "ground_truth_source": "角色基础信息.csv, 角色名=白露, 字段=属性",
+      "notes": "白露（雷/丰饶）与玲可（量子/丰饶）同为丰饶治疗角色，易混淆。"
+    },
+    {
+      "id": "C025",
+      "category": "confusable",
+      "question": "布洛妮娅 的属性是什么？",
+      "expected_answer": "风",
+      "distractor": "星期日（虚数）",
+      "ground_truth_source": "角色基础信息.csv, 角色名=布洛妮娅, 字段=属性",
+      "notes": "布洛妮娅（风/同谐）与星期日（虚数/同谐）同为同谐辅助，易混淆。"
+    },
+    {
+      "id": "C026",
+      "category": "confusable",
+      "question": "星期日 的属性是什么？",
+      "expected_answer": "虚数",
+      "distractor": "布洛妮娅（风）",
+      "ground_truth_source": "角色基础信息.csv, 角色名=星期日, 字段=属性",
+      "notes": "星期日（虚数/同谐）与布洛妮娅（风/同谐）同为同谐辅助，易混淆。"
+    },
+    {
+      "id": "C027",
+      "category": "confusable",
+      "question": "姬子 的实装日期是哪天？",
+      "expected_answer": "2023/04/26",
+      "distractor": "姬子•启行（2026/07/15）",
+      "ground_truth_source": "角色基础信息.csv, 角色名=姬子, 字段=实装日期",
+      "notes": "姬子与姬子•启行名称相近且属性/命途相同，需按实装日期区分，易混淆。"
+    },
+    {
+      "id": "C028",
+      "category": "confusable",
+      "question": "姬子•启行 的实装日期是哪天？",
+      "expected_answer": "2026/07/15",
+      "distractor": "姬子（2023/04/26）",
+      "ground_truth_source": "角色基础信息.csv, 角色名=姬子•启行, 字段=实装日期",
+      "notes": "姬子•启行与姬子名称相近且属性/命途相同，需按实装日期区分，易混淆。"
+    },
+    {
+      "id": "C029",
+      "category": "confusable",
+      "question": "佩拉 的属性是什么？",
+      "expected_answer": "冰",
+      "distractor": "桑博（风）",
+      "ground_truth_source": "角色基础信息.csv, 角色名=佩拉, 字段=属性",
+      "notes": "佩拉（冰/虚无）与桑博（风/虚无）同为贝洛伯格虚无角色，易混淆。"
+    },
+    {
+      "id": "C030",
+      "category": "confusable",
+      "question": "桑博 的属性是什么？",
+      "expected_answer": "风",
+      "distractor": "佩拉（冰）",
+      "ground_truth_source": "角色基础信息.csv, 角色名=桑博, 字段=属性",
+      "notes": "桑博（风/虚无）与佩拉（冰/虚无）同为贝洛伯格虚无角色，易混淆。"
+    },
+    {
+      "id": "C031",
+      "category": "confusable",
+      "question": "翡翠 的命途是什么？",
+      "expected_answer": "智识",
+      "distractor": "托帕&账账（巡猎）",
+      "ground_truth_source": "角色基础信息.csv, 角色名=翡翠, 字段=命途",
+      "notes": "翡翠（量子/智识）与托帕&账账（火/巡猎）同属星际和平公司，易混淆。"
+    },
+    {
+      "id": "C032",
+      "category": "confusable",
+      "question": "托帕&账账 的命途是什么？",
+      "expected_answer": "巡猎",
+      "distractor": "翡翠（智识）",
+      "ground_truth_source": "角色基础信息.csv, 角色名=托帕&账账, 字段=命途",
+      "notes": "托帕&账账（火/巡猎）与翡翠（量子/智识）同属星际和平公司，易混淆。"
+    },
+    {
+      "id": "C033",
+      "category": "confusable",
+      "question": "远坂凛 的命途是什么？",
+      "expected_answer": "智识",
+      "distractor": "Archer（巡猎）",
+      "ground_truth_source": "角色基础信息.csv, 角色名=远坂凛, 字段=命途",
+      "notes": "远坂凛（量子/智识）与 Archer（量子/巡猎）同属异界阵营，易混淆。"
+    },
+    {
+      "id": "C034",
+      "category": "confusable",
+      "question": "黑天鹅 的属性是什么？",
+      "expected_answer": "风",
+      "distractor": "卡芙卡（雷）",
+      "ground_truth_source": "角色基础信息.csv, 角色名=黑天鹅, 字段=属性",
+      "notes": "黑天鹅（风/虚无）与卡芙卡（雷/虚无）同为虚无，且名字易与卡芙卡混淆。"
+    },
+    {
+      "id": "C035",
+      "category": "confusable",
+      "question": "开拓者·毁灭 的属性是什么？",
+      "expected_answer": "物理",
+      "distractor": "开拓者•存护（火）",
+      "ground_truth_source": "角色基础信息.csv, 角色名=开拓者·毁灭, 字段=属性",
+      "notes": "开拓者·毁灭（物理/毁灭）与开拓者•存护（火/存护）等形态名称相近，易混淆。"
+    }
+  ]
+}
