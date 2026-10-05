@@ -1,1 +1,4 @@
-
+# 无RAG基线运行命令
+python scripts/3_run/run_rag.py --no-rag
+# 批量评测（无RAG）
+python evaluation/run_eval.py --no-rag

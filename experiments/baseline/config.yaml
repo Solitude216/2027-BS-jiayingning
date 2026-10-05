@@ -1,1 +1,7 @@
-
+# baseline 无RAG基线配置
+llm:
+  model: deepseek-flash
+  temperature: 0.2
+retrieval:
+  enabled: false        # 基线：不做检索，直接问答
+testset: data/samples/testset_2027-BS_v1.json
