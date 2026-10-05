@@ -1,5 +1,5 @@
 {
-  "testset_name": "2027-BS-game 游戏知识问答测试集 v1",
+  "testset_name": "游戏知识问答测试集 v1",
   "version": "1.0",
   "description": "基于《崩坏：星穹铁道》游戏知识库构建的知识问答测试集，用于评估 LLM/RAG 问答系统的答案正确性、知识命中率与引用准确性。",
   "knowledge_base_note": "可检索知识源：knowledge_base/角色数据csv 下的 8 个 CSV（角色基础信息、光锥推荐、遗器推荐、配队推荐、角色行迹、角色星魂、角色晋阶、角色故事）。角色数据txt 不使用。",
@@ -9,7 +9,7 @@
     "confusable": "易混淆：知识点相近、容易混淆，测试检索与生成能否正确区分相似实体。"
   },
   "frozen": true,
-  "frozen_date": "2026-10-05",
+  "frozen_date": "2026-09-25",
   "freeze_policy": "本测试集已冻结（v1.0）。测试完成后不得回头修改任何题目、答案或类别，以保证评测结果可复现。",
   "total": 120,
   "counts": {
