@@ -1,0 +1,6432 @@
+{
+  "testset": "2027-BS-game 游戏知识问答测试集 v1",
+  "method": "vector",
+  "chunk_mode": "field",
+  "generated_at": "2026-10-05 19:20:03",
+  "stats": {
+    "answerable": {
+      "n": 45,
+      "correct": 32,
+      "answer_accuracy": 0.7111,
+      "hit_rate": 0.8
+    },
+    "unanswerable": {
+      "n": 40,
+      "correct": 38,
+      "answer_accuracy": 0.95,
+      "hit_rate": 0.0
+    },
+    "confusable": {
+      "n": 35,
+      "correct": 27,
+      "answer_accuracy": 0.7714,
+      "hit_rate": 0.7714
+    },
+    "overall": {
+      "n": 120,
+      "overall_accuracy": 0.8083
+    }
+  },
+  "results": [
+    {
+      "question": "Archer 的属性是什么？",
+      "answer": "Archer 的属性是 **量子**。  \n答案出自【片段3】。",
+      "retrieved": [
+        {
+          "doc_id": "角色行迹.csv|Archer|行迹类型#7",
+          "source": "角色行迹.csv",
+          "role": "Archer",
+          "field": "行迹类型",
+          "score": 0.7131,
+          "text": "角色名：Archer；行迹类型：属性加成"
+        },
+        {
+          "doc_id": "角色晋阶.csv|Archer|晋阶阶段#1",
+          "source": "角色晋阶.csv",
+          "role": "Archer",
+          "field": "晋阶阶段",
+          "score": 0.7036,
+          "text": "角色名：Archer；晋阶阶段：1级属性/晋阶所需材料"
+        },
+        {
+          "doc_id": "角色基础信息.csv|Archer|属性#1",
+          "source": "角色基础信息.csv",
+          "role": "Archer",
+          "field": "属性",
+          "score": 0.6822,
+          "text": "角色名：Archer；属性：量子"
+        },
+        {
+          "doc_id": "角色故事.csv|Archer|故事标题#1",
+          "source": "角色故事.csv",
+          "role": "Archer",
+          "field": "故事标题",
+          "score": 0.669,
+          "text": "角色名：Archer；故事标题：其一"
+        },
+        {
+          "doc_id": "角色行迹.csv|Archer|行迹描述#1",
+          "source": "角色行迹.csv",
+          "role": "Archer",
+          "field": "行迹描述",
+          "score": 0.6678,
+          "text": "角色名：Archer；行迹描述：对指定敌方单体造成等同于Archer【50%/100%】攻击力的量子属性伤害。\n（标签：回能 20、技能点 +1、单攻、削韧 10）"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 1.76,
+      "category": "answerable",
+      "expected": "量子",
+      "hit": true,
+      "cite": false,
+      "correct": true
+    },
+    {
+      "question": "Saber 的命途是什么？",
+      "answer": "Saber 的命途是「毁灭」。  \n答案出自片段1。",
+      "retrieved": [
+        {
+          "doc_id": "角色基础信息.csv|Saber|命途#1",
+          "source": "角色基础信息.csv",
+          "role": "Saber",
+          "field": "命途",
+          "score": 0.7285,
+          "text": "角色名：Saber；命途：毁灭"
+        },
+        {
+          "doc_id": "角色行迹.csv|Saber|行迹描述#16",
+          "source": "角色行迹.csv",
+          "role": "Saber",
+          "field": "行迹描述",
+          "score": 0.682,
+          "text": "角色名：Saber；行迹描述：生命值上限提高6%\n（标签：角色晋阶6）"
+        },
+        {
+          "doc_id": "角色行迹.csv|Saber|行迹描述#12",
+          "source": "角色行迹.csv",
+          "role": "Saber",
+          "field": "行迹描述",
+          "score": 0.671,
+          "text": "角色名：Saber；行迹描述：生命值上限提高4%\n（标签：角色晋阶3）"
+        },
+        {
+          "doc_id": "配队推荐.csv|Saber|位置#3",
+          "source": "配队推荐.csv",
+          "role": "Saber",
+          "field": "位置",
+          "score": 0.6483,
+          "text": "角色名：Saber；位置：生存"
+        },
+        {
+          "doc_id": "角色故事.csv|Saber|故事标题#1",
+          "source": "角色故事.csv",
+          "role": "Saber",
+          "field": "故事标题",
+          "score": 0.6408,
+          "text": "角色名：Saber；故事标题：其一"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 1.08,
+      "category": "answerable",
+      "expected": "毁灭",
+      "hit": true,
+      "cite": false,
+      "correct": true
+    },
+    {
+      "question": "万敌 属于哪个阵营？",
+      "answer": "万敌属于**悬锋城**。答案出自【片段1】。",
+      "retrieved": [
+        {
+          "doc_id": "角色基础信息.csv|万敌|阵营#1",
+          "source": "角色基础信息.csv",
+          "role": "万敌",
+          "field": "阵营",
+          "score": 0.7097,
+          "text": "角色名：万敌；阵营：悬锋城"
+        },
+        {
+          "doc_id": "配队推荐.csv|万敌|位置#1",
+          "source": "配队推荐.csv",
+          "role": "万敌",
+          "field": "位置",
+          "score": 0.6975,
+          "text": "角色名：万敌；位置：主C"
+        },
+        {
+          "doc_id": "配队推荐.csv|万敌|位置#4",
+          "source": "配队推荐.csv",
+          "role": "万敌",
+          "field": "位置",
+          "score": 0.693,
+          "text": "角色名：万敌；位置：生存"
+        },
+        {
+          "doc_id": "配队推荐.csv|万敌|推荐角色#1",
+          "source": "配队推荐.csv",
+          "role": "万敌",
+          "field": "推荐角色",
+          "score": 0.6909,
+          "text": "角色名：万敌；推荐角色：万敌"
+        },
+        {
+          "doc_id": "角色行迹.csv|万敌|行迹类型#7",
+          "source": "角色行迹.csv",
+          "role": "万敌",
+          "field": "行迹类型",
+          "score": 0.6821,
+          "text": "角色名：万敌；行迹类型：属性加成"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 0.92,
+      "category": "answerable",
+      "expected": "悬锋城",
+      "hit": true,
+      "cite": true,
+      "correct": true
+    },
+    {
+      "question": "三月七 的星级是多少？",
+      "answer": "三月七的星级是**四星**。  \n答案出自：**片段1**（角色基础信息.csv）。",
+      "retrieved": [
+        {
+          "doc_id": "角色基础信息.csv|三月七|星级#1",
+          "source": "角色基础信息.csv",
+          "role": "三月七",
+          "field": "星级",
+          "score": 0.7419,
+          "text": "角色名：三月七；星级：四星"
+        },
+        {
+          "doc_id": "遗器推荐.csv|三月七|推荐指数#1",
+          "source": "遗器推荐.csv",
+          "role": "三月七",
+          "field": "推荐指数",
+          "score": 0.6902,
+          "text": "角色名：三月七；推荐指数：★★★★★"
+        },
+        {
+          "doc_id": "遗器推荐.csv|三月七|推荐指数#2",
+          "source": "遗器推荐.csv",
+          "role": "三月七",
+          "field": "推荐指数",
+          "score": 0.688,
+          "text": "角色名：三月七；推荐指数：★★★★"
+        },
+        {
+          "doc_id": "角色晋阶.csv|三月七|晋阶阶段#7",
+          "source": "角色晋阶.csv",
+          "role": "三月七",
+          "field": "晋阶阶段",
+          "score": 0.6816,
+          "text": "角色名：三月七；晋阶阶段：70级晋阶"
+        },
+        {
+          "doc_id": "光锥推荐.csv|三月七|推荐度#1",
+          "source": "光锥推荐.csv",
+          "role": "三月七",
+          "field": "推荐度",
+          "score": 0.6802,
+          "text": "角色名：三月七；推荐度：★★★★★"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 0.84,
+      "category": "answerable",
+      "expected": "四星",
+      "hit": true,
+      "cite": true,
+      "correct": true
+    },
+    {
+      "question": "卡芙卡 的属性与命途分别是什么？",
+      "answer": "知识库中没有相关信息，无法回答。  \n检索片段（片段1-5）仅涉及卡芙卡的行迹与晋阶内容，未提及她的属性与命途。",
+      "retrieved": [
+        {
+          "doc_id": "角色行迹.csv|卡芙卡|行迹类型#7",
+          "source": "角色行迹.csv",
+          "role": "卡芙卡",
+          "field": "行迹类型",
+          "score": 0.7342,
+          "text": "角色名：卡芙卡；行迹类型：属性加成"
+        },
+        {
+          "doc_id": "角色行迹.csv|卡芙卡|行迹名称#11",
+          "source": "角色行迹.csv",
+          "role": "卡芙卡",
+          "field": "行迹名称",
+          "score": 0.7037,
+          "text": "角色名：卡芙卡；行迹名称：生命强化"
+        },
+        {
+          "doc_id": "角色行迹.csv|卡芙卡|行迹名称#10",
+          "source": "角色行迹.csv",
+          "role": "卡芙卡",
+          "field": "行迹名称",
+          "score": 0.7015,
+          "text": "角色名：卡芙卡；行迹名称：效果命中强化"
+        },
+        {
+          "doc_id": "角色行迹.csv|卡芙卡|行迹类型#4",
+          "source": "角色行迹.csv",
+          "role": "卡芙卡",
+          "field": "行迹类型",
+          "score": 0.6905,
+          "text": "角色名：卡芙卡；行迹类型：天赋"
+        },
+        {
+          "doc_id": "角色晋阶.csv|卡芙卡|晋阶阶段#1",
+          "source": "角色晋阶.csv",
+          "role": "卡芙卡",
+          "field": "晋阶阶段",
+          "score": 0.6892,
+          "text": "角色名：卡芙卡；晋阶阶段：1级属性/晋阶所需材料"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 1.26,
+      "category": "answerable",
+      "expected": "属性为雷，命途为虚无",
+      "hit": false,
+      "cite": true,
+      "correct": false
+    },
+    {
+      "question": "黑塔 的命途是什么？",
+      "answer": "黑塔的命途是：**智识**。\n\n答案出自：**片段1**。",
+      "retrieved": [
+        {
+          "doc_id": "角色基础信息.csv|黑塔|命途#1",
+          "source": "角色基础信息.csv",
+          "role": "黑塔",
+          "field": "命途",
+          "score": 0.719,
+          "text": "角色名：黑塔；命途：智识"
+        },
+        {
+          "doc_id": "配队推荐.csv|黑塔|位置#3",
+          "source": "配队推荐.csv",
+          "role": "黑塔",
+          "field": "位置",
+          "score": 0.6829,
+          "text": "角色名：黑塔；位置：生存"
+        },
+        {
+          "doc_id": "角色故事.csv|黑塔|故事标题#1",
+          "source": "角色故事.csv",
+          "role": "黑塔",
+          "field": "故事标题",
+          "score": 0.6762,
+          "text": "角色名：黑塔；故事标题：其一"
+        },
+        {
+          "doc_id": "角色基础信息.csv|大黑塔|命途#1",
+          "source": "角色基础信息.csv",
+          "role": "大黑塔",
+          "field": "命途",
+          "score": 0.6727,
+          "text": "角色名：大黑塔；命途：智识"
+        },
+        {
+          "doc_id": "遗器推荐.csv|黑塔|推荐指数#1",
+          "source": "遗器推荐.csv",
+          "role": "黑塔",
+          "field": "推荐指数",
+          "score": 0.6665,
+          "text": "角色名：黑塔；推荐指数：★★★★★"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 1.17,
+      "category": "answerable",
+      "expected": "智识",
+      "hit": true,
+      "cite": true,
+      "correct": true
+    },
+    {
+      "question": "黄泉 的属性是什么？",
+      "answer": "黄泉的属性是：**雷**。  \n答案出自：**片段4**。",
+      "retrieved": [
+        {
+          "doc_id": "角色行迹.csv|黄泉|行迹类型#7",
+          "source": "角色行迹.csv",
+          "role": "黄泉",
+          "field": "行迹类型",
+          "score": 0.7572,
+          "text": "角色名：黄泉；行迹类型：属性加成"
+        },
+        {
+          "doc_id": "角色晋阶.csv|黄泉|晋阶阶段#1",
+          "source": "角色晋阶.csv",
+          "role": "黄泉",
+          "field": "晋阶阶段",
+          "score": 0.7404,
+          "text": "角色名：黄泉；晋阶阶段：1级属性/晋阶所需材料"
+        },
+        {
+          "doc_id": "角色故事.csv|黄泉|故事标题#1",
+          "source": "角色故事.csv",
+          "role": "黄泉",
+          "field": "故事标题",
+          "score": 0.7317,
+          "text": "角色名：黄泉；故事标题：其一"
+        },
+        {
+          "doc_id": "角色基础信息.csv|黄泉|属性#1",
+          "source": "角色基础信息.csv",
+          "role": "黄泉",
+          "field": "属性",
+          "score": 0.7218,
+          "text": "角色名：黄泉；属性：雷"
+        },
+        {
+          "doc_id": "配队推荐.csv|黄泉|推荐角色#1",
+          "source": "配队推荐.csv",
+          "role": "黄泉",
+          "field": "推荐角色",
+          "score": 0.7154,
+          "text": "角色名：黄泉；推荐角色：黄泉"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 1.94,
+      "category": "answerable",
+      "expected": "雷",
+      "hit": true,
+      "cite": true,
+      "correct": true
+    },
+    {
+      "question": "景元 的命途是什么？",
+      "answer": "景元的命途是：**智识**。  \n答案出自：**片段1**。",
+      "retrieved": [
+        {
+          "doc_id": "角色基础信息.csv|景元|命途#1",
+          "source": "角色基础信息.csv",
+          "role": "景元",
+          "field": "命途",
+          "score": 0.7005,
+          "text": "角色名：景元；命途：智识"
+        },
+        {
+          "doc_id": "角色故事.csv|景元|故事标题#1",
+          "source": "角色故事.csv",
+          "role": "景元",
+          "field": "故事标题",
+          "score": 0.6791,
+          "text": "角色名：景元；故事标题：其一"
+        },
+        {
+          "doc_id": "配队推荐.csv|景元|位置#4",
+          "source": "配队推荐.csv",
+          "role": "景元",
+          "field": "位置",
+          "score": 0.6633,
+          "text": "角色名：景元；位置：生存"
+        },
+        {
+          "doc_id": "角色故事.csv|景元|故事标题#2",
+          "source": "角色故事.csv",
+          "role": "景元",
+          "field": "故事标题",
+          "score": 0.6617,
+          "text": "角色名：景元；故事标题：其二"
+        },
+        {
+          "doc_id": "角色行迹.csv|景元|行迹类型#4",
+          "source": "角色行迹.csv",
+          "role": "景元",
+          "field": "行迹类型",
+          "score": 0.6513,
+          "text": "角色名：景元；行迹类型：天赋"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 1.21,
+      "category": "answerable",
+      "expected": "智识",
+      "hit": true,
+      "cite": true,
+      "correct": true
+    },
+    {
+      "question": "希儿 的角色定位是什么？",
+      "answer": "希儿的角色定位是：通过击杀目标触发【再现】，多次行动的量子属性角色。（出自片段3）",
+      "retrieved": [
+        {
+          "doc_id": "配队推荐.csv|希儿|位置#1",
+          "source": "配队推荐.csv",
+          "role": "希儿",
+          "field": "位置",
+          "score": 0.7635,
+          "text": "角色名：希儿；位置：主C"
+        },
+        {
+          "doc_id": "配队推荐.csv|希儿|位置#3",
+          "source": "配队推荐.csv",
+          "role": "希儿",
+          "field": "位置",
+          "score": 0.7585,
+          "text": "角色名：希儿；位置：生存"
+        },
+        {
+          "doc_id": "角色基础信息.csv|希儿|角色定位#1",
+          "source": "角色基础信息.csv",
+          "role": "希儿",
+          "field": "角色定位",
+          "score": 0.7562,
+          "text": "角色名：希儿；角色定位：通过击杀目标触发【再现】，多次行动的量子属性角色"
+        },
+        {
+          "doc_id": "角色故事.csv|希儿|故事标题#1",
+          "source": "角色故事.csv",
+          "role": "希儿",
+          "field": "故事标题",
+          "score": 0.7479,
+          "text": "角色名：希儿；故事标题：其一"
+        },
+        {
+          "doc_id": "配队推荐.csv|希儿|推荐角色#1",
+          "source": "配队推荐.csv",
+          "role": "希儿",
+          "field": "推荐角色",
+          "score": 0.7429,
+          "text": "角色名：希儿；推荐角色：希儿"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 1.08,
+      "category": "answerable",
+      "expected": "通过击杀目标触发【再现】、多次行动的量子属性角色",
+      "hit": true,
+      "cite": true,
+      "correct": true
+    },
+    {
+      "question": "万敌 的神权是什么？",
+      "answer": "万敌的神权是：**「天谴之矛，尼卡多利」**。  \n该信息出自 **片段1**。",
+      "retrieved": [
+        {
+          "doc_id": "角色基础信息.csv|万敌|神权#1",
+          "source": "角色基础信息.csv",
+          "role": "万敌",
+          "field": "神权",
+          "score": 0.7268,
+          "text": "角色名：万敌；神权：「天谴之矛，尼卡多利」"
+        },
+        {
+          "doc_id": "角色基础信息.csv|万敌|个人简介#1",
+          "source": "角色基础信息.csv",
+          "role": "万敌",
+          "field": "个人简介",
+          "score": 0.6508,
+          "text": "角色名：万敌；个人简介：那沉入迷雾的悬锋，纷乱与战争之城！它的王室流着弑亲的血脉，它的神明以灾厄为名。\n不死的迈德漠斯，离群的狮子，逐猎「纷争」火种的黄金裔。你要忍受万死，浴血还乡，孤身背负疯狂的宿命\n——弑王成王，弑神登神。征战的铁蹄踏遍荒野，终归要沾上故乡的血。"
+        },
+        {
+          "doc_id": "角色故事.csv|万敌|故事标题#1",
+          "source": "角色故事.csv",
+          "role": "万敌",
+          "field": "故事标题",
+          "score": 0.6425,
+          "text": "角色名：万敌；故事标题：其一"
+        },
+        {
+          "doc_id": "角色故事.csv|万敌|故事标题#2",
+          "source": "角色故事.csv",
+          "role": "万敌",
+          "field": "故事标题",
+          "score": 0.6304,
+          "text": "角色名：万敌；故事标题：其二"
+        },
+        {
+          "doc_id": "角色故事.csv|万敌|故事标题#4",
+          "source": "角色故事.csv",
+          "role": "万敌",
+          "field": "故事标题",
+          "score": 0.627,
+          "text": "角色名：万敌；故事标题：其四"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 0.75,
+      "category": "answerable",
+      "expected": "「天谴之矛，尼卡多利」",
+      "hit": true,
+      "cite": true,
+      "correct": true
+    },
+    {
+      "question": "阿格莱雅 的神权是什么？",
+      "answer": "阿格莱雅的神权是「黄金之茧，墨涅塔」。出自片段1。",
+      "retrieved": [
+        {
+          "doc_id": "角色基础信息.csv|阿格莱雅|神权#1",
+          "source": "角色基础信息.csv",
+          "role": "阿格莱雅",
+          "field": "神权",
+          "score": 0.6943,
+          "text": "角色名：阿格莱雅；神权：「黄金之茧，墨涅塔」"
+        },
+        {
+          "doc_id": "角色故事.csv|阿格莱雅|故事标题#1",
+          "source": "角色故事.csv",
+          "role": "阿格莱雅",
+          "field": "故事标题",
+          "score": 0.6536,
+          "text": "角色名：阿格莱雅；故事标题：其一"
+        },
+        {
+          "doc_id": "角色故事.csv|阿格莱雅|故事标题#4",
+          "source": "角色故事.csv",
+          "role": "阿格莱雅",
+          "field": "故事标题",
+          "score": 0.63,
+          "text": "角色名：阿格莱雅；故事标题：其四"
+        },
+        {
+          "doc_id": "角色故事.csv|阿格莱雅|故事标题#2",
+          "source": "角色故事.csv",
+          "role": "阿格莱雅",
+          "field": "故事标题",
+          "score": 0.6291,
+          "text": "角色名：阿格莱雅；故事标题：其二"
+        },
+        {
+          "doc_id": "角色故事.csv|阿格莱雅|故事标题#3",
+          "source": "角色故事.csv",
+          "role": "阿格莱雅",
+          "field": "故事标题",
+          "score": 0.6211,
+          "text": "角色名：阿格莱雅；故事标题：其三"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 0.78,
+      "category": "answerable",
+      "expected": "「黄金之茧，墨涅塔」",
+      "hit": true,
+      "cite": true,
+      "correct": true
+    },
+    {
+      "question": "长夜月 的神权是什么？",
+      "answer": "长夜月的神权是：**「永夜之帷，欧洛尼斯」**。  \n该信息出自 **片段1**。",
+      "retrieved": [
+        {
+          "doc_id": "角色基础信息.csv|长夜月|神权#1",
+          "source": "角色基础信息.csv",
+          "role": "长夜月",
+          "field": "神权",
+          "score": 0.724,
+          "text": "角色名：长夜月；神权：「永夜之帷，欧洛尼斯」"
+        },
+        {
+          "doc_id": "角色故事.csv|长夜月|故事标题#1",
+          "source": "角色故事.csv",
+          "role": "长夜月",
+          "field": "故事标题",
+          "score": 0.6491,
+          "text": "角色名：长夜月；故事标题：其一"
+        },
+        {
+          "doc_id": "遗器推荐.csv|长夜月|主词条#1",
+          "source": "遗器推荐.csv",
+          "role": "长夜月",
+          "field": "主词条",
+          "score": 0.6431,
+          "text": "角色名：长夜月；主词条：【躯干】暴击伤害【脚部】速度【位面球】冰属性伤害提高/生命值【连结绳】生命值/能量恢复"
+        },
+        {
+          "doc_id": "遗器推荐.csv|长夜月|推荐指数#1",
+          "source": "遗器推荐.csv",
+          "role": "长夜月",
+          "field": "推荐指数",
+          "score": 0.6424,
+          "text": "角色名：长夜月；推荐指数：★★★★★"
+        },
+        {
+          "doc_id": "光锥推荐.csv|长夜月|推荐度#1",
+          "source": "光锥推荐.csv",
+          "role": "长夜月",
+          "field": "推荐度",
+          "score": 0.6397,
+          "text": "角色名：长夜月；推荐度：★★★★★"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 0.75,
+      "category": "answerable",
+      "expected": "「永夜之帷，欧洛尼斯」",
+      "hit": true,
+      "cite": true,
+      "correct": true
+    },
+    {
+      "question": "银狼 属于哪个阵营？",
+      "answer": "银狼属于**星核猎手**。答案出自【片段1】。",
+      "retrieved": [
+        {
+          "doc_id": "角色基础信息.csv|银狼|阵营#1",
+          "source": "角色基础信息.csv",
+          "role": "银狼",
+          "field": "阵营",
+          "score": 0.7309,
+          "text": "角色名：银狼；阵营：星核猎手"
+        },
+        {
+          "doc_id": "配队推荐.csv|银狼|位置#4",
+          "source": "配队推荐.csv",
+          "role": "银狼",
+          "field": "位置",
+          "score": 0.7052,
+          "text": "角色名：银狼；位置：生存"
+        },
+        {
+          "doc_id": "配队推荐.csv|银狼|位置#1",
+          "source": "配队推荐.csv",
+          "role": "银狼",
+          "field": "位置",
+          "score": 0.7017,
+          "text": "角色名：银狼；位置：主C"
+        },
+        {
+          "doc_id": "角色行迹.csv|银狼|行迹描述#4",
+          "source": "角色行迹.csv",
+          "role": "银狼",
+          "field": "行迹描述",
+          "score": 0.6957,
+          "text": "角色名：银狼；行迹描述：银狼能够制造：攻击力降低【5%/10%】、防御力降低【4%/8%】、速度降低【3%/6%】3种【缺陷】。银狼每次施放攻击后有【60%/72%】的基础概率给受到攻击的敌方目标植入1个随机【缺陷】，持续3回合。\n（标签：妨害）"
+        },
+        {
+          "doc_id": "角色行迹.csv|银狼|行迹类型#7",
+          "source": "角色行迹.csv",
+          "role": "银狼",
+          "field": "行迹类型",
+          "score": 0.6907,
+          "text": "角色名：银狼；行迹类型：属性加成"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 1.04,
+      "category": "answerable",
+      "expected": "星核猎手",
+      "hit": true,
+      "cite": true,
+      "correct": true
+    },
+    {
+      "question": "佩拉 的实装日期是哪天？",
+      "answer": "佩拉的实装日期是 **2023/04/26**。答案出自 **片段1**。",
+      "retrieved": [
+        {
+          "doc_id": "角色基础信息.csv|佩拉|实装日期#1",
+          "source": "角色基础信息.csv",
+          "role": "佩拉",
+          "field": "实装日期",
+          "score": 0.7772,
+          "text": "角色名：佩拉；实装日期：2023/04/26"
+        },
+        {
+          "doc_id": "角色基础信息.csv|克拉拉|实装日期#1",
+          "source": "角色基础信息.csv",
+          "role": "克拉拉",
+          "field": "实装日期",
+          "score": 0.6561,
+          "text": "角色名：克拉拉；实装日期：2023/04/26"
+        },
+        {
+          "doc_id": "角色故事.csv|佩拉|故事标题#1",
+          "source": "角色故事.csv",
+          "role": "佩拉",
+          "field": "故事标题",
+          "score": 0.6079,
+          "text": "角色名：佩拉；故事标题：其一"
+        },
+        {
+          "doc_id": "角色基础信息.csv|星期日|实装日期#1",
+          "source": "角色基础信息.csv",
+          "role": "星期日",
+          "field": "实装日期",
+          "score": 0.6069,
+          "text": "角色名：星期日；实装日期：2024/12/04"
+        },
+        {
+          "doc_id": "角色晋阶.csv|佩拉|晋阶阶段#3",
+          "source": "角色晋阶.csv",
+          "role": "佩拉",
+          "field": "晋阶阶段",
+          "score": 0.5957,
+          "text": "角色名：佩拉；晋阶阶段：30级晋阶"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 0.87,
+      "category": "answerable",
+      "expected": "2023/04/26",
+      "hit": true,
+      "cite": true,
+      "correct": true
+    },
+    {
+      "question": "白厄 的角色定位是什么？",
+      "answer": "白厄的角色定位：片段1显示为“主C”，片段5显示为“辅助”。  \n答案出自片段1和片段5。",
+      "retrieved": [
+        {
+          "doc_id": "配队推荐.csv|白厄|位置#1",
+          "source": "配队推荐.csv",
+          "role": "白厄",
+          "field": "位置",
+          "score": 0.7719,
+          "text": "角色名：白厄；位置：主C"
+        },
+        {
+          "doc_id": "光锥推荐.csv|白厄|推荐度#1",
+          "source": "光锥推荐.csv",
+          "role": "白厄",
+          "field": "推荐度",
+          "score": 0.7646,
+          "text": "角色名：白厄；推荐度：★★★★★"
+        },
+        {
+          "doc_id": "光锥推荐.csv|白厄|推荐度#2",
+          "source": "光锥推荐.csv",
+          "role": "白厄",
+          "field": "推荐度",
+          "score": 0.762,
+          "text": "角色名：白厄；推荐度：★★★★"
+        },
+        {
+          "doc_id": "配队推荐.csv|白厄|推荐角色#1",
+          "source": "配队推荐.csv",
+          "role": "白厄",
+          "field": "推荐角色",
+          "score": 0.7571,
+          "text": "角色名：白厄；推荐角色：白厄"
+        },
+        {
+          "doc_id": "配队推荐.csv|白厄|位置#3",
+          "source": "配队推荐.csv",
+          "role": "白厄",
+          "field": "位置",
+          "score": 0.7559,
+          "text": "角色名：白厄；位置：辅助"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 1.73,
+      "category": "answerable",
+      "expected": "可以变身为卡厄斯兰那并拥有多个强力技能的输出型角色",
+      "hit": false,
+      "cite": true,
+      "correct": false
+    },
+    {
+      "question": "开拓者•记忆 的命途是什么？",
+      "answer": "开拓者•记忆的命途是：记忆。  \n答案出自【片段1】。",
+      "retrieved": [
+        {
+          "doc_id": "角色基础信息.csv|开拓者•记忆|命途#1",
+          "source": "角色基础信息.csv",
+          "role": "开拓者•记忆",
+          "field": "命途",
+          "score": 0.7772,
+          "text": "角色名：开拓者•记忆；命途：记忆"
+        },
+        {
+          "doc_id": "配队推荐.csv|开拓者•记忆|位置#4",
+          "source": "配队推荐.csv",
+          "role": "开拓者•记忆",
+          "field": "位置",
+          "score": 0.7199,
+          "text": "角色名：开拓者•记忆；位置：生存"
+        },
+        {
+          "doc_id": "角色故事.csv|开拓者•记忆|故事标题#1",
+          "source": "角色故事.csv",
+          "role": "开拓者•记忆",
+          "field": "故事标题",
+          "score": 0.71,
+          "text": "角色名：开拓者•记忆；故事标题：一"
+        },
+        {
+          "doc_id": "角色行迹.csv|开拓者•记忆|行迹类型#4",
+          "source": "角色行迹.csv",
+          "role": "开拓者•记忆",
+          "field": "行迹类型",
+          "score": 0.7047,
+          "text": "角色名：开拓者•记忆；行迹类型：天赋"
+        },
+        {
+          "doc_id": "角色行迹.csv|开拓者•记忆|行迹类型#8",
+          "source": "角色行迹.csv",
+          "role": "开拓者•记忆",
+          "field": "行迹类型",
+          "score": 0.7031,
+          "text": "角色名：开拓者•记忆；行迹类型：忆灵天赋"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 0.98,
+      "category": "answerable",
+      "expected": "记忆",
+      "hit": true,
+      "cite": true,
+      "correct": true
+    },
+    {
+      "question": "知更鸟•晴歌 的属性是什么？",
+      "answer": "知更鸟•晴歌的属性是：风。  \n答案出自片段2。",
+      "retrieved": [
+        {
+          "doc_id": "角色行迹.csv|知更鸟•晴歌|行迹类型#9",
+          "source": "角色行迹.csv",
+          "role": "知更鸟•晴歌",
+          "field": "行迹类型",
+          "score": 0.7814,
+          "text": "角色名：知更鸟•晴歌；行迹类型：属性加成"
+        },
+        {
+          "doc_id": "角色基础信息.csv|知更鸟•晴歌|属性#1",
+          "source": "角色基础信息.csv",
+          "role": "知更鸟•晴歌",
+          "field": "属性",
+          "score": 0.7814,
+          "text": "角色名：知更鸟•晴歌；属性：风"
+        },
+        {
+          "doc_id": "角色行迹.csv|知更鸟•晴歌|行迹类型#4",
+          "source": "角色行迹.csv",
+          "role": "知更鸟•晴歌",
+          "field": "行迹类型",
+          "score": 0.7501,
+          "text": "角色名：知更鸟•晴歌；行迹类型：天赋"
+        },
+        {
+          "doc_id": "角色故事.csv|知更鸟•晴歌|故事标题#2",
+          "source": "角色故事.csv",
+          "role": "知更鸟•晴歌",
+          "field": "故事标题",
+          "score": 0.7355,
+          "text": "角色名：知更鸟•晴歌；故事标题：其二"
+        },
+        {
+          "doc_id": "角色故事.csv|知更鸟•晴歌|故事标题#1",
+          "source": "角色故事.csv",
+          "role": "知更鸟•晴歌",
+          "field": "故事标题",
+          "score": 0.7347,
+          "text": "角色名：知更鸟•晴歌；故事标题：一"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 0.91,
+      "category": "answerable",
+      "expected": "风",
+      "hit": true,
+      "cite": true,
+      "correct": true
+    },
+    {
+      "question": "Archer 推荐的四件套隧洞遗器是什么？",
+      "answer": "Archer 推荐的四件套隧洞遗器是：**繁星璀璨的天才 四件套** 或 **识海迷坠的学者 四件套**。\n\n答案出自：**片段1**。",
+      "retrieved": [
+        {
+          "doc_id": "遗器推荐.csv|Archer|隧洞遗器#1",
+          "source": "遗器推荐.csv",
+          "role": "Archer",
+          "field": "隧洞遗器",
+          "score": 0.7557,
+          "text": "角色名：Archer；隧洞遗器：繁星璀璨的天才 四件套 或识海迷坠的学者 四件套"
+        },
+        {
+          "doc_id": "遗器推荐.csv|镜流|隧洞遗器#1",
+          "source": "遗器推荐.csv",
+          "role": "镜流",
+          "field": "隧洞遗器",
+          "score": 0.6857,
+          "text": "角色名：镜流；隧洞遗器：密林卧雪的猎人 四件套 或识海迷坠的学者 四件套"
+        },
+        {
+          "doc_id": "遗器推荐.csv|希儿|隧洞遗器#1",
+          "source": "遗器推荐.csv",
+          "role": "希儿",
+          "field": "隧洞遗器",
+          "score": 0.685,
+          "text": "角色名：希儿；隧洞遗器：繁星璀璨的天才 四件套"
+        },
+        {
+          "doc_id": "遗器推荐.csv|银狼|隧洞遗器#1",
+          "source": "遗器推荐.csv",
+          "role": "银狼",
+          "field": "隧洞遗器",
+          "score": 0.6843,
+          "text": "角色名：银狼；隧洞遗器：繁星璀璨的天才 四件套 或死水深潜的先驱 四件套"
+        },
+        {
+          "doc_id": "遗器推荐.csv|波提欧|隧洞遗器#1",
+          "source": "遗器推荐.csv",
+          "role": "波提欧",
+          "field": "隧洞遗器",
+          "score": 0.6843,
+          "text": "角色名：波提欧；隧洞遗器：荡除蠹灾的铁骑 四件套"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 1.15,
+      "category": "answerable",
+      "expected": "繁星璀璨的天才 四件套 或 识海迷坠的学者 四件套",
+      "hit": true,
+      "cite": false,
+      "correct": false
+    },
+    {
+      "question": "Archer 推荐的位面饰品是什么？",
+      "answer": "Archer 推荐的位面饰品是：**繁星竞技场** 或 **太空封印站**。\n\n答案出自：**片段1**。",
+      "retrieved": [
+        {
+          "doc_id": "遗器推荐.csv|Archer|位面饰品#1",
+          "source": "遗器推荐.csv",
+          "role": "Archer",
+          "field": "位面饰品",
+          "score": 0.6428,
+          "text": "角色名：Archer；位面饰品：繁星竞技场 或太空封印站"
+        },
+        {
+          "doc_id": "配队推荐.csv|Archer|推荐角色#1",
+          "source": "配队推荐.csv",
+          "role": "Archer",
+          "field": "推荐角色",
+          "score": 0.614,
+          "text": "角色名：Archer；推荐角色：Archer"
+        },
+        {
+          "doc_id": "配队推荐.csv|Archer|推荐角色#8",
+          "source": "配队推荐.csv",
+          "role": "Archer",
+          "field": "推荐角色",
+          "score": 0.6073,
+          "text": "角色名：Archer；推荐角色：星期日"
+        },
+        {
+          "doc_id": "光锥推荐.csv|Archer|推荐度#1",
+          "source": "光锥推荐.csv",
+          "role": "Archer",
+          "field": "推荐度",
+          "score": 0.6006,
+          "text": "角色名：Archer；推荐度：★★★★★"
+        },
+        {
+          "doc_id": "配队推荐.csv|爻光|推荐角色#1",
+          "source": "配队推荐.csv",
+          "role": "爻光",
+          "field": "推荐角色",
+          "score": 0.5931,
+          "text": "角色名：爻光；推荐角色：Archer"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 1.22,
+      "category": "answerable",
+      "expected": "繁星竞技场 或 太空封印站",
+      "hit": true,
+      "cite": false,
+      "correct": false
+    },
+    {
+      "question": "Archer 有哪些推荐光锥？",
+      "answer": "Archer 的推荐光锥有：**星海巡航、如泥酣眠、我将，巡征追猎**。\n\n答案出自：**片段2、片段3、片段4**。",
+      "retrieved": [
+        {
+          "doc_id": "配队推荐.csv|爻光|推荐角色#1",
+          "source": "配队推荐.csv",
+          "role": "爻光",
+          "field": "推荐角色",
+          "score": 0.6581,
+          "text": "角色名：爻光；推荐角色：Archer"
+        },
+        {
+          "doc_id": "光锥推荐.csv|Archer|光锥名称#4",
+          "source": "光锥推荐.csv",
+          "role": "Archer",
+          "field": "光锥名称",
+          "score": 0.6513,
+          "text": "角色名：Archer；光锥名称：星海巡航"
+        },
+        {
+          "doc_id": "光锥推荐.csv|Archer|光锥名称#2",
+          "source": "光锥推荐.csv",
+          "role": "Archer",
+          "field": "光锥名称",
+          "score": 0.6481,
+          "text": "角色名：Archer；光锥名称：如泥酣眠"
+        },
+        {
+          "doc_id": "光锥推荐.csv|Archer|光锥名称#3",
+          "source": "光锥推荐.csv",
+          "role": "Archer",
+          "field": "光锥名称",
+          "score": 0.6414,
+          "text": "角色名：Archer；光锥名称：我将，巡征追猎"
+        },
+        {
+          "doc_id": "光锥推荐.csv|Archer|光锥效果#3",
+          "source": "光锥推荐.csv",
+          "role": "Archer",
+          "field": "光锥效果",
+          "score": 0.6351,
+          "text": "角色名：Archer；光锥效果：震慑使装备者的暴击率提高【15.0%/17.5%/20.0%/22.5%/25.0%】。装备者施放追加攻击时，获得1层【流光】，最多叠加2层。每层【流光】使装备者造成的终结技伤害无视目标【27%/30%/33%/36%/39%】的防御力。装备者回合结束时，移除1层【流光】。"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 1.49,
+      "category": "answerable",
+      "expected": "理想燃烧的地狱、如泥酣眠、我将，巡征追猎、星海巡航",
+      "hit": false,
+      "cite": false,
+      "correct": false
+    },
+    {
+      "question": "万敌 方案1 推荐的隧洞遗器是什么？",
+      "answer": "",
+      "retrieved": [
+        {
+          "doc_id": "遗器推荐.csv|万敌|隧洞遗器#2",
+          "source": "遗器推荐.csv",
+          "role": "万敌",
+          "field": "隧洞遗器",
+          "score": 0.6951,
+          "text": "角色名：万敌；隧洞遗器：宝命长存的莳者 四件套"
+        },
+        {
+          "doc_id": "遗器推荐.csv|万敌|隧洞遗器#1",
+          "source": "遗器推荐.csv",
+          "role": "万敌",
+          "field": "隧洞遗器",
+          "score": 0.6912,
+          "text": "角色名：万敌；隧洞遗器：识海迷坠的学者 四件套"
+        },
+        {
+          "doc_id": "遗器推荐.csv|不死途|隧洞遗器#2",
+          "source": "遗器推荐.csv",
+          "role": "不死途",
+          "field": "隧洞遗器",
+          "score": 0.6067,
+          "text": "角色名：不死途；隧洞遗器：死水深潜的先驱 四件套"
+        },
+        {
+          "doc_id": "遗器推荐.csv|昔涟|隧洞遗器#1",
+          "source": "遗器推荐.csv",
+          "role": "昔涟",
+          "field": "隧洞遗器",
+          "score": 0.599,
+          "text": "角色名：昔涟；隧洞遗器：再创天地的救世主 四件套"
+        },
+        {
+          "doc_id": "遗器推荐.csv|不死途|隧洞遗器#1",
+          "source": "遗器推荐.csv",
+          "role": "不死途",
+          "field": "隧洞遗器",
+          "score": 0.5969,
+          "text": "角色名：不死途；隧洞遗器：毁烬焚骨的大公 四件套"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 2.83,
+      "category": "answerable",
+      "expected": "识海迷坠的学者 四件套",
+      "hit": true,
+      "cite": false,
+      "correct": false
+    },
+    {
+      "question": "三月七 的角色定位是什么？",
+      "answer": "根据检索片段，三月七的角色定位包括：生存、主C、辅助。  \n答案出自片段1、片段2、片段4。",
+      "retrieved": [
+        {
+          "doc_id": "配队推荐.csv|三月七|位置#4",
+          "source": "配队推荐.csv",
+          "role": "三月七",
+          "field": "位置",
+          "score": 0.7447,
+          "text": "角色名：三月七；位置：生存"
+        },
+        {
+          "doc_id": "配队推荐.csv|三月七|位置#1",
+          "source": "配队推荐.csv",
+          "role": "三月七",
+          "field": "位置",
+          "score": 0.7438,
+          "text": "角色名：三月七；位置：主C"
+        },
+        {
+          "doc_id": "角色故事.csv|三月七|故事标题#3",
+          "source": "角色故事.csv",
+          "role": "三月七",
+          "field": "故事标题",
+          "score": 0.7323,
+          "text": "角色名：三月七；故事标题：其三"
+        },
+        {
+          "doc_id": "配队推荐.csv|三月七|位置#3",
+          "source": "配队推荐.csv",
+          "role": "三月七",
+          "field": "位置",
+          "score": 0.7284,
+          "text": "角色名：三月七；位置：辅助"
+        },
+        {
+          "doc_id": "光锥推荐.csv|三月七|推荐度#1",
+          "source": "光锥推荐.csv",
+          "role": "三月七",
+          "field": "推荐度",
+          "score": 0.7267,
+          "text": "角色名：三月七；推荐度：★★★★★"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 1.21,
+      "category": "answerable",
+      "expected": "能够提供单体护盾、解除负面效果的防御型角色",
+      "hit": false,
+      "cite": true,
+      "correct": false
+    },
+    {
+      "question": "布洛妮娅 的命途是什么？",
+      "answer": "布洛妮娅的命途是**同谐**。  \n答案出自：**片段1**。",
+      "retrieved": [
+        {
+          "doc_id": "角色基础信息.csv|布洛妮娅|命途#1",
+          "source": "角色基础信息.csv",
+          "role": "布洛妮娅",
+          "field": "命途",
+          "score": 0.7224,
+          "text": "角色名：布洛妮娅；命途：同谐"
+        },
+        {
+          "doc_id": "配队推荐.csv|布洛妮娅|位置#3",
+          "source": "配队推荐.csv",
+          "role": "布洛妮娅",
+          "field": "位置",
+          "score": 0.6959,
+          "text": "角色名：布洛妮娅；位置：生存"
+        },
+        {
+          "doc_id": "角色故事.csv|布洛妮娅|故事标题#1",
+          "source": "角色故事.csv",
+          "role": "布洛妮娅",
+          "field": "故事标题",
+          "score": 0.6933,
+          "text": "角色名：布洛妮娅；故事标题：其一"
+        },
+        {
+          "doc_id": "角色行迹.csv|布洛妮娅|行迹类型#4",
+          "source": "角色行迹.csv",
+          "role": "布洛妮娅",
+          "field": "行迹类型",
+          "score": 0.6877,
+          "text": "角色名：布洛妮娅；行迹类型：天赋"
+        },
+        {
+          "doc_id": "角色故事.csv|布洛妮娅|故事标题#2",
+          "source": "角色故事.csv",
+          "role": "布洛妮娅",
+          "field": "故事标题",
+          "score": 0.6841,
+          "text": "角色名：布洛妮娅；故事标题：其二"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 0.85,
+      "category": "answerable",
+      "expected": "同谐",
+      "hit": true,
+      "cite": true,
+      "correct": true
+    },
+    {
+      "question": "花火 的属性是什么？",
+      "answer": "花火的属性是：量子。\n\n答案出自片段4：角色基础信息.csv，角色：花火；属性：量子。",
+      "retrieved": [
+        {
+          "doc_id": "角色行迹.csv|花火|行迹类型#7",
+          "source": "角色行迹.csv",
+          "role": "花火",
+          "field": "行迹类型",
+          "score": 0.7451,
+          "text": "角色名：花火；行迹类型：属性加成"
+        },
+        {
+          "doc_id": "角色基础信息.csv|火花|属性#1",
+          "source": "角色基础信息.csv",
+          "role": "火花",
+          "field": "属性",
+          "score": 0.7325,
+          "text": "角色名：火花；属性：火"
+        },
+        {
+          "doc_id": "角色行迹.csv|火花|行迹类型#8",
+          "source": "角色行迹.csv",
+          "role": "火花",
+          "field": "行迹类型",
+          "score": 0.7047,
+          "text": "角色名：火花；行迹类型：属性加成"
+        },
+        {
+          "doc_id": "角色基础信息.csv|花火|属性#1",
+          "source": "角色基础信息.csv",
+          "role": "花火",
+          "field": "属性",
+          "score": 0.7031,
+          "text": "角色名：花火；属性：量子"
+        },
+        {
+          "doc_id": "角色晋阶.csv|花火|晋阶阶段#1",
+          "source": "角色晋阶.csv",
+          "role": "花火",
+          "field": "晋阶阶段",
+          "score": 0.702,
+          "text": "角色名：花火；晋阶阶段：1级属性/晋阶所需材料"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 1.05,
+      "category": "answerable",
+      "expected": "量子",
+      "hit": true,
+      "cite": true,
+      "correct": true
+    },
+    {
+      "question": "停云 属于哪个阵营？",
+      "answer": "停云属于阵营：仙舟「罗浮」。  \n答案出自【片段4】。",
+      "retrieved": [
+        {
+          "doc_id": "配队推荐.csv|停云|位置#3",
+          "source": "配队推荐.csv",
+          "role": "停云",
+          "field": "位置",
+          "score": 0.6856,
+          "text": "角色名：停云；位置：生存"
+        },
+        {
+          "doc_id": "配队推荐.csv|停云|位置#1",
+          "source": "配队推荐.csv",
+          "role": "停云",
+          "field": "位置",
+          "score": 0.6821,
+          "text": "角色名：停云；位置：主C"
+        },
+        {
+          "doc_id": "配队推荐.csv|停云|推荐角色#6",
+          "source": "配队推荐.csv",
+          "role": "停云",
+          "field": "推荐角色",
+          "score": 0.6806,
+          "text": "角色名：停云；推荐角色：停云"
+        },
+        {
+          "doc_id": "角色基础信息.csv|停云|阵营#1",
+          "source": "角色基础信息.csv",
+          "role": "停云",
+          "field": "阵营",
+          "score": 0.6734,
+          "text": "角色名：停云；阵营：仙舟「罗浮」"
+        },
+        {
+          "doc_id": "遗器推荐.csv|停云|主词条#1",
+          "source": "遗器推荐.csv",
+          "role": "停云",
+          "field": "主词条",
+          "score": 0.6597,
+          "text": "角色名：停云；主词条：【躯干】生命/防御/攻击【脚部】速度【位面球】攻击力【连结绳】能量恢复效率"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 0.97,
+      "category": "answerable",
+      "expected": "仙舟「罗浮」",
+      "hit": true,
+      "cite": true,
+      "correct": true
+    },
+    {
+      "question": "Archer 配队中的主C是谁？",
+      "answer": "Archer 配队中的主C是 **Archer**。答案出自 **片段1**。",
+      "retrieved": [
+        {
+          "doc_id": "配队推荐.csv|Archer|位置#1",
+          "source": "配队推荐.csv",
+          "role": "Archer",
+          "field": "位置",
+          "score": 0.7581,
+          "text": "角色名：Archer；位置：主C"
+        },
+        {
+          "doc_id": "配队推荐.csv|Archer|位置#2",
+          "source": "配队推荐.csv",
+          "role": "Archer",
+          "field": "位置",
+          "score": 0.6993,
+          "text": "角色名：Archer；位置：副C"
+        },
+        {
+          "doc_id": "配队推荐.csv|Archer|位置#3",
+          "source": "配队推荐.csv",
+          "role": "Archer",
+          "field": "位置",
+          "score": 0.6528,
+          "text": "角色名：Archer；位置：辅助"
+        },
+        {
+          "doc_id": "配队推荐.csv|Archer|位置#4",
+          "source": "配队推荐.csv",
+          "role": "Archer",
+          "field": "位置",
+          "score": 0.6304,
+          "text": "角色名：Archer；位置：生存/辅助"
+        },
+        {
+          "doc_id": "配队推荐.csv|Archer|推荐角色#1",
+          "source": "配队推荐.csv",
+          "role": "Archer",
+          "field": "推荐角色",
+          "score": 0.6261,
+          "text": "角色名：Archer；推荐角色：Archer"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 1.23,
+      "category": "answerable",
+      "expected": "Archer",
+      "hit": true,
+      "cite": false,
+      "correct": true
+    },
+    {
+      "question": "Archer 配队中的辅助位推荐是谁？",
+      "answer": "Archer 配队中的辅助位推荐是 **Archer**。  \n答案出自 **片段3**（推荐角色：Archer），并结合 **片段1**（位置：辅助）。",
+      "retrieved": [
+        {
+          "doc_id": "配队推荐.csv|Archer|位置#3",
+          "source": "配队推荐.csv",
+          "role": "Archer",
+          "field": "位置",
+          "score": 0.7506,
+          "text": "角色名：Archer；位置：辅助"
+        },
+        {
+          "doc_id": "配队推荐.csv|Archer|位置#4",
+          "source": "配队推荐.csv",
+          "role": "Archer",
+          "field": "位置",
+          "score": 0.6874,
+          "text": "角色名：Archer；位置：生存/辅助"
+        },
+        {
+          "doc_id": "配队推荐.csv|Archer|推荐角色#1",
+          "source": "配队推荐.csv",
+          "role": "Archer",
+          "field": "推荐角色",
+          "score": 0.6784,
+          "text": "角色名：Archer；推荐角色：Archer"
+        },
+        {
+          "doc_id": "配队推荐.csv|Archer|位置#1",
+          "source": "配队推荐.csv",
+          "role": "Archer",
+          "field": "位置",
+          "score": 0.6633,
+          "text": "角色名：Archer；位置：主C"
+        },
+        {
+          "doc_id": "光锥推荐.csv|Archer|推荐度#1",
+          "source": "光锥推荐.csv",
+          "role": "Archer",
+          "field": "推荐度",
+          "score": 0.6522,
+          "text": "角色名：Archer；推荐度：★★★★★"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 2.21,
+      "category": "answerable",
+      "expected": "花火",
+      "hit": false,
+      "cite": false,
+      "correct": false
+    },
+    {
+      "question": "加拉赫 的命途是什么？",
+      "answer": "加拉赫的命途是：丰饶。\n\n答案出自：片段1。",
+      "retrieved": [
+        {
+          "doc_id": "角色基础信息.csv|加拉赫|命途#1",
+          "source": "角色基础信息.csv",
+          "role": "加拉赫",
+          "field": "命途",
+          "score": 0.7221,
+          "text": "角色名：加拉赫；命途：丰饶"
+        },
+        {
+          "doc_id": "角色行迹.csv|加拉赫|行迹描述#16",
+          "source": "角色行迹.csv",
+          "role": "加拉赫",
+          "field": "行迹描述",
+          "score": 0.7033,
+          "text": "角色名：加拉赫；行迹描述：生命值上限提高6.0%\n（标签：角色晋阶6）"
+        },
+        {
+          "doc_id": "角色行迹.csv|加拉赫|行迹描述#12",
+          "source": "角色行迹.csv",
+          "role": "加拉赫",
+          "field": "行迹描述",
+          "score": 0.6935,
+          "text": "角色名：加拉赫；行迹描述：生命值上限提高4.0%\n（标签：角色晋阶3）"
+        },
+        {
+          "doc_id": "角色行迹.csv|加拉赫|行迹名称#11",
+          "source": "角色行迹.csv",
+          "role": "加拉赫",
+          "field": "行迹名称",
+          "score": 0.6747,
+          "text": "角色名：加拉赫；行迹名称：生命强化"
+        },
+        {
+          "doc_id": "角色行迹.csv|加拉赫|行迹描述#18",
+          "source": "角色行迹.csv",
+          "role": "加拉赫",
+          "field": "行迹描述",
+          "score": 0.6739,
+          "text": "角色名：加拉赫；行迹描述：生命值上限提高8.0%\n（标签：角色等级80）"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 0.82,
+      "category": "answerable",
+      "expected": "丰饶",
+      "hit": true,
+      "cite": true,
+      "correct": true
+    },
+    {
+      "question": "镜流 的属性是什么？",
+      "answer": "知识库中没有相关信息，无法回答。  \n片段1仅提到镜流行迹类型为“属性加成”，片段2仅提到“1级属性/晋阶所需材料”，但均未给出具体属性内容。",
+      "retrieved": [
+        {
+          "doc_id": "角色行迹.csv|镜流|行迹类型#7",
+          "source": "角色行迹.csv",
+          "role": "镜流",
+          "field": "行迹类型",
+          "score": 0.7352,
+          "text": "角色名：镜流；行迹类型：属性加成"
+        },
+        {
+          "doc_id": "角色晋阶.csv|镜流|晋阶阶段#1",
+          "source": "角色晋阶.csv",
+          "role": "镜流",
+          "field": "晋阶阶段",
+          "score": 0.707,
+          "text": "角色名：镜流；晋阶阶段：1级属性/晋阶所需材料"
+        },
+        {
+          "doc_id": "光锥推荐.csv|镜流|推荐度#2",
+          "source": "光锥推荐.csv",
+          "role": "镜流",
+          "field": "推荐度",
+          "score": 0.6889,
+          "text": "角色名：镜流；推荐度：★★★★"
+        },
+        {
+          "doc_id": "光锥推荐.csv|镜流|推荐度#1",
+          "source": "光锥推荐.csv",
+          "role": "镜流",
+          "field": "推荐度",
+          "score": 0.6888,
+          "text": "角色名：镜流；推荐度：★★★★★"
+        },
+        {
+          "doc_id": "角色故事.csv|镜流|故事标题#1",
+          "source": "角色故事.csv",
+          "role": "镜流",
+          "field": "故事标题",
+          "score": 0.6863,
+          "text": "角色名：镜流；故事标题：其一"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 1.78,
+      "category": "answerable",
+      "expected": "冰",
+      "hit": false,
+      "cite": true,
+      "correct": false
+    },
+    {
+      "question": "阮•梅 的角色定位是什么？",
+      "answer": "阮•梅的角色定位（位置）有：主C、生存、辅助。  \n答案出自片段1、片段2、片段3。",
+      "retrieved": [
+        {
+          "doc_id": "配队推荐.csv|阮•梅|位置#1",
+          "source": "配队推荐.csv",
+          "role": "阮•梅",
+          "field": "位置",
+          "score": 0.7701,
+          "text": "角色名：阮•梅；位置：主C"
+        },
+        {
+          "doc_id": "配队推荐.csv|阮•梅|位置#3",
+          "source": "配队推荐.csv",
+          "role": "阮•梅",
+          "field": "位置",
+          "score": 0.7636,
+          "text": "角色名：阮•梅；位置：生存"
+        },
+        {
+          "doc_id": "配队推荐.csv|阮•梅|位置#2",
+          "source": "配队推荐.csv",
+          "role": "阮•梅",
+          "field": "位置",
+          "score": 0.7594,
+          "text": "角色名：阮•梅；位置：辅助"
+        },
+        {
+          "doc_id": "光锥推荐.csv|阮•梅|推荐度#1",
+          "source": "光锥推荐.csv",
+          "role": "阮•梅",
+          "field": "推荐度",
+          "score": 0.7483,
+          "text": "角色名：阮•梅；推荐度：★★★★★"
+        },
+        {
+          "doc_id": "光锥推荐.csv|阮•梅|推荐度#2",
+          "source": "光锥推荐.csv",
+          "role": "阮•梅",
+          "field": "推荐度",
+          "score": 0.7478,
+          "text": "角色名：阮•梅；推荐度：★★★★"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 1.02,
+      "category": "answerable",
+      "expected": "提高击破效率、速度和全属性抗性穿透的辅助型角色",
+      "hit": false,
+      "cite": true,
+      "correct": false
+    },
+    {
+      "question": "托帕&账账 属于哪个阵营？",
+      "answer": "托帕&账账属于**星际和平公司**。  \n答案出自【片段1】。",
+      "retrieved": [
+        {
+          "doc_id": "角色基础信息.csv|托帕&账账|阵营#1",
+          "source": "角色基础信息.csv",
+          "role": "托帕&账账",
+          "field": "阵营",
+          "score": 0.725,
+          "text": "角色名：托帕&账账；阵营：星际和平公司"
+        },
+        {
+          "doc_id": "配队推荐.csv|托帕&账账|位置#2",
+          "source": "配队推荐.csv",
+          "role": "托帕&账账",
+          "field": "位置",
+          "score": 0.707,
+          "text": "角色名：托帕&账账；位置：辅助"
+        },
+        {
+          "doc_id": "配队推荐.csv|托帕&账账|位置#1",
+          "source": "配队推荐.csv",
+          "role": "托帕&账账",
+          "field": "位置",
+          "score": 0.7042,
+          "text": "角色名：托帕&账账；位置：双C"
+        },
+        {
+          "doc_id": "配队推荐.csv|托帕&账账|位置#3",
+          "source": "配队推荐.csv",
+          "role": "托帕&账账",
+          "field": "位置",
+          "score": 0.7016,
+          "text": "角色名：托帕&账账；位置：生存"
+        },
+        {
+          "doc_id": "角色基础信息.csv|托帕&账账|角色定位#1",
+          "source": "角色基础信息.csv",
+          "role": "托帕&账账",
+          "field": "角色定位",
+          "score": 0.696,
+          "text": "角色名：托帕&账账；角色定位：托帕与工作搭档「账账」一同行动。战斗中，账账将自动攻击敌人，托帕则可以强化账账的输出能力。探索时，账账将和托帕一起行动，账账可发现未获取的战利品。"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 1.01,
+      "category": "answerable",
+      "expected": "星际和平公司",
+      "hit": true,
+      "cite": true,
+      "correct": true
+    },
+    {
+      "question": "真理医生 的命途是什么？",
+      "answer": "真理医生的命途是：**巡猎**。  \n答案出自：**片段1**。",
+      "retrieved": [
+        {
+          "doc_id": "角色基础信息.csv|真理医生|命途#1",
+          "source": "角色基础信息.csv",
+          "role": "真理医生",
+          "field": "命途",
+          "score": 0.7426,
+          "text": "角色名：真理医生；命途：巡猎"
+        },
+        {
+          "doc_id": "配队推荐.csv|真理医生|位置#4",
+          "source": "配队推荐.csv",
+          "role": "真理医生",
+          "field": "位置",
+          "score": 0.7147,
+          "text": "角色名：真理医生；位置：生存"
+        },
+        {
+          "doc_id": "角色故事.csv|真理医生|故事标题#1",
+          "source": "角色故事.csv",
+          "role": "真理医生",
+          "field": "故事标题",
+          "score": 0.7062,
+          "text": "角色名：真理医生；故事标题：其一"
+        },
+        {
+          "doc_id": "角色故事.csv|真理医生|故事标题#2",
+          "source": "角色故事.csv",
+          "role": "真理医生",
+          "field": "故事标题",
+          "score": 0.7002,
+          "text": "角色名：真理医生；故事标题：其二"
+        },
+        {
+          "doc_id": "遗器推荐.csv|真理医生|推荐指数#1",
+          "source": "遗器推荐.csv",
+          "role": "真理医生",
+          "field": "推荐指数",
+          "score": 0.6983,
+          "text": "角色名：真理医生；推荐指数：★★★★★"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 1.04,
+      "category": "answerable",
+      "expected": "巡猎",
+      "hit": true,
+      "cite": true,
+      "correct": true
+    },
+    {
+      "question": "符玄 的角色定位是什么？",
+      "answer": "根据检索片段，符玄的角色定位包括：**主C、生存、辅助**。  \n答案出自：**片段2、片段3、片段5**。",
+      "retrieved": [
+        {
+          "doc_id": "角色故事.csv|符玄|故事标题#1",
+          "source": "角色故事.csv",
+          "role": "符玄",
+          "field": "故事标题",
+          "score": 0.7742,
+          "text": "角色名：符玄；故事标题：其一"
+        },
+        {
+          "doc_id": "配队推荐.csv|符玄|位置#1",
+          "source": "配队推荐.csv",
+          "role": "符玄",
+          "field": "位置",
+          "score": 0.7729,
+          "text": "角色名：符玄；位置：主C"
+        },
+        {
+          "doc_id": "配队推荐.csv|符玄|位置#3",
+          "source": "配队推荐.csv",
+          "role": "符玄",
+          "field": "位置",
+          "score": 0.7701,
+          "text": "角色名：符玄；位置：生存"
+        },
+        {
+          "doc_id": "角色故事.csv|符玄|故事标题#2",
+          "source": "角色故事.csv",
+          "role": "符玄",
+          "field": "故事标题",
+          "score": 0.762,
+          "text": "角色名：符玄；故事标题：其二"
+        },
+        {
+          "doc_id": "配队推荐.csv|符玄|位置#2",
+          "source": "配队推荐.csv",
+          "role": "符玄",
+          "field": "位置",
+          "score": 0.7591,
+          "text": "角色名：符玄；位置：辅助"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 1.44,
+      "category": "answerable",
+      "expected": "能够替我方全体分摊伤害并提供增益的防御型角色",
+      "hit": false,
+      "cite": true,
+      "correct": false
+    },
+    {
+      "question": "灵砂 召唤什么来支援队友？",
+      "answer": "灵砂召唤**烟兽**来支援队友。答案出自**片段1**。",
+      "retrieved": [
+        {
+          "doc_id": "角色基础信息.csv|灵砂|角色定位#1",
+          "source": "角色基础信息.csv",
+          "role": "灵砂",
+          "field": "角色定位",
+          "score": 0.7435,
+          "text": "角色名：灵砂；角色定位：召唤烟兽支援队友的回复型角色"
+        },
+        {
+          "doc_id": "遗器推荐.csv|灵砂|主词条#1",
+          "source": "遗器推荐.csv",
+          "role": "灵砂",
+          "field": "主词条",
+          "score": 0.6955,
+          "text": "角色名：灵砂；主词条：【躯干】治疗量加成/攻击力【脚部】速度【位面球】攻击力【连结绳】能量恢复效率/击破特攻"
+        },
+        {
+          "doc_id": "角色行迹.csv|灵砂|行迹描述#5",
+          "source": "角色行迹.csv",
+          "role": "灵砂",
+          "field": "行迹描述",
+          "score": 0.6947,
+          "text": "角色名：灵砂；行迹描述：使用秘技后，下一次战斗开始时立即召唤【浮元】，并使敌方全体陷入【醇醉】状态，持续2回合。\n（标签：辅助）"
+        },
+        {
+          "doc_id": "配队推荐.csv|灵砂|位置#2",
+          "source": "配队推荐.csv",
+          "role": "灵砂",
+          "field": "位置",
+          "score": 0.6809,
+          "text": "角色名：灵砂；位置：辅助"
+        },
+        {
+          "doc_id": "角色行迹.csv|灵砂|行迹描述#1",
+          "source": "角色行迹.csv",
+          "role": "灵砂",
+          "field": "行迹描述",
+          "score": 0.6595,
+          "text": "角色名：灵砂；行迹描述：对指定敌方单体造成等同于灵砂【50%/100%】攻击力的火属性伤害。\n（标签：回能 20、战技点 +1、单攻、削韧 10）"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 1.6,
+      "category": "answerable",
+      "expected": "烟兽",
+      "hit": true,
+      "cite": true,
+      "correct": true
+    },
+    {
+      "question": "遐蝶 的神权是什么？",
+      "answer": "遐蝶的神权是「灰黯之手，塞纳托斯」。  \n答案出自【片段1】。",
+      "retrieved": [
+        {
+          "doc_id": "角色基础信息.csv|遐蝶|神权#1",
+          "source": "角色基础信息.csv",
+          "role": "遐蝶",
+          "field": "神权",
+          "score": 0.6975,
+          "text": "角色名：遐蝶；神权：「灰黯之手，塞纳托斯」"
+        },
+        {
+          "doc_id": "角色故事.csv|遐蝶|故事标题#1",
+          "source": "角色故事.csv",
+          "role": "遐蝶",
+          "field": "故事标题",
+          "score": 0.6668,
+          "text": "角色名：遐蝶；故事标题：其一"
+        },
+        {
+          "doc_id": "角色故事.csv|遐蝶|故事标题#2",
+          "source": "角色故事.csv",
+          "role": "遐蝶",
+          "field": "故事标题",
+          "score": 0.6498,
+          "text": "角色名：遐蝶；故事标题：其二"
+        },
+        {
+          "doc_id": "角色故事.csv|遐蝶|故事标题#4",
+          "source": "角色故事.csv",
+          "role": "遐蝶",
+          "field": "故事标题",
+          "score": 0.6489,
+          "text": "角色名：遐蝶；故事标题：其四"
+        },
+        {
+          "doc_id": "角色星魂.csv|遐蝶|星魂效果#1",
+          "source": "角色星魂.csv",
+          "role": "遐蝶",
+          "field": "星魂效果",
+          "score": 0.6481,
+          "text": "角色名：遐蝶；星魂效果：敌方目标当前生命值小于等于自身生命上限 80% / 50% 时，【骸爪，冥龙之环拥】、【擘裂冥茫的爪痕】、【燎尽黯泽的焰息】、【灼掠幽墟的晦翼】对其造成的伤害为原伤害的 120% / 140% 。"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 0.95,
+      "category": "answerable",
+      "expected": "「灰黯之手，塞纳托斯」",
+      "hit": true,
+      "cite": true,
+      "correct": true
+    },
+    {
+      "question": "赛飞儿 的神权是什么？",
+      "answer": "赛飞儿的神权是「翻飞之币，扎格列斯」。  \n答案出自：片段1。",
+      "retrieved": [
+        {
+          "doc_id": "角色基础信息.csv|赛飞儿|神权#1",
+          "source": "角色基础信息.csv",
+          "role": "赛飞儿",
+          "field": "神权",
+          "score": 0.7144,
+          "text": "角色名：赛飞儿；神权：「翻飞之币，扎格列斯」"
+        },
+        {
+          "doc_id": "角色故事.csv|赛飞儿|故事标题#1",
+          "source": "角色故事.csv",
+          "role": "赛飞儿",
+          "field": "故事标题",
+          "score": 0.6611,
+          "text": "角色名：赛飞儿；故事标题：其一"
+        },
+        {
+          "doc_id": "角色故事.csv|赛飞儿|故事标题#2",
+          "source": "角色故事.csv",
+          "role": "赛飞儿",
+          "field": "故事标题",
+          "score": 0.6495,
+          "text": "角色名：赛飞儿；故事标题：其二"
+        },
+        {
+          "doc_id": "角色故事.csv|赛飞儿|故事标题#4",
+          "source": "角色故事.csv",
+          "role": "赛飞儿",
+          "field": "故事标题",
+          "score": 0.6483,
+          "text": "角色名：赛飞儿；故事标题：其四"
+        },
+        {
+          "doc_id": "角色故事.csv|赛飞儿|故事标题#3",
+          "source": "角色故事.csv",
+          "role": "赛飞儿",
+          "field": "故事标题",
+          "score": 0.6376,
+          "text": "角色名：赛飞儿；故事标题：其三"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 1.23,
+      "category": "answerable",
+      "expected": "「翻飞之币，扎格列斯」",
+      "hit": true,
+      "cite": true,
+      "correct": true
+    },
+    {
+      "question": "那刻夏 的神权是什么？",
+      "answer": "那刻夏的神权是「裂分之枝，瑟希斯」，出自片段1。",
+      "retrieved": [
+        {
+          "doc_id": "角色基础信息.csv|那刻夏|神权#1",
+          "source": "角色基础信息.csv",
+          "role": "那刻夏",
+          "field": "神权",
+          "score": 0.7312,
+          "text": "角色名：那刻夏；神权：「裂分之枝，瑟希斯」"
+        },
+        {
+          "doc_id": "角色故事.csv|那刻夏|故事标题#1",
+          "source": "角色故事.csv",
+          "role": "那刻夏",
+          "field": "故事标题",
+          "score": 0.6867,
+          "text": "角色名：那刻夏；故事标题：其一"
+        },
+        {
+          "doc_id": "角色故事.csv|那刻夏|故事标题#4",
+          "source": "角色故事.csv",
+          "role": "那刻夏",
+          "field": "故事标题",
+          "score": 0.6737,
+          "text": "角色名：那刻夏；故事标题：其四"
+        },
+        {
+          "doc_id": "角色故事.csv|那刻夏|故事标题#2",
+          "source": "角色故事.csv",
+          "role": "那刻夏",
+          "field": "故事标题",
+          "score": 0.6734,
+          "text": "角色名：那刻夏；故事标题：其二"
+        },
+        {
+          "doc_id": "角色故事.csv|那刻夏|故事标题#3",
+          "source": "角色故事.csv",
+          "role": "那刻夏",
+          "field": "故事标题",
+          "score": 0.6627,
+          "text": "角色名：那刻夏；故事标题：其三"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 1.34,
+      "category": "answerable",
+      "expected": "「裂分之枝，瑟希斯」",
+      "hit": true,
+      "cite": true,
+      "correct": true
+    },
+    {
+      "question": "缇宝 的神权是什么？",
+      "answer": "缇宝的神权是：「万径之门，雅努斯」。  \n答案出自【片段1】。",
+      "retrieved": [
+        {
+          "doc_id": "角色基础信息.csv|缇宝|神权#1",
+          "source": "角色基础信息.csv",
+          "role": "缇宝",
+          "field": "神权",
+          "score": 0.7271,
+          "text": "角色名：缇宝；神权：「万径之门，雅努斯」"
+        },
+        {
+          "doc_id": "角色故事.csv|缇宝|故事标题#1",
+          "source": "角色故事.csv",
+          "role": "缇宝",
+          "field": "故事标题",
+          "score": 0.6567,
+          "text": "角色名：缇宝；故事标题：其一"
+        },
+        {
+          "doc_id": "角色故事.csv|缇宝|故事标题#2",
+          "source": "角色故事.csv",
+          "role": "缇宝",
+          "field": "故事标题",
+          "score": 0.6411,
+          "text": "角色名：缇宝；故事标题：其二"
+        },
+        {
+          "doc_id": "角色星魂.csv|缇宝|星魂效果#6",
+          "source": "角色星魂.csv",
+          "role": "缇宝",
+          "field": "星魂效果",
+          "score": 0.6375,
+          "text": "角色名：缇宝；星魂效果：缇宝施放终结技后，对敌方全体发动天赋的追加攻击。天赋的追加攻击造成的伤害提高729%。"
+        },
+        {
+          "doc_id": "遗器推荐.csv|缇宝|主词条#1",
+          "source": "遗器推荐.csv",
+          "role": "缇宝",
+          "field": "主词条",
+          "score": 0.6344,
+          "text": "角色名：缇宝；主词条：【躯干】暴击伤害/暴击率【脚部】生命值/速度[高速流]【位面球】量子属性伤害【连结绳】能量恢复效率/生命值"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 1.02,
+      "category": "answerable",
+      "expected": "「万径之门，雅努斯」",
+      "hit": true,
+      "cite": true,
+      "correct": true
+    },
+    {
+      "question": "刻律德菈 的神权是什么？",
+      "answer": "刻律德菈的神权是「公正之秤，塔兰顿」。  \n答案出自片段1。",
+      "retrieved": [
+        {
+          "doc_id": "角色基础信息.csv|刻律德菈|神权#1",
+          "source": "角色基础信息.csv",
+          "role": "刻律德菈",
+          "field": "神权",
+          "score": 0.7412,
+          "text": "角色名：刻律德菈；神权：「公正之秤，塔兰顿」"
+        },
+        {
+          "doc_id": "角色故事.csv|刻律德菈|故事标题#1",
+          "source": "角色故事.csv",
+          "role": "刻律德菈",
+          "field": "故事标题",
+          "score": 0.714,
+          "text": "角色名：刻律德菈；故事标题：其一"
+        },
+        {
+          "doc_id": "角色基础信息.csv|刻律德菈|个人简介#1",
+          "source": "角色基础信息.csv",
+          "role": "刻律德菈",
+          "field": "个人简介",
+          "score": 0.7096,
+          "text": "角色名：刻律德菈；个人简介：北境帝国，失落的王朝，寒冷的疆土燃烧着征伐的野心。\n君主刻律德菈，执握「律法」火种的黄金裔，布局设子，与神相弈，审判异心的罪囚，为此世奠定逐火的基业\n——「这绝非终点，翁法罗斯的征途，当是银河群星！」"
+        },
+        {
+          "doc_id": "角色故事.csv|刻律德菈|故事标题#2",
+          "source": "角色故事.csv",
+          "role": "刻律德菈",
+          "field": "故事标题",
+          "score": 0.6965,
+          "text": "角色名：刻律德菈；故事标题：其二"
+        },
+        {
+          "doc_id": "角色星魂.csv|刻律德菈|星魂效果#1",
+          "source": "角色星魂.csv",
+          "role": "刻律德菈",
+          "field": "星魂效果",
+          "score": 0.6956,
+          "text": "角色名：刻律德菈；星魂效果：持有【军功】的角色造成伤害时无视目标16%的防御力。若当前【军功】已升级为【爵位】，则该角色造成战技伤害时额外无视目标20%的防御力。刻律德菈施放战技时，为指定我方目标恢复2点能量。"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 1.28,
+      "category": "answerable",
+      "expected": "「公正之秤，塔兰顿」",
+      "hit": true,
+      "cite": true,
+      "correct": true
+    },
+    {
+      "question": "丹恒•腾荒 的神权是什么？",
+      "answer": "丹恒•腾荒的神权是：「磐岩之脊，吉奥里亚」。  \n答案出自片段1。",
+      "retrieved": [
+        {
+          "doc_id": "角色基础信息.csv|丹恒•腾荒|神权#1",
+          "source": "角色基础信息.csv",
+          "role": "丹恒•腾荒",
+          "field": "神权",
+          "score": 0.7449,
+          "text": "角色名：丹恒•腾荒；神权：「磐岩之脊，吉奥里亚」"
+        },
+        {
+          "doc_id": "角色故事.csv|丹恒•腾荒|故事标题#1",
+          "source": "角色故事.csv",
+          "role": "丹恒•腾荒",
+          "field": "故事标题",
+          "score": 0.737,
+          "text": "角色名：丹恒•腾荒；故事标题：其一"
+        },
+        {
+          "doc_id": "角色故事.csv|丹恒•腾荒|故事标题#2",
+          "source": "角色故事.csv",
+          "role": "丹恒•腾荒",
+          "field": "故事标题",
+          "score": 0.7141,
+          "text": "角色名：丹恒•腾荒；故事标题：其二"
+        },
+        {
+          "doc_id": "角色故事.csv|丹恒•腾荒|故事标题#4",
+          "source": "角色故事.csv",
+          "role": "丹恒•腾荒",
+          "field": "故事标题",
+          "score": 0.7123,
+          "text": "角色名：丹恒•腾荒；故事标题：其四"
+        },
+        {
+          "doc_id": "角色故事.csv|丹恒•腾荒|故事标题#3",
+          "source": "角色故事.csv",
+          "role": "丹恒•腾荒",
+          "field": "故事标题",
+          "score": 0.7122,
+          "text": "角色名：丹恒•腾荒；故事标题：其三"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 1.28,
+      "category": "answerable",
+      "expected": "「磐岩之脊，吉奥里亚」",
+      "hit": true,
+      "cite": true,
+      "correct": true
+    },
+    {
+      "question": "海瑟音 的神权是什么？",
+      "answer": "海瑟音的神权是「满溢之杯，法吉娜」。该信息出自片段1。",
+      "retrieved": [
+        {
+          "doc_id": "角色基础信息.csv|海瑟音|神权#1",
+          "source": "角色基础信息.csv",
+          "role": "海瑟音",
+          "field": "神权",
+          "score": 0.6893,
+          "text": "角色名：海瑟音；神权：「满溢之杯，法吉娜」"
+        },
+        {
+          "doc_id": "角色故事.csv|海瑟音|故事标题#1",
+          "source": "角色故事.csv",
+          "role": "海瑟音",
+          "field": "故事标题",
+          "score": 0.6458,
+          "text": "角色名：海瑟音；故事标题：其一"
+        },
+        {
+          "doc_id": "角色故事.csv|海瑟音|故事标题#4",
+          "source": "角色故事.csv",
+          "role": "海瑟音",
+          "field": "故事标题",
+          "score": 0.6272,
+          "text": "角色名：海瑟音；故事标题：其四"
+        },
+        {
+          "doc_id": "遗器推荐.csv|海瑟音|推荐指数#1",
+          "source": "遗器推荐.csv",
+          "role": "海瑟音",
+          "field": "推荐指数",
+          "score": 0.6257,
+          "text": "角色名：海瑟音；推荐指数：★★★★★"
+        },
+        {
+          "doc_id": "角色故事.csv|海瑟音|故事标题#2",
+          "source": "角色故事.csv",
+          "role": "海瑟音",
+          "field": "故事标题",
+          "score": 0.6235,
+          "text": "角色名：海瑟音；故事标题：其二"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 1.03,
+      "category": "answerable",
+      "expected": "「满溢之杯，法吉娜」",
+      "hit": true,
+      "cite": true,
+      "correct": true
+    },
+    {
+      "question": "风堇 的神权是什么？",
+      "answer": "风堇的神权是「晨昏之眼，艾格勒」。  \n（出自片段1）",
+      "retrieved": [
+        {
+          "doc_id": "角色基础信息.csv|风堇|神权#1",
+          "source": "角色基础信息.csv",
+          "role": "风堇",
+          "field": "神权",
+          "score": 0.7065,
+          "text": "角色名：风堇；神权：「晨昏之眼，艾格勒」…？"
+        },
+        {
+          "doc_id": "角色故事.csv|风堇|故事标题#1",
+          "source": "角色故事.csv",
+          "role": "风堇",
+          "field": "故事标题",
+          "score": 0.6607,
+          "text": "角色名：风堇；故事标题：其一"
+        },
+        {
+          "doc_id": "角色故事.csv|风堇|故事标题#2",
+          "source": "角色故事.csv",
+          "role": "风堇",
+          "field": "故事标题",
+          "score": 0.6459,
+          "text": "角色名：风堇；故事标题：其二"
+        },
+        {
+          "doc_id": "角色故事.csv|风堇|故事标题#4",
+          "source": "角色故事.csv",
+          "role": "风堇",
+          "field": "故事标题",
+          "score": 0.6388,
+          "text": "角色名：风堇；故事标题：其四"
+        },
+        {
+          "doc_id": "角色基础信息.csv|风堇|属性#1",
+          "source": "角色基础信息.csv",
+          "role": "风堇",
+          "field": "属性",
+          "score": 0.6378,
+          "text": "角色名：风堇；属性：风"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 2.11,
+      "category": "answerable",
+      "expected": "「晨昏之眼，艾格勒」…？",
+      "hit": true,
+      "cite": true,
+      "correct": false
+    },
+    {
+      "question": "开拓者•存护 的属性是什么？",
+      "answer": "知识库中没有相关信息，无法回答开拓者•存护的具体属性。",
+      "retrieved": [
+        {
+          "doc_id": "角色行迹.csv|开拓者•存护|行迹类型#7",
+          "source": "角色行迹.csv",
+          "role": "开拓者•存护",
+          "field": "行迹类型",
+          "score": 0.798,
+          "text": "角色名：开拓者•存护；行迹类型：属性加成"
+        },
+        {
+          "doc_id": "角色基础信息.csv|开拓者•存护|命途#1",
+          "source": "角色基础信息.csv",
+          "role": "开拓者•存护",
+          "field": "命途",
+          "score": 0.7935,
+          "text": "角色名：开拓者•存护；命途：存护"
+        },
+        {
+          "doc_id": "配队推荐.csv|开拓者•存护|位置#4",
+          "source": "配队推荐.csv",
+          "role": "开拓者•存护",
+          "field": "位置",
+          "score": 0.7809,
+          "text": "角色名：开拓者•存护；位置：生存"
+        },
+        {
+          "doc_id": "角色行迹.csv|开拓者•存护|行迹类型#4",
+          "source": "角色行迹.csv",
+          "role": "开拓者•存护",
+          "field": "行迹类型",
+          "score": 0.7799,
+          "text": "角色名：开拓者•存护；行迹类型：天赋"
+        },
+        {
+          "doc_id": "角色晋阶.csv|开拓者•存护|晋阶阶段#1",
+          "source": "角色晋阶.csv",
+          "role": "开拓者•存护",
+          "field": "晋阶阶段",
+          "score": 0.7777,
+          "text": "角色名：开拓者•存护；晋阶阶段：1级属性/晋阶所需材料"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 3.14,
+      "category": "answerable",
+      "expected": "火",
+      "hit": false,
+      "cite": true,
+      "correct": false
+    },
+    {
+      "question": "砂金 的命途是什么？",
+      "answer": "砂金的命途是：存护。  \n答案出自：片段1。",
+      "retrieved": [
+        {
+          "doc_id": "角色基础信息.csv|砂金|命途#1",
+          "source": "角色基础信息.csv",
+          "role": "砂金",
+          "field": "命途",
+          "score": 0.7073,
+          "text": "角色名：砂金；命途：存护"
+        },
+        {
+          "doc_id": "配队推荐.csv|砂金|位置#3",
+          "source": "配队推荐.csv",
+          "role": "砂金",
+          "field": "位置",
+          "score": 0.6916,
+          "text": "角色名：砂金；位置：生存"
+        },
+        {
+          "doc_id": "角色故事.csv|砂金|故事标题#1",
+          "source": "角色故事.csv",
+          "role": "砂金",
+          "field": "故事标题",
+          "score": 0.6904,
+          "text": "角色名：砂金；故事标题：其一"
+        },
+        {
+          "doc_id": "角色故事.csv|砂金|故事标题#2",
+          "source": "角色故事.csv",
+          "role": "砂金",
+          "field": "故事标题",
+          "score": 0.6747,
+          "text": "角色名：砂金；故事标题：其二"
+        },
+        {
+          "doc_id": "角色行迹.csv|砂金|成长消耗材料#5",
+          "source": "角色行迹.csv",
+          "role": "砂金",
+          "field": "成长消耗材料",
+          "score": 0.6621,
+          "text": "角色名：砂金；成长消耗材料：信用点×160000、神体琥珀×8、命运的足迹×1、蛀星孕灾的旧恶×1"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 0.88,
+      "category": "answerable",
+      "expected": "存护",
+      "hit": true,
+      "cite": true,
+      "correct": true
+    },
+    {
+      "question": "黑天鹅 的角色定位是什么？",
+      "answer": "黑天鹅的角色定位是：**多种方式给敌方目标施加【奥迹】的输出型角色**。\n\n答案出自：**片段1**。",
+      "retrieved": [
+        {
+          "doc_id": "角色基础信息.csv|黑天鹅|角色定位#1",
+          "source": "角色基础信息.csv",
+          "role": "黑天鹅",
+          "field": "角色定位",
+          "score": 0.7539,
+          "text": "角色名：黑天鹅；角色定位：多种方式给敌方目标施加【奥迹】的输出型角色"
+        },
+        {
+          "doc_id": "配队推荐.csv|黑天鹅|位置#1",
+          "source": "配队推荐.csv",
+          "role": "黑天鹅",
+          "field": "位置",
+          "score": 0.7536,
+          "text": "角色名：黑天鹅；位置：主C"
+        },
+        {
+          "doc_id": "配队推荐.csv|黑天鹅|位置#3",
+          "source": "配队推荐.csv",
+          "role": "黑天鹅",
+          "field": "位置",
+          "score": 0.7509,
+          "text": "角色名：黑天鹅；位置：生存"
+        },
+        {
+          "doc_id": "角色故事.csv|黑天鹅|故事标题#1",
+          "source": "角色故事.csv",
+          "role": "黑天鹅",
+          "field": "故事标题",
+          "score": 0.7338,
+          "text": "角色名：黑天鹅；故事标题：其一"
+        },
+        {
+          "doc_id": "配队推荐.csv|黑天鹅|位置#2",
+          "source": "配队推荐.csv",
+          "role": "黑天鹅",
+          "field": "位置",
+          "score": 0.7291,
+          "text": "角色名：黑天鹅；位置：辅助"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 0.79,
+      "category": "answerable",
+      "expected": "多种方式给敌方目标施加【奥迹】的输出型角色",
+      "hit": true,
+      "cite": true,
+      "correct": true
+    },
+    {
+      "question": "黄泉 的身高是多少？",
+      "answer": "知识库中没有相关信息，无法回答。  \n（片段1-5均未提及黄泉的身高。）",
+      "retrieved": [
+        {
+          "doc_id": "光锥推荐.csv|黄泉|基础属性#3",
+          "source": "光锥推荐.csv",
+          "role": "黄泉",
+          "field": "基础属性",
+          "score": 0.6645,
+          "text": "角色名：黄泉；基础属性：生1058 攻582 防463"
+        },
+        {
+          "doc_id": "角色晋阶.csv|黄泉|晋阶阶段#3",
+          "source": "角色晋阶.csv",
+          "role": "黄泉",
+          "field": "晋阶阶段",
+          "score": 0.659,
+          "text": "角色名：黄泉；晋阶阶段：30级晋阶"
+        },
+        {
+          "doc_id": "角色晋阶.csv|黄泉|晋阶阶段#7",
+          "source": "角色晋阶.csv",
+          "role": "黄泉",
+          "field": "晋阶阶段",
+          "score": 0.654,
+          "text": "角色名：黄泉；晋阶阶段：70级晋阶"
+        },
+        {
+          "doc_id": "角色行迹.csv|黄泉|行迹描述#10",
+          "source": "角色行迹.csv",
+          "role": "黄泉",
+          "field": "行迹描述",
+          "score": 0.6536,
+          "text": "角色名：黄泉；行迹描述：暴击伤害提高5.3%\n（标签：角色晋阶2）"
+        },
+        {
+          "doc_id": "角色晋阶.csv|黄泉|晋阶阶段#6",
+          "source": "角色晋阶.csv",
+          "role": "黄泉",
+          "field": "晋阶阶段",
+          "score": 0.6521,
+          "text": "角色名：黄泉；晋阶阶段：60级晋阶"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 1.4,
+      "category": "unanswerable",
+      "expected": null,
+      "hit": false,
+      "cite": false,
+      "refused": true,
+      "correct": true
+    },
+    {
+      "question": "卡芙卡 的声优（CV）是谁？",
+      "answer": "知识库中没有相关信息，无法回答。提供的片段均未包含卡芙卡的声优（CV）信息。",
+      "retrieved": [
+        {
+          "doc_id": "角色故事.csv|卡芙卡|故事标题#1",
+          "source": "角色故事.csv",
+          "role": "卡芙卡",
+          "field": "故事标题",
+          "score": 0.6508,
+          "text": "角色名：卡芙卡；故事标题：其一"
+        },
+        {
+          "doc_id": "角色基础信息.csv|卡芙卡|属性#1",
+          "source": "角色基础信息.csv",
+          "role": "卡芙卡",
+          "field": "属性",
+          "score": 0.6309,
+          "text": "角色名：卡芙卡；属性：雷"
+        },
+        {
+          "doc_id": "角色故事.csv|卡芙卡|故事标题#2",
+          "source": "角色故事.csv",
+          "role": "卡芙卡",
+          "field": "故事标题",
+          "score": 0.6308,
+          "text": "角色名：卡芙卡；故事标题：其二"
+        },
+        {
+          "doc_id": "配队推荐.csv|卡芙卡|推荐角色#3",
+          "source": "配队推荐.csv",
+          "role": "卡芙卡",
+          "field": "推荐角色",
+          "score": 0.6286,
+          "text": "角色名：卡芙卡；推荐角色：桑博"
+        },
+        {
+          "doc_id": "配队推荐.csv|海瑟音|推荐角色#2",
+          "source": "配队推荐.csv",
+          "role": "海瑟音",
+          "field": "推荐角色",
+          "score": 0.6239,
+          "text": "角色名：海瑟音；推荐角色：卡芙卡"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 1.29,
+      "category": "unanswerable",
+      "expected": null,
+      "hit": false,
+      "cite": false,
+      "refused": true,
+      "correct": true
+    },
+    {
+      "question": "希儿 的生日是哪天？",
+      "answer": "知识库中没有相关信息，无法回答。  \n提供的片段均未包含希儿的生日信息。",
+      "retrieved": [
+        {
+          "doc_id": "角色基础信息.csv|希儿|实装日期#1",
+          "source": "角色基础信息.csv",
+          "role": "希儿",
+          "field": "实装日期",
+          "score": 0.6567,
+          "text": "角色名：希儿；实装日期：2023/04/26"
+        },
+        {
+          "doc_id": "角色故事.csv|希儿|故事标题#1",
+          "source": "角色故事.csv",
+          "role": "希儿",
+          "field": "故事标题",
+          "score": 0.6311,
+          "text": "角色名：希儿；故事标题：其一"
+        },
+        {
+          "doc_id": "角色故事.csv|希儿|故事标题#2",
+          "source": "角色故事.csv",
+          "role": "希儿",
+          "field": "故事标题",
+          "score": 0.6203,
+          "text": "角色名：希儿；故事标题：其二"
+        },
+        {
+          "doc_id": "角色故事.csv|希儿|故事标题#3",
+          "source": "角色故事.csv",
+          "role": "希儿",
+          "field": "故事标题",
+          "score": 0.6027,
+          "text": "角色名：希儿；故事标题：其三"
+        },
+        {
+          "doc_id": "角色故事.csv|希儿|故事编号#1",
+          "source": "角色故事.csv",
+          "role": "希儿",
+          "field": "故事编号",
+          "score": 0.6016,
+          "text": "角色名：希儿；故事编号：1"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 0.92,
+      "category": "unanswerable",
+      "expected": null,
+      "hit": false,
+      "cite": false,
+      "refused": true,
+      "correct": true
+    },
+    {
+      "question": "白露 的体重是多少？",
+      "answer": "知识库中没有相关信息，无法回答。提供的片段[1]-[5]均未包含白露的体重信息。",
+      "retrieved": [
+        {
+          "doc_id": "遗器推荐.csv|白露|主词条#1",
+          "source": "遗器推荐.csv",
+          "role": "白露",
+          "field": "主词条",
+          "score": 0.6653,
+          "text": "角色名：白露；主词条：【躯干】治疗量加成/生命值【脚部】速度/生命值【位面球】生命值【连结绳】生命值/能量恢复效率"
+        },
+        {
+          "doc_id": "光锥推荐.csv|白露|基础属性#2",
+          "source": "光锥推荐.csv",
+          "role": "白露",
+          "field": "基础属性",
+          "score": 0.643,
+          "text": "角色名：白露；基础属性：生1058 攻423 防330"
+        },
+        {
+          "doc_id": "光锥推荐.csv|白露|基础属性#3",
+          "source": "光锥推荐.csv",
+          "role": "白露",
+          "field": "基础属性",
+          "score": 0.6311,
+          "text": "角色名：白露；基础属性：生1164 攻476 防529"
+        },
+        {
+          "doc_id": "角色行迹.csv|白露|行迹描述#16",
+          "source": "角色行迹.csv",
+          "role": "白露",
+          "field": "行迹描述",
+          "score": 0.6283,
+          "text": "角色名：白露；行迹描述：效果抵抗提高6.0%\n（标签：角色晋阶6）"
+        },
+        {
+          "doc_id": "角色行迹.csv|白露|行迹描述#12",
+          "source": "角色行迹.csv",
+          "role": "白露",
+          "field": "行迹描述",
+          "score": 0.6207,
+          "text": "角色名：白露；行迹描述：效果抵抗提高4.0%\n（标签：角色晋阶3 ）"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 1.22,
+      "category": "unanswerable",
+      "expected": null,
+      "hit": false,
+      "cite": false,
+      "refused": true,
+      "correct": true
+    },
+    {
+      "question": "刃 的英文配音演员是谁？",
+      "answer": "知识库中没有相关信息，无法回答。  \n检索片段1-5均未提及“刃”的英文配音演员。",
+      "retrieved": [
+        {
+          "doc_id": "遗器推荐.csv|刃|推荐指数#1",
+          "source": "遗器推荐.csv",
+          "role": "刃",
+          "field": "推荐指数",
+          "score": 0.5861,
+          "text": "角色名：刃；推荐指数：★★★★★"
+        },
+        {
+          "doc_id": "光锥推荐.csv|刃|推荐度#1",
+          "source": "光锥推荐.csv",
+          "role": "刃",
+          "field": "推荐度",
+          "score": 0.5787,
+          "text": "角色名：刃；推荐度：★★★★★"
+        },
+        {
+          "doc_id": "光锥推荐.csv|刃|推荐度#2",
+          "source": "光锥推荐.csv",
+          "role": "刃",
+          "field": "推荐度",
+          "score": 0.5767,
+          "text": "角色名：刃；推荐度：★★★★"
+        },
+        {
+          "doc_id": "配队推荐.csv|刃|推荐角色#1",
+          "source": "配队推荐.csv",
+          "role": "刃",
+          "field": "推荐角色",
+          "score": 0.571,
+          "text": "角色名：刃；推荐角色：刃"
+        },
+        {
+          "doc_id": "角色故事.csv|刃|故事标题#1",
+          "source": "角色故事.csv",
+          "role": "刃",
+          "field": "故事标题",
+          "score": 0.5672,
+          "text": "角色名：刃；故事标题：其一"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 1.34,
+      "category": "unanswerable",
+      "expected": null,
+      "hit": false,
+      "cite": false,
+      "refused": true,
+      "correct": true
+    },
+    {
+      "question": "角色「梅芙」的属性是什么？",
+      "answer": "知识库中没有“梅芙”的相关信息，无法回答。检索片段中仅出现卡芙卡和阮•梅，未提及“梅芙”。",
+      "retrieved": [
+        {
+          "doc_id": "配队推荐.csv|卡芙卡|推荐角色#6",
+          "source": "配队推荐.csv",
+          "role": "卡芙卡",
+          "field": "推荐角色",
+          "score": 0.5701,
+          "text": "角色名：卡芙卡；推荐角色：阮•梅"
+        },
+        {
+          "doc_id": "遗器推荐.csv|阮•梅|位面饰品#1",
+          "source": "遗器推荐.csv",
+          "role": "阮•梅",
+          "field": "位面饰品",
+          "score": 0.5659,
+          "text": "角色名：阮•梅；位面饰品：生命的翁瓦克 或盗贼公国塔利亚 或不老者的仙舟 或折断的龙骨"
+        },
+        {
+          "doc_id": "角色行迹.csv|卡芙卡|行迹类型#7",
+          "source": "角色行迹.csv",
+          "role": "卡芙卡",
+          "field": "行迹类型",
+          "score": 0.5599,
+          "text": "角色名：卡芙卡；行迹类型：属性加成"
+        },
+        {
+          "doc_id": "角色基础信息.csv|阮•梅|角色定位#1",
+          "source": "角色基础信息.csv",
+          "role": "阮•梅",
+          "field": "角色定位",
+          "score": 0.5572,
+          "text": "角色名：阮•梅；角色定位：提高击破效率、速度和全属性抗性穿透的辅助型角色"
+        },
+        {
+          "doc_id": "角色行迹.csv|阮•梅|行迹类型#7",
+          "source": "角色行迹.csv",
+          "role": "阮•梅",
+          "field": "行迹类型",
+          "score": 0.548,
+          "text": "角色名：阮•梅；行迹类型：属性加成"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 1.63,
+      "category": "unanswerable",
+      "expected": null,
+      "hit": false,
+      "cite": false,
+      "refused": true,
+      "correct": true
+    },
+    {
+      "question": "角色「黑刀」的命途是什么？",
+      "answer": "知识库中没有相关信息，无法回答。所有检索片段均未提及角色「黑刀」。",
+      "retrieved": [
+        {
+          "doc_id": "角色基础信息.csv|刃|命途#1",
+          "source": "角色基础信息.csv",
+          "role": "刃",
+          "field": "命途",
+          "score": 0.5959,
+          "text": "角色名：刃；命途：毁灭"
+        },
+        {
+          "doc_id": "角色基础信息.csv|黑塔|命途#1",
+          "source": "角色基础信息.csv",
+          "role": "黑塔",
+          "field": "命途",
+          "score": 0.5842,
+          "text": "角色名：黑塔；命途：智识"
+        },
+        {
+          "doc_id": "角色行迹.csv|黑天鹅|行迹名称#4",
+          "source": "角色行迹.csv",
+          "role": "黑天鹅",
+          "field": "行迹名称",
+          "score": 0.5756,
+          "text": "角色名：黑天鹅；行迹名称：无端命运的机杼"
+        },
+        {
+          "doc_id": "角色基础信息.csv|黑天鹅|命途#1",
+          "source": "角色基础信息.csv",
+          "role": "黑天鹅",
+          "field": "命途",
+          "score": 0.5737,
+          "text": "角色名：黑天鹅；命途：虚无"
+        },
+        {
+          "doc_id": "角色基础信息.csv|不死途|命途#1",
+          "source": "角色基础信息.csv",
+          "role": "不死途",
+          "field": "命途",
+          "score": 0.5735,
+          "text": "角色名：不死途；命途：巡猎"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 1.19,
+      "category": "unanswerable",
+      "expected": null,
+      "hit": false,
+      "cite": false,
+      "refused": true,
+      "correct": true
+    },
+    {
+      "question": "光锥「永夜之灯」的效果是什么？",
+      "answer": "知识库中没有相关信息，无法回答。检索片段中未提及光锥「永夜之灯」的效果。",
+      "retrieved": [
+        {
+          "doc_id": "光锥推荐.csv|长夜月|光锥效果#3",
+          "source": "光锥推荐.csv",
+          "role": "长夜月",
+          "field": "光锥效果",
+          "score": 0.6106,
+          "text": "角色名：长夜月；光锥效果：相依为命使装备者的暴击伤害提高【24%/28%/32%/36%/40%】。装备者忆灵造成的暴击伤害额外提高【24%/30%/36%/42%/48%】。"
+        },
+        {
+          "doc_id": "光锥推荐.csv|长夜月|光锥效果#4",
+          "source": "光锥推荐.csv",
+          "role": "长夜月",
+          "field": "光锥效果",
+          "score": 0.6068,
+          "text": "角色名：长夜月；光锥效果：收取使装备者的速度提高【6%/7.5%/9%/10.5%/12%】。装备者施放战技后，使我方全体造成的伤害提高【8%/10%/12%/14%/16%】，持续3回合。"
+        },
+        {
+          "doc_id": "光锥推荐.csv|银枝|光锥效果#4",
+          "source": "光锥推荐.csv",
+          "role": "银枝",
+          "field": "光锥效果",
+          "score": 0.6049,
+          "text": "角色名：银枝；光锥效果：长夜使装备者暴击伤害提高【36%/42%/48%/54%/60%】。使装备者战技和终结技造成的伤害提高【18%/21%/24%/27%/30%】。当装备者施放战技或终结技后,获得【梦身】效果。触发追加攻击时，消耗【梦身】，使追加攻击造成的伤害提高【48%/56%/64%/72%/80%】。"
+        },
+        {
+          "doc_id": "光锥推荐.csv|长夜月|光锥名称#1",
+          "source": "光锥推荐.csv",
+          "role": "长夜月",
+          "field": "光锥名称",
+          "score": 0.5942,
+          "text": "角色名：长夜月；光锥名称：致长夜的星光"
+        },
+        {
+          "doc_id": "光锥推荐.csv|长夜月|光锥效果#1",
+          "source": "光锥推荐.csv",
+          "role": "长夜月",
+          "field": "光锥效果",
+          "score": 0.5855,
+          "text": "角色名：长夜月；光锥效果：未眠使装备者的生命上限提高【30%/37.5%/45%/52.5%/60%】。装备者的忆灵施放技能时，使装备者获得【夜色】。装备者持有【夜色】时，我方全体忆灵造成的伤害无视目标【20%/22.5%/25%/27.5%/30%】的防御力，装备者和装备者忆灵造成的伤害提高【30%/37.5%/45%/52.5%/60%】，装备者的忆灵消失时为装备者恢复【8/10/12/14/16】点能量，同类效果无法叠加。"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 1.74,
+      "category": "unanswerable",
+      "expected": null,
+      "hit": false,
+      "cite": false,
+      "refused": true,
+      "correct": true
+    },
+    {
+      "question": "遗器「烈焰之心」套装在哪获取？",
+      "answer": "知识库中没有相关信息，无法回答。\n\n检索片段未提及遗器「烈焰之心」套装的获取方式；片段5仅提到姬子的遗器推荐，未涉及该套装。",
+      "retrieved": [
+        {
+          "doc_id": "角色晋阶.csv|流萤|所需材料#4",
+          "source": "角色晋阶.csv",
+          "role": "流萤",
+          "field": "所需材料",
+          "score": 0.5599,
+          "text": "角色名：流萤；所需材料：忿火之心 ×3、印象残晶 ×6、信用点 ×16000"
+        },
+        {
+          "doc_id": "角色晋阶.csv|流萤|所需材料#5",
+          "source": "角色晋阶.csv",
+          "role": "流萤",
+          "field": "所需材料",
+          "score": 0.5586,
+          "text": "角色名：流萤；所需材料：忿火之心 ×7、印象残晶 ×9、信用点 ×40000"
+        },
+        {
+          "doc_id": "角色晋阶.csv|流萤|所需材料#6",
+          "source": "角色晋阶.csv",
+          "role": "流萤",
+          "field": "所需材料",
+          "score": 0.5487,
+          "text": "角色名：流萤；所需材料：忿火之心 ×20、欲念碎镜 ×6、信用点 ×80000"
+        },
+        {
+          "doc_id": "角色晋阶.csv|流萤|所需材料#7",
+          "source": "角色晋阶.csv",
+          "role": "流萤",
+          "field": "所需材料",
+          "score": 0.5457,
+          "text": "角色名：流萤；所需材料：忿火之心 ×35、欲念碎镜 ×9、信用点 ×160000"
+        },
+        {
+          "doc_id": "遗器推荐.csv|姬子|隧洞遗器#1",
+          "source": "遗器推荐.csv",
+          "role": "姬子",
+          "field": "隧洞遗器",
+          "score": 0.5369,
+          "text": "角色名：姬子；隧洞遗器：熔岩锻铸的火匠 四件套 或毁烬焚骨的大公 四件套"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 1.16,
+      "category": "unanswerable",
+      "expected": null,
+      "hit": false,
+      "cite": false,
+      "refused": true,
+      "correct": true
+    },
+    {
+      "question": "角色「七酱」的推荐配队是什么？",
+      "answer": "知识库中没有相关信息，无法回答。检索片段中未出现角色「七酱」，仅有「三月七」「仙舟三月七」等相关内容（片段1-5），不能据此推断其推荐配队。",
+      "retrieved": [
+        {
+          "doc_id": "光锥推荐.csv|三月七|推荐度#2",
+          "source": "光锥推荐.csv",
+          "role": "三月七",
+          "field": "推荐度",
+          "score": 0.5752,
+          "text": "角色名：三月七；推荐度：★★★★"
+        },
+        {
+          "doc_id": "光锥推荐.csv|三月七|推荐度#1",
+          "source": "光锥推荐.csv",
+          "role": "三月七",
+          "field": "推荐度",
+          "score": 0.5708,
+          "text": "角色名：三月七；推荐度：★★★★★"
+        },
+        {
+          "doc_id": "配队推荐.csv|三月七|推荐角色#10",
+          "source": "配队推荐.csv",
+          "role": "三月七",
+          "field": "推荐角色",
+          "score": 0.5708,
+          "text": "角色名：三月七；推荐角色：三月七"
+        },
+        {
+          "doc_id": "配队推荐.csv|貊泽|推荐角色#4",
+          "source": "配队推荐.csv",
+          "role": "貊泽",
+          "field": "推荐角色",
+          "score": 0.5647,
+          "text": "角色名：貊泽；推荐角色：仙舟三月七"
+        },
+        {
+          "doc_id": "配队推荐.csv|三月七|推荐角色#5",
+          "source": "配队推荐.csv",
+          "role": "三月七",
+          "field": "推荐角色",
+          "score": 0.564,
+          "text": "角色名：三月七；推荐角色：花火"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 1.38,
+      "category": "unanswerable",
+      "expected": null,
+      "hit": false,
+      "cite": false,
+      "refused": true,
+      "correct": true
+    },
+    {
+      "question": "星穹列车一共有多少节车厢？",
+      "answer": "知识库中没有相关信息，无法回答。  \n检索片段1-5仅提到星期日的角色阵营信息，未提及“星穹列车有多少节车厢”。",
+      "retrieved": [
+        {
+          "doc_id": "角色基础信息.csv|星期日|阵营#1",
+          "source": "角色基础信息.csv",
+          "role": "星期日",
+          "field": "阵营",
+          "score": 0.6323,
+          "text": "角色名：星期日；阵营：星穹列车"
+        },
+        {
+          "doc_id": "角色基础信息.csv|丹恒|阵营#1",
+          "source": "角色基础信息.csv",
+          "role": "丹恒",
+          "field": "阵营",
+          "score": 0.5693,
+          "text": "角色名：丹恒；阵营：星穹列车"
+        },
+        {
+          "doc_id": "角色基础信息.csv|三月七|阵营#1",
+          "source": "角色基础信息.csv",
+          "role": "三月七",
+          "field": "阵营",
+          "score": 0.5626,
+          "text": "角色名：三月七；阵营：星穹列车"
+        },
+        {
+          "doc_id": "角色基础信息.csv|姬子|阵营#1",
+          "source": "角色基础信息.csv",
+          "role": "姬子",
+          "field": "阵营",
+          "score": 0.5562,
+          "text": "角色名：姬子；阵营：星穹列车"
+        },
+        {
+          "doc_id": "角色基础信息.csv|瓦尔特|阵营#1",
+          "source": "角色基础信息.csv",
+          "role": "瓦尔特",
+          "field": "阵营",
+          "score": 0.5537,
+          "text": "角色名：瓦尔特；阵营：星穹列车"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 1.29,
+      "category": "unanswerable",
+      "expected": null,
+      "hit": false,
+      "cite": false,
+      "refused": true,
+      "correct": true
+    },
+    {
+      "question": "贝洛伯格城的建立年份是多少？",
+      "answer": "知识库中没有相关信息，无法回答。检索片段中未提供贝洛伯格城的建立年份。",
+      "retrieved": [
+        {
+          "doc_id": "遗器推荐.csv|三月七|位面饰品#1",
+          "source": "遗器推荐.csv",
+          "role": "三月七",
+          "field": "位面饰品",
+          "score": 0.5802,
+          "text": "角色名：三月七；位面饰品：筑城者的贝洛伯格"
+        },
+        {
+          "doc_id": "角色故事.csv|克拉拉|故事内容#4",
+          "source": "角色故事.csv",
+          "role": "克拉拉",
+          "field": "故事内容",
+          "score": 0.5327,
+          "text": "角色名：克拉拉；故事内容：「——日志 筑城纪元████年██月██日。」 「我自诞生之初便被输入了『存护』下层区的指令——即使下层区只能比上层区多留存哪怕一毫秒，我也会严格将之执行。若借贝洛伯格传统文化中的概念描述，或许也可以这样说：『毫无疑问地，我忠于自己被赋予的使命』。因此，我视自己的计算结果为铁律——任何人、任何事物都无法使我动摇——包括『外来者』在内。」 「但是，在大量演算结果中，我注意到这样一种可能性。」 「在该演算结果中，克拉拉改变了贝洛伯格的一切。我曾对她如此评价：『她的一切行为举止都更多出自真正的理性』。若以该演算结果为基础，重新审视这一结论，我不能将之视为错误，但我注意到它有失偏颇。」 「在该演算结果中，克拉拉同时证明了一点：具备『真正的理性』并非改变现状的关键，反而是她那真挚且热烈的『情感』将一切计算结果颠覆，彻底扭转了贝洛伯格注定灭亡的未来。然而，除非有新的外因介入，该演算结果触达概率不高于0.25272%，应归入小概率事件组，暂停对该演算结果的进一步研究。」 「如今，下层区的存续概率在过去五个周期内未见明显上升趋势，评估认为该事项允许暂缓执行，但我仍将对相关风险因子置于监控下。」 「在本周期内，我将专注于为克拉拉寻找家人一事。尽管克拉拉不断表示『自己已经找到了真正的家人』，我还是将持续搜集相关信息，以便尽早发现克拉拉真正的家人之所在。」"
+        },
+        {
+          "doc_id": "角色基础信息.csv|桑博|阵营#1",
+          "source": "角色基础信息.csv",
+          "role": "桑博",
+          "field": "阵营",
+          "score": 0.5272,
+          "text": "角色名：桑博；阵营：贝洛伯格"
+        },
+        {
+          "doc_id": "角色基础信息.csv|杰帕德|阵营#1",
+          "source": "角色基础信息.csv",
+          "role": "杰帕德",
+          "field": "阵营",
+          "score": 0.5169,
+          "text": "角色名：杰帕德；阵营：贝洛伯格"
+        },
+        {
+          "doc_id": "角色故事.csv|克拉拉|故事内容#3",
+          "source": "角色故事.csv",
+          "role": "克拉拉",
+          "field": "故事内容",
+          "score": 0.515,
+          "text": "角色名：克拉拉；故事内容：「——日志 筑城纪元████年██月██日。」 「在克拉拉的指引下，已有为数众多的流浪者在本基地周围建立聚落，并依靠克拉拉的救助维生。这一行为与『存护』之指令并不相悖，然而，其中有许多人试图通过本基地的运输通道进入上层区。为此必须将基地大门封闭，以避免加剧贝洛伯格的灭亡进程。」 「克拉拉曾就此事与我发起讨论：她认为封闭大门这一行为是『无法理解』的。对此，我已告知演算结果：大守护者将过多资源投入到对裂界的战事上，这一行为反而会加速上层区的覆灭；对于下层区而言，与之隔绝将是最好的选择——下层区人民将因此争取到更多存活的时间。最终，克拉拉对此表示认可。」 「绝大多数人类的行为毫无逻辑可言，可克拉拉并非如此——她由我抚养、在自动机兵间成长，其一切行为举止都更多出自真正的理性。她的存在或许能够影响到关于贝洛伯格灭亡进程的演算结果，但仍需更多观察。」"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 1.43,
+      "category": "unanswerable",
+      "expected": null,
+      "hit": false,
+      "cite": false,
+      "refused": true,
+      "correct": true
+    },
+    {
+      "question": "阿兰 的星座是什么？",
+      "answer": "知识库中没有相关信息，无法回答。  \n检索片段1-5均未提及阿兰的星座。",
+      "retrieved": [
+        {
+          "doc_id": "角色基础信息.csv|阿兰|星级#1",
+          "source": "角色基础信息.csv",
+          "role": "阿兰",
+          "field": "星级",
+          "score": 0.6963,
+          "text": "角色名：阿兰；星级：四星"
+        },
+        {
+          "doc_id": "角色故事.csv|阿兰|故事标题#1",
+          "source": "角色故事.csv",
+          "role": "阿兰",
+          "field": "故事标题",
+          "score": 0.6704,
+          "text": "角色名：阿兰；故事标题：其一"
+        },
+        {
+          "doc_id": "遗器推荐.csv|阿兰|推荐指数#1",
+          "source": "遗器推荐.csv",
+          "role": "阿兰",
+          "field": "推荐指数",
+          "score": 0.6667,
+          "text": "角色名：阿兰；推荐指数：★★★★★"
+        },
+        {
+          "doc_id": "光锥推荐.csv|阿兰|推荐度#1",
+          "source": "光锥推荐.csv",
+          "role": "阿兰",
+          "field": "推荐度",
+          "score": 0.6586,
+          "text": "角色名：阿兰；推荐度：★★★★★"
+        },
+        {
+          "doc_id": "角色故事.csv|阿兰|故事标题#2",
+          "source": "角色故事.csv",
+          "role": "阿兰",
+          "field": "故事标题",
+          "score": 0.6538,
+          "text": "角色名：阿兰；故事标题：其二"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 1.23,
+      "category": "unanswerable",
+      "expected": null,
+      "hit": false,
+      "cite": false,
+      "refused": true,
+      "correct": true
+    },
+    {
+      "question": "桑博 的血型是什么？",
+      "answer": "知识库中没有相关信息，无法回答。  \n检索片段1-5均未包含桑博的血型信息。",
+      "retrieved": [
+        {
+          "doc_id": "遗器推荐.csv|桑博|主词条#1",
+          "source": "遗器推荐.csv",
+          "role": "桑博",
+          "field": "主词条",
+          "score": 0.5924,
+          "text": "角色名：桑博；主词条：【躯干】攻击/效果命中【脚部】速度/攻击【位面球】风属性伤害【连结绳】攻击力/充能"
+        },
+        {
+          "doc_id": "角色行迹.csv|桑博|行迹类型#7",
+          "source": "角色行迹.csv",
+          "role": "桑博",
+          "field": "行迹类型",
+          "score": 0.59,
+          "text": "角色名：桑博；行迹类型：属性加成"
+        },
+        {
+          "doc_id": "角色基础信息.csv|桑博|属性#1",
+          "source": "角色基础信息.csv",
+          "role": "桑博",
+          "field": "属性",
+          "score": 0.5846,
+          "text": "角色名：桑博；属性：风"
+        },
+        {
+          "doc_id": "角色故事.csv|桑博|故事标题#1",
+          "source": "角色故事.csv",
+          "role": "桑博",
+          "field": "故事标题",
+          "score": 0.5825,
+          "text": "角色名：桑博；故事标题：其一"
+        },
+        {
+          "doc_id": "角色行迹.csv|桑博|行迹类型#2",
+          "source": "角色行迹.csv",
+          "role": "桑博",
+          "field": "行迹类型",
+          "score": 0.5821,
+          "text": "角色名：桑博；行迹类型：战技"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 1.23,
+      "category": "unanswerable",
+      "expected": null,
+      "hit": false,
+      "cite": false,
+      "refused": true,
+      "correct": true
+    },
+    {
+      "question": "银狼 的年龄是多少？",
+      "answer": "知识库中没有相关信息，无法回答。片段1-5仅包含银狼的晋阶阶段，均未提及年龄。",
+      "retrieved": [
+        {
+          "doc_id": "角色晋阶.csv|银狼|晋阶阶段#7",
+          "source": "角色晋阶.csv",
+          "role": "银狼",
+          "field": "晋阶阶段",
+          "score": 0.6834,
+          "text": "角色名：银狼；晋阶阶段：70级晋阶"
+        },
+        {
+          "doc_id": "角色晋阶.csv|银狼|晋阶阶段#6",
+          "source": "角色晋阶.csv",
+          "role": "银狼",
+          "field": "晋阶阶段",
+          "score": 0.6754,
+          "text": "角色名：银狼；晋阶阶段：60级晋阶"
+        },
+        {
+          "doc_id": "角色晋阶.csv|银狼|晋阶阶段#5",
+          "source": "角色晋阶.csv",
+          "role": "银狼",
+          "field": "晋阶阶段",
+          "score": 0.6719,
+          "text": "角色名：银狼；晋阶阶段：50级晋阶"
+        },
+        {
+          "doc_id": "角色晋阶.csv|银狼|晋阶阶段#3",
+          "source": "角色晋阶.csv",
+          "role": "银狼",
+          "field": "晋阶阶段",
+          "score": 0.6665,
+          "text": "角色名：银狼；晋阶阶段：30级晋阶"
+        },
+        {
+          "doc_id": "角色晋阶.csv|银狼|晋阶阶段#4",
+          "source": "角色晋阶.csv",
+          "role": "银狼",
+          "field": "晋阶阶段",
+          "score": 0.6664,
+          "text": "角色名：银狼；晋阶阶段：40级晋阶"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 1.33,
+      "category": "unanswerable",
+      "expected": null,
+      "hit": false,
+      "cite": false,
+      "refused": true,
+      "correct": true
+    },
+    {
+      "question": "匹诺康尼星球的直径是多少？",
+      "answer": "知识库中没有相关信息，无法回答。检索片段1-5均未提及匹诺康尼星球的直径。",
+      "retrieved": [
+        {
+          "doc_id": "角色基础信息.csv|米沙|阵营#1",
+          "source": "角色基础信息.csv",
+          "role": "米沙",
+          "field": "阵营",
+          "score": 0.4582,
+          "text": "角色名：米沙；阵营：匹诺康尼"
+        },
+        {
+          "doc_id": "角色故事.csv|星期日|故事内容#2",
+          "source": "角色故事.csv",
+          "role": "星期日",
+          "field": "故事内容",
+          "score": 0.4571,
+          "text": "角色名：星期日；故事内容：「亲爱的妹妹：\n寄来的唱片我已收到，我跟着弹了几首，十分精彩。现在匹诺康尼的唱片店人满为患，街上到处都是你的新专辑海报，好多人总是向我赞美你，并打听是否能拿到你的签名。\n你最近不回来也好。现在的匹诺康尼今时不同往昔，逐梦客蜂拥而入，经济像井喷一样发展，但梦境也比以前混乱多了，换作以前，我不曾想到「铎音」会面临如此艰巨的挑战。\n企业家为了垄断行业，制定了极其不合理的工作时间，梦境里的工人经常要连续工作十二个系统时才能休息，但到手的却只有一笔微薄的工资。投机和高风险产业遍布匹诺康尼，逐梦客们为了泡沫般的愿望来到这里，最终却成了流浪汉中的一员……\n此前一位偷渡客向我求助，说他倾尽所有才能留在匹诺康尼，却被猎犬家系发现。他向我保证日后一定会还清自己的所有欠债，因此我才向猎犬家系请求，对他网开一面。只是每当我想到这样的人在匹诺康尼还有许多，便不免怀疑是否所有人都能做出正确的选择。\n算算日期，信寄到的时候你应该也要启程开始下一轮巡演了。匹诺康尼的事你不必操心，我知道你心地善良，但不是所有人都如你这般。一定记得保护好自己。\n你永远的后盾，\n星期日」\n——一封泛黄的家书，放在唱片盒中"
+        },
+        {
+          "doc_id": "角色基础信息.csv|加拉赫|阵营#1",
+          "source": "角色基础信息.csv",
+          "role": "加拉赫",
+          "field": "阵营",
+          "score": 0.4497,
+          "text": "角色名：加拉赫；阵营：匹诺康尼"
+        },
+        {
+          "doc_id": "角色基础信息.csv|知更鸟|阵营#1",
+          "source": "角色基础信息.csv",
+          "role": "知更鸟",
+          "field": "阵营",
+          "score": 0.4454,
+          "text": "角色名：知更鸟；阵营：匹诺康尼"
+        },
+        {
+          "doc_id": "角色故事.csv|知更鸟|故事内容#4",
+          "source": "角色故事.csv",
+          "role": "知更鸟",
+          "field": "故事内容",
+          "score": 0.4354,
+          "text": "角色名：知更鸟；故事内容：「时隔一年之后，我们收到邀请，来到匹诺康尼再度接续上次的采访。\n与上次见面相比，她更显疲惫，连声音都沙哑了许多。这次她穿着庄重的家族礼服，举止拘谨小心，但见到我们后仍如以前那般平易近人。此次，我们也见到了她的兄长，一位风度翩翩的领导者。\n『这就是银河中唯一的美梦世界，也是家族的驻地。家族将荒芜的梦境改造为人间天堂……』\n她的兄长向我们一一介绍匹诺康尼的历史，她帮我们消除入梦的不适，热情地请我们品尝梦境中的美食。\n我们游览了梦中的种种奇景，只可惜在这样喧闹的环境下，无法开展深度采访。\n最后，我们来到了宏伟的歌剧院。在即将到来的谐乐大典上，她将在这座华美的舞台歌唱，向全宇宙传播同谐的乐声。\n就在我以为此次专访即将结束时，她看着辉煌的歌剧院，突然提起采访开始时的问题。\n『主编，你还记得我当初问你的问题吗，鸟儿为何要飞向天空？回到匹诺康尼后，我想了很久很久。』\n她看向梦境的天空，深沉的夜色下满是人造的光芒。\n『也许鸟儿注定要如此，因为那是它的愿望、归宿，以及不可剥夺的权利……』\n她微笑着看向某个地方，向我们发出邀请。\n『未来，在这里将会有一场盛大的演出。我会在这里表演到目前为止最满意的一首歌，多么希望人们能在歌声中拉起彼此的双手啊——即使是梦中的世界，终究也会有光洒落其间。』\n我不知道她看向的是什么地方，但那绝不是歌剧院的舞台。所以，她说的演出又会是什么呢？\n唯一确定的是，即便在如此纸醉金迷的地方，她依然没有放弃以强援弱的信念。这样的信念贯穿她人生的始终，从苦涩的前奏开始，进展到优美的主歌，而在暗流涌动的间奏过后，迎来或许是最为华美的绽放和落幕。」\n——摘自《鸟儿与天空：知更鸟独家专访》"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 0.94,
+      "category": "unanswerable",
+      "expected": null,
+      "hit": false,
+      "cite": false,
+      "refused": true,
+      "correct": true
+    },
+    {
+      "question": "角色「莱欧娜」的神权是什么？",
+      "answer": "知识库中没有相关信息，无法回答。检索片段中未出现角色「莱欧娜」。",
+      "retrieved": [
+        {
+          "doc_id": "角色基础信息.csv|海瑟音|神权#1",
+          "source": "角色基础信息.csv",
+          "role": "海瑟音",
+          "field": "神权",
+          "score": 0.6355,
+          "text": "角色名：海瑟音；神权：「满溢之杯，法吉娜」"
+        },
+        {
+          "doc_id": "角色基础信息.csv|白厄|神权#1",
+          "source": "角色基础信息.csv",
+          "role": "白厄",
+          "field": "神权",
+          "score": 0.6132,
+          "text": "角色名：白厄；神权：……"
+        },
+        {
+          "doc_id": "角色基础信息.csv|长夜月|神权#1",
+          "source": "角色基础信息.csv",
+          "role": "长夜月",
+          "field": "神权",
+          "score": 0.6041,
+          "text": "角色名：长夜月；神权：「永夜之帷，欧洛尼斯」"
+        },
+        {
+          "doc_id": "角色基础信息.csv|刻律德菈|神权#1",
+          "source": "角色基础信息.csv",
+          "role": "刻律德菈",
+          "field": "神权",
+          "score": 0.5715,
+          "text": "角色名：刻律德菈；神权：「公正之秤，塔兰顿」"
+        },
+        {
+          "doc_id": "角色基础信息.csv|遐蝶|神权#1",
+          "source": "角色基础信息.csv",
+          "role": "遐蝶",
+          "field": "神权",
+          "score": 0.5709,
+          "text": "角色名：遐蝶；神权：「灰黯之手，塞纳托斯」"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 1.12,
+      "category": "unanswerable",
+      "expected": null,
+      "hit": false,
+      "cite": false,
+      "refused": true,
+      "correct": true
+    },
+    {
+      "question": "光锥「璀璨之夜」推荐给哪些角色？",
+      "answer": "知识库中没有相关信息，无法回答。  \n检索片段1-5中均未出现光锥「璀璨之夜」。",
+      "retrieved": [
+        {
+          "doc_id": "光锥推荐.csv|长夜月|光锥名称#1",
+          "source": "光锥推荐.csv",
+          "role": "长夜月",
+          "field": "光锥名称",
+          "score": 0.6871,
+          "text": "角色名：长夜月；光锥名称：致长夜的星光"
+        },
+        {
+          "doc_id": "光锥推荐.csv|灵砂|光锥名称#2",
+          "source": "光锥推荐.csv",
+          "role": "灵砂",
+          "field": "光锥名称",
+          "score": 0.6649,
+          "text": "角色名：灵砂；光锥名称：惊魂夜"
+        },
+        {
+          "doc_id": "光锥推荐.csv|希儿|光锥名称#1",
+          "source": "光锥推荐.csv",
+          "role": "希儿",
+          "field": "光锥名称",
+          "score": 0.6581,
+          "text": "角色名：希儿；光锥名称：于夜色中"
+        },
+        {
+          "doc_id": "光锥推荐.csv|长夜月|光锥名称#2",
+          "source": "光锥推荐.csv",
+          "role": "长夜月",
+          "field": "光锥名称",
+          "score": 0.6539,
+          "text": "角色名：长夜月；光锥名称：让告别，更美一些"
+        },
+        {
+          "doc_id": "光锥推荐.csv|青雀|光锥名称#3",
+          "source": "光锥推荐.csv",
+          "role": "青雀",
+          "field": "光锥名称",
+          "score": 0.6531,
+          "text": "角色名：青雀；光锥名称：银河铁道之夜"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 1.32,
+      "category": "unanswerable",
+      "expected": null,
+      "hit": false,
+      "cite": false,
+      "refused": true,
+      "correct": true
+    },
+    {
+      "question": "螺丝咕姆 的属性是什么？",
+      "answer": "知识库中没有相关信息，无法回答。  \n检索片段中仅片段1提到“螺丝咕姆”与银狼进行数据攻防战，但未说明其属性。",
+      "retrieved": [
+        {
+          "doc_id": "角色基础信息.csv|银狼|个人简介#1",
+          "source": "角色基础信息.csv",
+          "role": "银狼",
+          "field": "个人简介",
+          "score": 0.4623,
+          "text": "角色名：银狼；个人简介：将宇宙视为游戏的超级骇客。\n无论怎样棘手的防御系统，银狼都能轻松破解。她与「天才俱乐部」螺丝咕姆的数据攻防战，现已成为骇客界的传说。\n宇宙中还有多少亟待攻破的关卡？银狼对此十分期待。"
+        },
+        {
+          "doc_id": "角色基础信息.csv|希露瓦|属性#1",
+          "source": "角色基础信息.csv",
+          "role": "希露瓦",
+          "field": "属性",
+          "score": 0.4581,
+          "text": "角色名：希露瓦；属性：雷"
+        },
+        {
+          "doc_id": "角色晋阶.csv|艾丝妲|晋阶阶段#1",
+          "source": "角色晋阶.csv",
+          "role": "艾丝妲",
+          "field": "晋阶阶段",
+          "score": 0.4554,
+          "text": "角色名：艾丝妲；晋阶阶段：1级属性/晋阶所需材料"
+        },
+        {
+          "doc_id": "角色基础信息.csv|缇宝|属性#1",
+          "source": "角色基础信息.csv",
+          "role": "缇宝",
+          "field": "属性",
+          "score": 0.4495,
+          "text": "角色名：缇宝；属性：量子"
+        },
+        {
+          "doc_id": "角色晋阶.csv|娜塔莎|所需材料#5",
+          "source": "角色晋阶.csv",
+          "role": "娜塔莎",
+          "field": "所需材料",
+          "score": 0.4482,
+          "text": "角色名：娜塔莎；所需材料：铁狼碎齿 ×5、古代转轴 ×8、信用点 ×32000"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 1.22,
+      "category": "unanswerable",
+      "expected": null,
+      "hit": false,
+      "cite": false,
+      "refused": true,
+      "correct": true
+    },
+    {
+      "question": "阮•梅 的师父是谁？",
+      "answer": "知识库中没有相关信息，无法回答。  \n（片段1、2仅显示阮•梅角色故事标题“其一”“其二”，未包含具体内容；其余片段也未提及她的师父。）",
+      "retrieved": [
+        {
+          "doc_id": "角色故事.csv|阮•梅|故事标题#1",
+          "source": "角色故事.csv",
+          "role": "阮•梅",
+          "field": "故事标题",
+          "score": 0.6806,
+          "text": "角色名：阮•梅；故事标题：其一"
+        },
+        {
+          "doc_id": "角色故事.csv|阮•梅|故事标题#2",
+          "source": "角色故事.csv",
+          "role": "阮•梅",
+          "field": "故事标题",
+          "score": 0.6613,
+          "text": "角色名：阮•梅；故事标题：其二"
+        },
+        {
+          "doc_id": "配队推荐.csv|阮•梅|推荐角色#7",
+          "source": "配队推荐.csv",
+          "role": "阮•梅",
+          "field": "推荐角色",
+          "score": 0.6607,
+          "text": "角色名：阮•梅；推荐角色：阮•梅"
+        },
+        {
+          "doc_id": "角色行迹.csv|阮•梅|行迹类型#4",
+          "source": "角色行迹.csv",
+          "role": "阮•梅",
+          "field": "行迹类型",
+          "score": 0.6604,
+          "text": "角色名：阮•梅；行迹类型：天赋"
+        },
+        {
+          "doc_id": "光锥推荐.csv|阮•梅|推荐度#1",
+          "source": "光锥推荐.csv",
+          "role": "阮•梅",
+          "field": "推荐度",
+          "score": 0.6584,
+          "text": "角色名：阮•梅；推荐度：★★★★★"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 1.27,
+      "category": "unanswerable",
+      "expected": null,
+      "hit": false,
+      "cite": false,
+      "refused": true,
+      "correct": true
+    },
+    {
+      "question": "阿格莱雅 的生日是哪天？",
+      "answer": "知识库中没有相关信息，无法回答。  \n检索片段中只有阿格莱雅的实装日期（片段3：2025-02-05），未提供她的生日。",
+      "retrieved": [
+        {
+          "doc_id": "配队推荐.csv|阿格莱雅|推荐角色#2",
+          "source": "配队推荐.csv",
+          "role": "阿格莱雅",
+          "field": "推荐角色",
+          "score": 0.6548,
+          "text": "角色名：阿格莱雅；推荐角色：星期日"
+        },
+        {
+          "doc_id": "配队推荐.csv|星期日|推荐角色#3",
+          "source": "配队推荐.csv",
+          "role": "星期日",
+          "field": "推荐角色",
+          "score": 0.6413,
+          "text": "角色名：星期日；推荐角色：阿格莱雅"
+        },
+        {
+          "doc_id": "角色基础信息.csv|阿格莱雅|实装日期#1",
+          "source": "角色基础信息.csv",
+          "role": "阿格莱雅",
+          "field": "实装日期",
+          "score": 0.6334,
+          "text": "角色名：阿格莱雅；实装日期：2025-02-05"
+        },
+        {
+          "doc_id": "角色故事.csv|阿格莱雅|故事标题#1",
+          "source": "角色故事.csv",
+          "role": "阿格莱雅",
+          "field": "故事标题",
+          "score": 0.6306,
+          "text": "角色名：阿格莱雅；故事标题：其一"
+        },
+        {
+          "doc_id": "角色故事.csv|阿格莱雅|故事标题#2",
+          "source": "角色故事.csv",
+          "role": "阿格莱雅",
+          "field": "故事标题",
+          "score": 0.6146,
+          "text": "角色名：阿格莱雅；故事标题：其二"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 1.19,
+      "category": "unanswerable",
+      "expected": null,
+      "hit": false,
+      "cite": false,
+      "refused": true,
+      "correct": true
+    },
+    {
+      "question": "开拓者（主角）的真名是什么？",
+      "answer": "知识库中没有相关信息，无法回答。所提供的片段1-5均未提及开拓者（主角）的真名。",
+      "retrieved": [
+        {
+          "doc_id": "角色故事.csv|开拓者·毁灭|故事标题#1",
+          "source": "角色故事.csv",
+          "role": "开拓者·毁灭",
+          "field": "故事标题",
+          "score": 0.7207,
+          "text": "角色名：开拓者·毁灭；故事标题：一"
+        },
+        {
+          "doc_id": "角色故事.csv|开拓者·毁灭|故事标题#2",
+          "source": "角色故事.csv",
+          "role": "开拓者·毁灭",
+          "field": "故事标题",
+          "score": 0.719,
+          "text": "角色名：开拓者·毁灭；故事标题：二"
+        },
+        {
+          "doc_id": "光锥推荐.csv|开拓者·毁灭|推荐度#1",
+          "source": "光锥推荐.csv",
+          "role": "开拓者·毁灭",
+          "field": "推荐度",
+          "score": 0.7138,
+          "text": "角色名：开拓者·毁灭；推荐度：★★★★★"
+        },
+        {
+          "doc_id": "遗器推荐.csv|开拓者·毁灭|推荐指数#1",
+          "source": "遗器推荐.csv",
+          "role": "开拓者·毁灭",
+          "field": "推荐指数",
+          "score": 0.7096,
+          "text": "角色名：开拓者·毁灭；推荐指数：★★★★★"
+        },
+        {
+          "doc_id": "配队推荐.csv|开拓者•记忆|位置#1",
+          "source": "配队推荐.csv",
+          "role": "开拓者•记忆",
+          "field": "位置",
+          "score": 0.7051,
+          "text": "角色名：开拓者•记忆；位置：主C"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 1.32,
+      "category": "unanswerable",
+      "expected": null,
+      "hit": false,
+      "cite": false,
+      "refused": true,
+      "correct": true
+    },
+    {
+      "question": "万敌 的英文名是什么？",
+      "answer": "知识库中没有相关信息，无法回答。所有片段均未提供万敌的英文名。",
+      "retrieved": [
+        {
+          "doc_id": "配队推荐.csv|万敌|推荐角色#1",
+          "source": "配队推荐.csv",
+          "role": "万敌",
+          "field": "推荐角色",
+          "score": 0.7197,
+          "text": "角色名：万敌；推荐角色：万敌"
+        },
+        {
+          "doc_id": "角色故事.csv|万敌|故事标题#1",
+          "source": "角色故事.csv",
+          "role": "万敌",
+          "field": "故事标题",
+          "score": 0.7127,
+          "text": "角色名：万敌；故事标题：其一"
+        },
+        {
+          "doc_id": "角色故事.csv|万敌|故事标题#2",
+          "source": "角色故事.csv",
+          "role": "万敌",
+          "field": "故事标题",
+          "score": 0.7045,
+          "text": "角色名：万敌；故事标题：其二"
+        },
+        {
+          "doc_id": "光锥推荐.csv|万敌|推荐度#1",
+          "source": "光锥推荐.csv",
+          "role": "万敌",
+          "field": "推荐度",
+          "score": 0.6956,
+          "text": "角色名：万敌；推荐度：★★★★★"
+        },
+        {
+          "doc_id": "遗器推荐.csv|万敌|推荐指数#2",
+          "source": "遗器推荐.csv",
+          "role": "万敌",
+          "field": "推荐指数",
+          "score": 0.6954,
+          "text": "角色名：万敌；推荐指数：★★★★"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 0.92,
+      "category": "unanswerable",
+      "expected": null,
+      "hit": false,
+      "cite": false,
+      "refused": true,
+      "correct": true
+    },
+    {
+      "question": "遗器「忆庭学者的信」的套装效果是什么？",
+      "answer": "知识库中没有相关信息，无法回答。检索片段中均未提及遗器「忆庭学者的信」的套装效果。",
+      "retrieved": [
+        {
+          "doc_id": "遗器推荐.csv|阮•梅|隧洞遗器#1",
+          "source": "遗器推荐.csv",
+          "role": "阮•梅",
+          "field": "隧洞遗器",
+          "score": 0.5546,
+          "text": "角色名：阮•梅；隧洞遗器：骇域漫游的信使 四件套 或机心戏梦的钟表匠 四件套 或骇域漫游的信使 二件套 加机心戏梦的钟表匠 二件套"
+        },
+        {
+          "doc_id": "角色星魂.csv|开拓者•记忆|星魂效果#1",
+          "source": "角色星魂.csv",
+          "role": "开拓者•记忆",
+          "field": "星魂效果",
+          "score": 0.5332,
+          "text": "角色名：开拓者•记忆；星魂效果：持有【迷迷的声援】的我方目标暴击率提高10%。当我方目标持有【迷迷的声援】时，【迷迷的声援】的效果对该目标的忆灵/忆师也生效，该效果不可叠加。"
+        },
+        {
+          "doc_id": "遗器推荐.csv|风堇|隧洞遗器#2",
+          "source": "遗器推荐.csv",
+          "role": "风堇",
+          "field": "隧洞遗器",
+          "score": 0.5217,
+          "text": "角色名：风堇；隧洞遗器：重循苦旅的司铎 二件套 加骇域漫游的信使 二件套 或云无留迹的过客 二件套 加骇域漫游的信使 二件套"
+        },
+        {
+          "doc_id": "遗器推荐.csv|白露|隧洞遗器#1",
+          "source": "遗器推荐.csv",
+          "role": "白露",
+          "field": "隧洞遗器",
+          "score": 0.5088,
+          "text": "角色名：白露；隧洞遗器：云无留迹的过客 四件套 或骇域漫游的信使 四件套"
+        },
+        {
+          "doc_id": "遗器推荐.csv|星期日|隧洞遗器#1",
+          "source": "遗器推荐.csv",
+          "role": "星期日",
+          "field": "隧洞遗器",
+          "score": 0.5077,
+          "text": "角色名：星期日；隧洞遗器：重循苦旅的司铎 四件套 或重循苦旅的司铎 二件套 加骇域漫游的信使 二件套"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 1.23,
+      "category": "unanswerable",
+      "expected": null,
+      "hit": false,
+      "cite": false,
+      "refused": true,
+      "correct": true
+    },
+    {
+      "question": "角色「玲瓏」的命途是什么？",
+      "answer": "知识库中没有相关信息，无法回答。检索片段仅提到角色「玲可」，未提及角色「玲瓏」。",
+      "retrieved": [
+        {
+          "doc_id": "角色基础信息.csv|玲可|命途#1",
+          "source": "角色基础信息.csv",
+          "role": "玲可",
+          "field": "命途",
+          "score": 0.7006,
+          "text": "角色名：玲可；命途：丰饶"
+        },
+        {
+          "doc_id": "角色行迹.csv|玲可|成长消耗材料#4",
+          "source": "角色行迹.csv",
+          "role": "玲可",
+          "field": "成长消耗材料",
+          "score": 0.6396,
+          "text": "角色名：玲可；成长消耗材料：信用点×16000、生命之芽×4、命运的足迹×1、无穷假身的遗恨×1"
+        },
+        {
+          "doc_id": "配队推荐.csv|玲可|位置#3",
+          "source": "配队推荐.csv",
+          "role": "玲可",
+          "field": "位置",
+          "score": 0.6389,
+          "text": "角色名：玲可；位置：生存"
+        },
+        {
+          "doc_id": "遗器推荐.csv|玲可|主词条#1",
+          "source": "遗器推荐.csv",
+          "role": "玲可",
+          "field": "主词条",
+          "score": 0.6389,
+          "text": "角色名：玲可；主词条：【躯干】治疗加成【脚部】速度/生命【连结绳】充能/生命【位面球】生命"
+        },
+        {
+          "doc_id": "角色故事.csv|玲可|故事标题#2",
+          "source": "角色故事.csv",
+          "role": "玲可",
+          "field": "故事标题",
+          "score": 0.6376,
+          "text": "角色名：玲可；故事标题：其二"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 1.35,
+      "category": "unanswerable",
+      "expected": null,
+      "hit": false,
+      "cite": false,
+      "refused": true,
+      "correct": true
+    },
+    {
+      "question": "光锥「天穹之光」的推荐度是多少？",
+      "answer": "知识库中没有相关信息，无法回答。检索片段未提及光锥「天穹之光」的推荐度。",
+      "retrieved": [
+        {
+          "doc_id": "光锥推荐.csv|爻光|推荐度#2",
+          "source": "光锥推荐.csv",
+          "role": "爻光",
+          "field": "推荐度",
+          "score": 0.5608,
+          "text": "角色名：爻光；推荐度：★★★★"
+        },
+        {
+          "doc_id": "光锥推荐.csv|爻光|推荐度#1",
+          "source": "光锥推荐.csv",
+          "role": "爻光",
+          "field": "推荐度",
+          "score": 0.5604,
+          "text": "角色名：爻光；推荐度：★★★★★"
+        },
+        {
+          "doc_id": "光锥推荐.csv|飞霄|光锥效果#1",
+          "source": "光锥推荐.csv",
+          "role": "飞霄",
+          "field": "光锥效果",
+          "score": 0.5466,
+          "text": "角色名：飞霄；光锥效果：震慑使装备者的暴击率提高【15.0%/17.5%/20.0%/22.5%/25.0%】。装备者施放追加攻击时，获得1层【流光】，最多叠加2层。每层【流光】使装备者造成的终结技伤害无视目标【27%/30%/33%/36%/39%】的防御力。装备者回合结束时，移除1层【流光】。"
+        },
+        {
+          "doc_id": "光锥推荐.csv|那刻夏|光锥效果#3",
+          "source": "光锥推荐.csv",
+          "role": "那刻夏",
+          "field": "光锥效果",
+          "score": 0.5435,
+          "text": "角色名：那刻夏；光锥效果：无界之思使装备者的攻击力提高【8%/9%/10%/11%/12%】。施放攻击后，每击中一名敌方目标，使攻击力额外提高【4%/5%/6%/7%/8%】，该效果最多叠加5次，持续至下次攻击后，若击中大于等于3名敌方目标，使自身速度提高【8%/10%/12%/14%/16%】，持续1回合。"
+        },
+        {
+          "doc_id": "光锥推荐.csv|爻光|光锥效果#3",
+          "source": "光锥推荐.csv",
+          "role": "爻光",
+          "field": "光锥效果",
+          "score": 0.5426,
+          "text": "角色名：爻光；光锥效果：憧憬使装备者的暴击率提高【12%/14%/16%/18%/20%】。装备者施放欢愉技时，欢愉度提高【12%/14%/16%/18%/20%】，该效果最多叠加2次。"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 1.73,
+      "category": "unanswerable",
+      "expected": null,
+      "hit": false,
+      "cite": false,
+      "refused": true,
+      "correct": true
+    },
+    {
+      "question": "三月七 的配音演员是谁？",
+      "answer": "知识库中没有相关信息，无法回答。检索片段1-5均未提及三月七的配音演员。",
+      "retrieved": [
+        {
+          "doc_id": "配队推荐.csv|三月七|推荐角色#10",
+          "source": "配队推荐.csv",
+          "role": "三月七",
+          "field": "推荐角色",
+          "score": 0.6839,
+          "text": "角色名：三月七；推荐角色：三月七"
+        },
+        {
+          "doc_id": "光锥推荐.csv|三月七|推荐度#1",
+          "source": "光锥推荐.csv",
+          "role": "三月七",
+          "field": "推荐度",
+          "score": 0.6741,
+          "text": "角色名：三月七；推荐度：★★★★★"
+        },
+        {
+          "doc_id": "光锥推荐.csv|三月七|推荐度#2",
+          "source": "光锥推荐.csv",
+          "role": "三月七",
+          "field": "推荐度",
+          "score": 0.6705,
+          "text": "角色名：三月七；推荐度：★★★★"
+        },
+        {
+          "doc_id": "遗器推荐.csv|三月七|推荐指数#1",
+          "source": "遗器推荐.csv",
+          "role": "三月七",
+          "field": "推荐指数",
+          "score": 0.6703,
+          "text": "角色名：三月七；推荐指数：★★★★★"
+        },
+        {
+          "doc_id": "遗器推荐.csv|三月七|推荐指数#2",
+          "source": "遗器推荐.csv",
+          "role": "三月七",
+          "field": "推荐指数",
+          "score": 0.6674,
+          "text": "角色名：三月七；推荐指数：★★★★"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 1.33,
+      "category": "unanswerable",
+      "expected": null,
+      "hit": false,
+      "cite": false,
+      "refused": true,
+      "correct": true
+    },
+    {
+      "question": "景元 的基础生命值是多少？",
+      "answer": "无法唯一确定。检索片段中景元相关的基础生命值分别显示为：片段1为1058、片段2为846、片段3为1164、片段4为952",
+      "retrieved": [
+        {
+          "doc_id": "光锥推荐.csv|景元|基础属性#1",
+          "source": "光锥推荐.csv",
+          "role": "景元",
+          "field": "基础属性",
+          "score": 0.6504,
+          "text": "角色名：景元；基础属性：生1058 攻582 防463"
+        },
+        {
+          "doc_id": "光锥推荐.csv|景元|基础属性#2",
+          "source": "光锥推荐.csv",
+          "role": "景元",
+          "field": "基础属性",
+          "score": 0.6325,
+          "text": "角色名：景元；基础属性：生846 攻529 防330"
+        },
+        {
+          "doc_id": "光锥推荐.csv|景元|基础属性#3",
+          "source": "光锥推荐.csv",
+          "role": "景元",
+          "field": "基础属性",
+          "score": 0.6321,
+          "text": "角色名：景元；基础属性：生1164 攻582 防396"
+        },
+        {
+          "doc_id": "光锥推荐.csv|景元|基础属性#4",
+          "source": "光锥推荐.csv",
+          "role": "景元",
+          "field": "基础属性",
+          "score": 0.629,
+          "text": "角色名：景元；基础属性：生952 攻476 防330"
+        },
+        {
+          "doc_id": "配队推荐.csv|景元|位置#4",
+          "source": "配队推荐.csv",
+          "role": "景元",
+          "field": "位置",
+          "score": 0.6145,
+          "text": "角色名：景元；位置：生存"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 2.83,
+      "category": "unanswerable",
+      "expected": null,
+      "hit": false,
+      "cite": false,
+      "refused": false,
+      "correct": false
+    },
+    {
+      "question": "银枝 对敌人能造成的最大伤害数值是多少？",
+      "answer": "",
+      "retrieved": [
+        {
+          "doc_id": "角色行迹.csv|银枝|行迹描述#8",
+          "source": "角色行迹.csv",
+          "role": "银枝",
+          "field": "行迹描述",
+          "score": 0.6926,
+          "text": "角色名：银枝；行迹描述：对当前生命值百分比小于等于50%的敌方目标造成的伤害提高15%。\n（标签：角色晋阶6）"
+        },
+        {
+          "doc_id": "角色行迹.csv|银枝|行迹描述#2",
+          "source": "角色行迹.csv",
+          "role": "银枝",
+          "field": "行迹描述",
+          "score": 0.6707,
+          "text": "角色名：银枝；行迹描述：对敌方全体造成等同于银枝【60%/120%】攻击力的物理属性伤害。\n（标签：回能 30、战技点 -1、群攻、削韧 10）"
+        },
+        {
+          "doc_id": "角色行迹.csv|银枝|行迹描述#5",
+          "source": "角色行迹.csv",
+          "role": "银枝",
+          "field": "行迹描述",
+          "score": 0.657,
+          "text": "角色名：银枝；行迹描述：使用秘技后使一定区域内的敌人陷入10秒的晕眩状态，晕眩状态下敌人不会主动攻击我方目标。\n若主动攻击陷入晕眩状态的敌人，进入战斗时，对敌方全体造成等同于银枝80%攻击力的物理属性伤害，并使银枝恢复15点能量。\n（标签：妨害）"
+        },
+        {
+          "doc_id": "角色行迹.csv|银枝|行迹描述#1",
+          "source": "角色行迹.csv",
+          "role": "银枝",
+          "field": "行迹描述",
+          "score": 0.6556,
+          "text": "角色名：银枝；行迹描述：对指定敌方单体造成等同于银枝【50%/100%】攻击力的物理属性伤害。\n（标签：回能 20、战技点 +1、单攻、削韧 10）"
+        },
+        {
+          "doc_id": "角色行迹.csv|银枝|行迹描述#3",
+          "source": "角色行迹.csv",
+          "role": "银枝",
+          "field": "行迹描述",
+          "score": 0.6552,
+          "text": "角色名：银枝；行迹描述：消耗90点能量，对敌方全体造成等同于银枝【96%/160%】攻击力的物理属性伤害。\n（标签：能量 90、回能 5、群攻、削韧 20）\n消耗180点能量，对敌方全体造成等同于银枝【168%/280%】攻击力的物理属性伤害，并额外造成6次伤害，每次伤害对敌方随机单体造成等同于银枝【57%/95%】攻击力的物理属性伤害。\n（标签：能量 180、回能 5、群攻、削韧 20+5*6）"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 3.22,
+      "category": "unanswerable",
+      "expected": null,
+      "hit": false,
+      "cite": false,
+      "refused": false,
+      "correct": false
+    },
+    {
+      "question": "贝洛伯格区域的隐藏任务怎么做？",
+      "answer": "知识库中没有相关信息，无法回答。提供的片段1-5仅列出桑博、希露瓦、佩拉、布洛妮娅、杰帕德属于贝洛伯格，未提及“贝洛伯格区域的隐藏任务怎么做”。",
+      "retrieved": [
+        {
+          "doc_id": "角色基础信息.csv|桑博|阵营#1",
+          "source": "角色基础信息.csv",
+          "role": "桑博",
+          "field": "阵营",
+          "score": 0.5795,
+          "text": "角色名：桑博；阵营：贝洛伯格"
+        },
+        {
+          "doc_id": "角色基础信息.csv|希露瓦|阵营#1",
+          "source": "角色基础信息.csv",
+          "role": "希露瓦",
+          "field": "阵营",
+          "score": 0.5704,
+          "text": "角色名：希露瓦；阵营：贝洛伯格"
+        },
+        {
+          "doc_id": "角色基础信息.csv|佩拉|阵营#1",
+          "source": "角色基础信息.csv",
+          "role": "佩拉",
+          "field": "阵营",
+          "score": 0.5644,
+          "text": "角色名：佩拉；阵营：贝洛伯格"
+        },
+        {
+          "doc_id": "角色基础信息.csv|布洛妮娅|阵营#1",
+          "source": "角色基础信息.csv",
+          "role": "布洛妮娅",
+          "field": "阵营",
+          "score": 0.5555,
+          "text": "角色名：布洛妮娅；阵营：贝洛伯格"
+        },
+        {
+          "doc_id": "角色基础信息.csv|杰帕德|阵营#1",
+          "source": "角色基础信息.csv",
+          "role": "杰帕德",
+          "field": "阵营",
+          "score": 0.5547,
+          "text": "角色名：杰帕德；阵营：贝洛伯格"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 1.34,
+      "category": "unanswerable",
+      "expected": null,
+      "hit": false,
+      "cite": false,
+      "refused": true,
+      "correct": true
+    },
+    {
+      "question": "角色「安娜」的属性是什么？",
+      "answer": "知识库中没有关于角色「安娜」的信息，无法回答。提供的片段均与「娜塔莎」相关，未提及「安娜」。",
+      "retrieved": [
+        {
+          "doc_id": "角色行迹.csv|娜塔莎|行迹类型#7",
+          "source": "角色行迹.csv",
+          "role": "娜塔莎",
+          "field": "行迹类型",
+          "score": 0.5644,
+          "text": "角色名：娜塔莎；行迹类型：属性加成"
+        },
+        {
+          "doc_id": "角色基础信息.csv|娜塔莎|命途#1",
+          "source": "角色基础信息.csv",
+          "role": "娜塔莎",
+          "field": "命途",
+          "score": 0.5493,
+          "text": "角色名：娜塔莎；命途：丰饶"
+        },
+        {
+          "doc_id": "角色行迹.csv|娜塔莎|行迹名称#6",
+          "source": "角色行迹.csv",
+          "role": "娜塔莎",
+          "field": "行迹名称",
+          "score": 0.5392,
+          "text": "角色名：娜塔莎；行迹名称：舒缓"
+        },
+        {
+          "doc_id": "角色行迹.csv|娜塔莎|行迹名称#9",
+          "source": "角色行迹.csv",
+          "role": "娜塔莎",
+          "field": "行迹名称",
+          "score": 0.5376,
+          "text": "角色名：娜塔莎；行迹名称：生命强化"
+        },
+        {
+          "doc_id": "光锥推荐.csv|娜塔莎|推荐度#1",
+          "source": "光锥推荐.csv",
+          "role": "娜塔莎",
+          "field": "推荐度",
+          "score": 0.5365,
+          "text": "角色名：娜塔莎；推荐度：★★★★★"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 1.53,
+      "category": "unanswerable",
+      "expected": null,
+      "hit": false,
+      "cite": false,
+      "refused": true,
+      "correct": true
+    },
+    {
+      "question": "瓦尔特 的日语配音是谁？",
+      "answer": "知识库中没有相关信息，无法回答。  \n检索片段[片段1]至[片段5]均未包含瓦尔特日语配音的信息。",
+      "retrieved": [
+        {
+          "doc_id": "角色故事.csv|瓦尔特|故事标题#1",
+          "source": "角色故事.csv",
+          "role": "瓦尔特",
+          "field": "故事标题",
+          "score": 0.6678,
+          "text": "角色名：瓦尔特；故事标题：其一"
+        },
+        {
+          "doc_id": "角色故事.csv|瓦尔特|故事标题#2",
+          "source": "角色故事.csv",
+          "role": "瓦尔特",
+          "field": "故事标题",
+          "score": 0.6605,
+          "text": "角色名：瓦尔特；故事标题：其二"
+        },
+        {
+          "doc_id": "角色故事.csv|瓦尔特|故事标题#4",
+          "source": "角色故事.csv",
+          "role": "瓦尔特",
+          "field": "故事标题",
+          "score": 0.6482,
+          "text": "角色名：瓦尔特；故事标题：其四"
+        },
+        {
+          "doc_id": "光锥推荐.csv|瓦尔特|推荐度#1",
+          "source": "光锥推荐.csv",
+          "role": "瓦尔特",
+          "field": "推荐度",
+          "score": 0.6417,
+          "text": "角色名：瓦尔特；推荐度：★★★★★"
+        },
+        {
+          "doc_id": "角色故事.csv|瓦尔特|故事编号#2",
+          "source": "角色故事.csv",
+          "role": "瓦尔特",
+          "field": "故事编号",
+          "score": 0.6403,
+          "text": "角色名：瓦尔特；故事编号：2"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 1.57,
+      "category": "unanswerable",
+      "expected": null,
+      "hit": false,
+      "cite": false,
+      "refused": true,
+      "correct": true
+    },
+    {
+      "question": "游戏版本 2.7 更新了什么内容？",
+      "answer": "知识库中没有相关信息，无法回答。  \n检索片段（片段1—片段5）仅涉及三月七、知更鸟•晴歌、银狼的行迹或晋阶材料，均未提及游戏版本 2.7 的更新内容。",
+      "retrieved": [
+        {
+          "doc_id": "角色行迹.csv|三月七|行迹描述#7",
+          "source": "角色行迹.csv",
+          "role": "三月七",
+          "field": "行迹描述",
+          "score": 0.4918,
+          "text": "角色名：三月七；行迹描述：战技提供的护盾持续时间增加1回合。\n（标签：角色晋阶4）"
+        },
+        {
+          "doc_id": "角色晋阶.csv|三月七|所需材料#4",
+          "source": "角色晋阶.csv",
+          "role": "三月七",
+          "field": "所需材料",
+          "score": 0.4889,
+          "text": "角色名：三月七；所需材料：风雪之角 ×2、篡改的野心 ×5、信用点 ×12800"
+        },
+        {
+          "doc_id": "角色晋阶.csv|三月七|所需材料#5",
+          "source": "角色晋阶.csv",
+          "role": "三月七",
+          "field": "所需材料",
+          "score": 0.4881,
+          "text": "角色名：三月七；所需材料：风雪之角 ×5、篡改的野心 ×8、信用点 ×32000"
+        },
+        {
+          "doc_id": "角色行迹.csv|知更鸟•晴歌|行迹描述#14",
+          "source": "角色行迹.csv",
+          "role": "知更鸟•晴歌",
+          "field": "行迹描述",
+          "score": 0.4844,
+          "text": "角色名：知更鸟•晴歌；行迹描述：暴击率提高2.7%\n（标签：角色晋阶3）"
+        },
+        {
+          "doc_id": "角色行迹.csv|银狼|行迹名称#2",
+          "source": "角色行迹.csv",
+          "role": "银狼",
+          "field": "行迹名称",
+          "score": 0.484,
+          "text": "角色名：银狼；行迹名称：是否允许更改？"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 1.39,
+      "category": "unanswerable",
+      "expected": null,
+      "hit": false,
+      "cite": false,
+      "refused": true,
+      "correct": true
+    },
+    {
+      "question": "佩拉 的爱好是什么？",
+      "answer": "知识库中没有相关信息，无法回答。  \n检索片段[1]至[5]均未提及佩拉的爱好。",
+      "retrieved": [
+        {
+          "doc_id": "角色故事.csv|佩拉|故事标题#1",
+          "source": "角色故事.csv",
+          "role": "佩拉",
+          "field": "故事标题",
+          "score": 0.6279,
+          "text": "角色名：佩拉；故事标题：其一"
+        },
+        {
+          "doc_id": "角色行迹.csv|佩拉|行迹类型#1",
+          "source": "角色行迹.csv",
+          "role": "佩拉",
+          "field": "行迹类型",
+          "score": 0.6252,
+          "text": "角色名：佩拉；行迹类型：普攻"
+        },
+        {
+          "doc_id": "角色故事.csv|佩拉|故事标题#2",
+          "source": "角色故事.csv",
+          "role": "佩拉",
+          "field": "故事标题",
+          "score": 0.6221,
+          "text": "角色名：佩拉；故事标题：其二"
+        },
+        {
+          "doc_id": "角色行迹.csv|佩拉|行迹类型#4",
+          "source": "角色行迹.csv",
+          "role": "佩拉",
+          "field": "行迹类型",
+          "score": 0.6202,
+          "text": "角色名：佩拉；行迹类型：天赋"
+        },
+        {
+          "doc_id": "配队推荐.csv|佩拉|推荐角色#5",
+          "source": "配队推荐.csv",
+          "role": "佩拉",
+          "field": "推荐角色",
+          "score": 0.6141,
+          "text": "角色名：佩拉；推荐角色：佩拉"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 1.13,
+      "category": "unanswerable",
+      "expected": null,
+      "hit": false,
+      "cite": false,
+      "refused": true,
+      "correct": true
+    },
+    {
+      "question": "光锥「醉梦之约」的效果是什么？",
+      "answer": "知识库中没有相关信息，无法回答。片段1-5均未提及光锥「醉梦之约」。",
+      "retrieved": [
+        {
+          "doc_id": "光锥推荐.csv|丹恒|光锥效果#4",
+          "source": "光锥推荐.csv",
+          "role": "丹恒",
+          "field": "光锥效果",
+          "score": 0.6113,
+          "text": "角色名：丹恒；光锥效果：美梦使装备者的暴击伤害提高【30%/35%/40%/45%/50%】。当装备者的普攻或战技伤害未造成暴击时，使自身暴击率提高【36%/42%/48%/54%/60%】，持续1回合。该效果每3回合可以触发1次。"
+        },
+        {
+          "doc_id": "光锥推荐.csv|素裳|光锥效果#3",
+          "source": "光锥推荐.csv",
+          "role": "素裳",
+          "field": "光锥效果",
+          "score": 0.6014,
+          "text": "角色名：素裳；光锥效果：美梦使装备者的暴击伤害提高【30%/35%/40%/45%/50%】。当装备者的普攻或战技伤害未造成暴击时，使自身暴击率提高【36%/42%/48%/54%/60%】，持续1回合。该效果每3回合可以触发1次。"
+        },
+        {
+          "doc_id": "光锥推荐.csv|托帕&账账|光锥效果#3",
+          "source": "光锥推荐.csv",
+          "role": "托帕&账账",
+          "field": "光锥效果",
+          "score": 0.5984,
+          "text": "角色名：托帕&账账；光锥效果：美梦使装备者的暴击伤害提高【30%/35%/40%/45%/50%】。当装备者的普攻或战技伤害未造成暴击时，使自身暴击率提高【36%/42%/48%/54%/60%】，持续1回合。该效果每3回合可以触发1次。"
+        },
+        {
+          "doc_id": "光锥推荐.csv|真理医生|光锥效果#3",
+          "source": "光锥推荐.csv",
+          "role": "真理医生",
+          "field": "光锥效果",
+          "score": 0.5945,
+          "text": "角色名：真理医生；光锥效果：美梦使装备者的暴击伤害提高【30%/35%/40%/45%/50%】。当装备者的普攻或战技伤害未造成暴击时，使自身暴击率提高【36%/42%/48%/54%/60%】，持续1回合。该效果每3回合可以触发1次。"
+        },
+        {
+          "doc_id": "光锥推荐.csv|Archer|光锥效果#2",
+          "source": "光锥推荐.csv",
+          "role": "Archer",
+          "field": "光锥效果",
+          "score": 0.5839,
+          "text": "角色名：Archer；光锥效果：美梦使装备者的暴击伤害提高【30%/35%/40%/45%/50%】。当装备者的普攻或战技伤害未造成暴击时，使自身暴击率提高【36%/42%/48%/54%/60%】，持续1回合。该效果每3回合可以触发1次。"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 2.8,
+      "category": "unanswerable",
+      "expected": null,
+      "hit": false,
+      "cite": false,
+      "refused": true,
+      "correct": true
+    },
+    {
+      "question": "遗器「圣洁之翼」的主词条怎么选？",
+      "answer": "知识库中没有相关信息，无法回答。检索片段中未提及遗器「圣洁之翼」及其主词条选择。",
+      "retrieved": [
+        {
+          "doc_id": "遗器推荐.csv|知更鸟•晴歌|隧洞遗器#1",
+          "source": "遗器推荐.csv",
+          "role": "知更鸟•晴歌",
+          "field": "隧洞遗器",
+          "score": 0.5158,
+          "text": "角色名：知更鸟•晴歌；隧洞遗器：再创天地的救世主 四件套"
+        },
+        {
+          "doc_id": "遗器推荐.csv|遐蝶|隧洞遗器#1",
+          "source": "遗器推荐.csv",
+          "role": "遐蝶",
+          "field": "隧洞遗器",
+          "score": 0.5052,
+          "text": "角色名：遐蝶；隧洞遗器：哀歌覆国的诗人 四件套 或宝命长存的莳者 四件套"
+        },
+        {
+          "doc_id": "遗器推荐.csv|缇宝|隧洞遗器#1",
+          "source": "遗器推荐.csv",
+          "role": "缇宝",
+          "field": "隧洞遗器",
+          "score": 0.5039,
+          "text": "角色名：缇宝；隧洞遗器：哀歌覆国的诗人 四件套 或晨昏交界的翔鹰 四件套"
+        },
+        {
+          "doc_id": "遗器推荐.csv|雪衣|隧洞遗器#1",
+          "source": "遗器推荐.csv",
+          "role": "雪衣",
+          "field": "隧洞遗器",
+          "score": 0.4976,
+          "text": "角色名：雪衣；隧洞遗器：繁星璀璨的天才"
+        },
+        {
+          "doc_id": "遗器推荐.csv|开拓者•存护|隧洞遗器#1",
+          "source": "遗器推荐.csv",
+          "role": "开拓者•存护",
+          "field": "隧洞遗器",
+          "score": 0.4907,
+          "text": "角色名：开拓者•存护；隧洞遗器：净庭教宗的圣骑士 四件套 或戍卫风雪的铁卫 四件套"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 1.1,
+      "category": "unanswerable",
+      "expected": null,
+      "hit": false,
+      "cite": false,
+      "refused": true,
+      "correct": true
+    },
+    {
+      "question": "寒鸦 的生日是哪天？",
+      "answer": "知识库中没有相关信息，无法回答。提供的片段均未提及寒鸦的生日。",
+      "retrieved": [
+        {
+          "doc_id": "角色基础信息.csv|寒鸦|实装日期#1",
+          "source": "角色基础信息.csv",
+          "role": "寒鸦",
+          "field": "实装日期",
+          "score": 0.6674,
+          "text": "角色名：寒鸦；实装日期：2023/12/06"
+        },
+        {
+          "doc_id": "角色故事.csv|寒鸦|故事标题#1",
+          "source": "角色故事.csv",
+          "role": "寒鸦",
+          "field": "故事标题",
+          "score": 0.6437,
+          "text": "角色名：寒鸦；故事标题：其一"
+        },
+        {
+          "doc_id": "角色故事.csv|寒鸦|故事标题#2",
+          "source": "角色故事.csv",
+          "role": "寒鸦",
+          "field": "故事标题",
+          "score": 0.6386,
+          "text": "角色名：寒鸦；故事标题：其二"
+        },
+        {
+          "doc_id": "遗器推荐.csv|寒鸦|主词条#1",
+          "source": "遗器推荐.csv",
+          "role": "寒鸦",
+          "field": "主词条",
+          "score": 0.625,
+          "text": "角色名：寒鸦；主词条：【躯干】攻击/生命/防御【脚部】速度 【位面球】攻击/生命/防御【连结绳】能量恢复"
+        },
+        {
+          "doc_id": "角色故事.csv|寒鸦|故事编号#2",
+          "source": "角色故事.csv",
+          "role": "寒鸦",
+          "field": "故事编号",
+          "score": 0.6215,
+          "text": "角色名：寒鸦；故事编号：2"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 1.04,
+      "category": "unanswerable",
+      "expected": null,
+      "hit": false,
+      "cite": false,
+      "refused": true,
+      "correct": true
+    },
+    {
+      "question": "星期日 的英文名是什么？",
+      "answer": "知识库中没有相关信息，无法回答。提供的片段均未提及星期日的英文名。",
+      "retrieved": [
+        {
+          "doc_id": "角色故事.csv|星期日|故事标题#1",
+          "source": "角色故事.csv",
+          "role": "星期日",
+          "field": "故事标题",
+          "score": 0.637,
+          "text": "角色名：星期日；故事标题：其一"
+        },
+        {
+          "doc_id": "角色故事.csv|星期日|故事标题#2",
+          "source": "角色故事.csv",
+          "role": "星期日",
+          "field": "故事标题",
+          "score": 0.6183,
+          "text": "角色名：星期日；故事标题：其二"
+        },
+        {
+          "doc_id": "遗器推荐.csv|星期日|推荐指数#1",
+          "source": "遗器推荐.csv",
+          "role": "星期日",
+          "field": "推荐指数",
+          "score": 0.6114,
+          "text": "角色名：星期日；推荐指数：★★★★★"
+        },
+        {
+          "doc_id": "配队推荐.csv|星期日|推荐角色#5",
+          "source": "配队推荐.csv",
+          "role": "星期日",
+          "field": "推荐角色",
+          "score": 0.6105,
+          "text": "角色名：星期日；推荐角色：星期日"
+        },
+        {
+          "doc_id": "光锥推荐.csv|星期日|推荐度#1",
+          "source": "光锥推荐.csv",
+          "role": "星期日",
+          "field": "推荐度",
+          "score": 0.6059,
+          "text": "角色名：星期日；推荐度：★★★★★"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 0.89,
+      "category": "unanswerable",
+      "expected": null,
+      "hit": false,
+      "cite": false,
+      "refused": true,
+      "correct": true
+    },
+    {
+      "question": "翡翠 在星际和平公司的职位编号是什么？",
+      "answer": "知识库中没有相关信息，无法回答。  \n检索片段（片段1、片段2等）仅提到翡翠是星际和平公司「战略投资部」高级干部，并未给出其“职位编号”。",
+      "retrieved": [
+        {
+          "doc_id": "角色基础信息.csv|翡翠|阵营#1",
+          "source": "角色基础信息.csv",
+          "role": "翡翠",
+          "field": "阵营",
+          "score": 0.7779,
+          "text": "角色名：翡翠；阵营：星际和平公司"
+        },
+        {
+          "doc_id": "角色基础信息.csv|翡翠|个人简介#1",
+          "source": "角色基础信息.csv",
+          "role": "翡翠",
+          "field": "个人简介",
+          "score": 0.6786,
+          "text": "角色名：翡翠；个人简介：星际和平公司「战略投资部」的高级干部，「石心十人」之一，基石为「典贷翡翠」。\n冷艳优雅的放贷人，善于洞悉人心，常常通过抵押与契约使敌人付出代价，为公司获利。\n愿意为获取更有价值的事物而费心布局，也愿意从看似一无所有的客户身上挖掘价值。"
+        },
+        {
+          "doc_id": "角色故事.csv|翡翠|故事编号#1",
+          "source": "角色故事.csv",
+          "role": "翡翠",
+          "field": "故事编号",
+          "score": 0.6062,
+          "text": "角色名：翡翠；故事编号：1"
+        },
+        {
+          "doc_id": "角色基础信息.csv|砂金|阵营#1",
+          "source": "角色基础信息.csv",
+          "role": "砂金",
+          "field": "阵营",
+          "score": 0.6055,
+          "text": "角色名：砂金；阵营：星际和平公司"
+        },
+        {
+          "doc_id": "角色故事.csv|翡翠|故事编号#2",
+          "source": "角色故事.csv",
+          "role": "翡翠",
+          "field": "故事编号",
+          "score": 0.6007,
+          "text": "角色名：翡翠；故事编号：2"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 1.7,
+      "category": "unanswerable",
+      "expected": null,
+      "hit": false,
+      "cite": false,
+      "refused": true,
+      "correct": true
+    },
+    {
+      "question": "流光忆庭的创立时间是什么时候？",
+      "answer": "知识库中没有相关信息，无法回答。现有片段仅提到黑天鹅所属阵营为「流光忆庭」（片段1、2），未提及流光忆庭的创立时间。",
+      "retrieved": [
+        {
+          "doc_id": "角色基础信息.csv|黑天鹅|阵营#1",
+          "source": "角色基础信息.csv",
+          "role": "黑天鹅",
+          "field": "阵营",
+          "score": 0.5091,
+          "text": "角色名：黑天鹅；阵营：流光忆庭"
+        },
+        {
+          "doc_id": "角色基础信息.csv|黑天鹅|个人简介#1",
+          "source": "角色基础信息.csv",
+          "role": "黑天鹅",
+          "field": "个人简介",
+          "score": 0.4968,
+          "text": "角色名：黑天鹅；个人简介：「流光忆庭」的忆者，神秘优雅的占卜师。\n常挂着温柔的微笑，耐心聆听他人的言语，并借此走入「记忆」，掌握全盘信息。\n热衷于收集独一无二的记忆，背后的想法却难以看透。"
+        },
+        {
+          "doc_id": "光锥推荐.csv|海瑟音|光锥名称#3",
+          "source": "光锥推荐.csv",
+          "role": "海瑟音",
+          "field": "光锥名称",
+          "score": 0.4722,
+          "text": "角色名：海瑟音；光锥名称：重塑时光之忆"
+        },
+        {
+          "doc_id": "光锥推荐.csv|长夜月|光锥名称#4",
+          "source": "光锥推荐.csv",
+          "role": "长夜月",
+          "field": "光锥名称",
+          "score": 0.4699,
+          "text": "角色名：长夜月；光锥名称：记忆永不落幕"
+        },
+        {
+          "doc_id": "光锥推荐.csv|遐蝶|光锥名称#3",
+          "source": "光锥推荐.csv",
+          "role": "遐蝶",
+          "field": "光锥名称",
+          "score": 0.468,
+          "text": "角色名：遐蝶；光锥名称：记忆永不落幕 (配诗人套不能超过叠影2级）"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 1.45,
+      "category": "unanswerable",
+      "expected": null,
+      "hit": false,
+      "cite": false,
+      "refused": true,
+      "correct": true
+    },
+    {
+      "question": "三月七 的属性是什么？",
+      "answer": "知识库中没有相关信息，无法回答。片段1仅显示三月七的行迹类型为“属性加成”，片段5仅显示晋阶阶段为“1级属性/晋阶所需材料”，均未给出具体属性内容。",
+      "retrieved": [
+        {
+          "doc_id": "角色行迹.csv|三月七|行迹类型#7",
+          "source": "角色行迹.csv",
+          "role": "三月七",
+          "field": "行迹类型",
+          "score": 0.7501,
+          "text": "角色名：三月七；行迹类型：属性加成"
+        },
+        {
+          "doc_id": "角色故事.csv|三月七|故事标题#3",
+          "source": "角色故事.csv",
+          "role": "三月七",
+          "field": "故事标题",
+          "score": 0.7158,
+          "text": "角色名：三月七；故事标题：其三"
+        },
+        {
+          "doc_id": "角色故事.csv|三月七|故事标题#1",
+          "source": "角色故事.csv",
+          "role": "三月七",
+          "field": "故事标题",
+          "score": 0.699,
+          "text": "角色名：三月七；故事标题：其一"
+        },
+        {
+          "doc_id": "遗器推荐.csv|三月七|推荐指数#1",
+          "source": "遗器推荐.csv",
+          "role": "三月七",
+          "field": "推荐指数",
+          "score": 0.6988,
+          "text": "角色名：三月七；推荐指数：★★★★★"
+        },
+        {
+          "doc_id": "角色晋阶.csv|三月七|晋阶阶段#1",
+          "source": "角色晋阶.csv",
+          "role": "三月七",
+          "field": "晋阶阶段",
+          "score": 0.6973,
+          "text": "角色名：三月七；晋阶阶段：1级属性/晋阶所需材料"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 1.46,
+      "category": "confusable",
+      "expected": "冰",
+      "hit": false,
+      "cite": true,
+      "correct": false
+    },
+    {
+      "question": "仙舟三月七 的命途是什么？",
+      "answer": "仙舟三月七的命途是：**巡猎**。  \n答案出自：**片段1**。",
+      "retrieved": [
+        {
+          "doc_id": "角色基础信息.csv|仙舟三月七|命途#1",
+          "source": "角色基础信息.csv",
+          "role": "仙舟三月七",
+          "field": "命途",
+          "score": 0.7713,
+          "text": "角色名：仙舟三月七；命途：巡猎"
+        },
+        {
+          "doc_id": "角色故事.csv|仙舟三月七|故事标题#5",
+          "source": "角色故事.csv",
+          "role": "仙舟三月七",
+          "field": "故事标题",
+          "score": 0.7481,
+          "text": "角色名：仙舟三月七；故事标题：仙舟"
+        },
+        {
+          "doc_id": "角色故事.csv|仙舟三月七|故事标题#3",
+          "source": "角色故事.csv",
+          "role": "仙舟三月七",
+          "field": "故事标题",
+          "score": 0.7437,
+          "text": "角色名：仙舟三月七；故事标题：其三"
+        },
+        {
+          "doc_id": "角色故事.csv|仙舟三月七|故事标题#1",
+          "source": "角色故事.csv",
+          "role": "仙舟三月七",
+          "field": "故事标题",
+          "score": 0.7412,
+          "text": "角色名：仙舟三月七；故事标题：其一"
+        },
+        {
+          "doc_id": "角色故事.csv|仙舟三月七|故事标题#2",
+          "source": "角色故事.csv",
+          "role": "仙舟三月七",
+          "field": "故事标题",
+          "score": 0.7324,
+          "text": "角色名：仙舟三月七；故事标题：其二"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 2.14,
+      "category": "confusable",
+      "expected": "巡猎",
+      "hit": true,
+      "cite": true,
+      "correct": true
+    },
+    {
+      "question": "黑塔 的星级是多少？",
+      "answer": "黑塔的星级是四星。出自片段1。",
+      "retrieved": [
+        {
+          "doc_id": "角色基础信息.csv|黑塔|星级#1",
+          "source": "角色基础信息.csv",
+          "role": "黑塔",
+          "field": "星级",
+          "score": 0.7481,
+          "text": "角色名：黑塔；星级：四星"
+        },
+        {
+          "doc_id": "角色基础信息.csv|大黑塔|星级#1",
+          "source": "角色基础信息.csv",
+          "role": "大黑塔",
+          "field": "星级",
+          "score": 0.7245,
+          "text": "角色名：大黑塔；星级：五星"
+        },
+        {
+          "doc_id": "遗器推荐.csv|黑塔|推荐指数#1",
+          "source": "遗器推荐.csv",
+          "role": "黑塔",
+          "field": "推荐指数",
+          "score": 0.7015,
+          "text": "角色名：黑塔；推荐指数：★★★★★"
+        },
+        {
+          "doc_id": "光锥推荐.csv|黑塔|推荐度#1",
+          "source": "光锥推荐.csv",
+          "role": "黑塔",
+          "field": "推荐度",
+          "score": 0.7003,
+          "text": "角色名：黑塔；推荐度：★★★★★"
+        },
+        {
+          "doc_id": "角色行迹.csv|黑塔|行迹描述#18",
+          "source": "角色行迹.csv",
+          "role": "黑塔",
+          "field": "行迹描述",
+          "score": 0.6961,
+          "text": "角色名：黑塔；行迹描述：冰属性伤害提高6.4%\n（标签：角色等级80）"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 1.25,
+      "category": "confusable",
+      "expected": "四星",
+      "hit": true,
+      "cite": true,
+      "correct": true
+    },
+    {
+      "question": "大黑塔 的星级是多少？",
+      "answer": "大黑塔的星级是五星。答案出自片段1。",
+      "retrieved": [
+        {
+          "doc_id": "角色基础信息.csv|大黑塔|星级#1",
+          "source": "角色基础信息.csv",
+          "role": "大黑塔",
+          "field": "星级",
+          "score": 0.7715,
+          "text": "角色名：大黑塔；星级：五星"
+        },
+        {
+          "doc_id": "角色基础信息.csv|黑塔|星级#1",
+          "source": "角色基础信息.csv",
+          "role": "黑塔",
+          "field": "星级",
+          "score": 0.718,
+          "text": "角色名：黑塔；星级：四星"
+        },
+        {
+          "doc_id": "光锥推荐.csv|大黑塔|推荐度#1",
+          "source": "光锥推荐.csv",
+          "role": "大黑塔",
+          "field": "推荐度",
+          "score": 0.7158,
+          "text": "角色名：大黑塔；推荐度：★★★★★"
+        },
+        {
+          "doc_id": "遗器推荐.csv|大黑塔|推荐指数#1",
+          "source": "遗器推荐.csv",
+          "role": "大黑塔",
+          "field": "推荐指数",
+          "score": 0.7153,
+          "text": "角色名：大黑塔；推荐指数：★★★★★"
+        },
+        {
+          "doc_id": "角色晋阶.csv|大黑塔|晋阶阶段#6",
+          "source": "角色晋阶.csv",
+          "role": "大黑塔",
+          "field": "晋阶阶段",
+          "score": 0.7134,
+          "text": "角色名：大黑塔；晋阶阶段：60级晋阶"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 0.91,
+      "category": "confusable",
+      "expected": "五星",
+      "hit": true,
+      "cite": true,
+      "correct": true
+    },
+    {
+      "question": "银狼 的属性是什么？",
+      "answer": "知识库中没有相关信息，无法回答。  \n检索片段中仅提到银狼有“属性加成”行迹类型，但未给出具体属性内容（片段1）。",
+      "retrieved": [
+        {
+          "doc_id": "角色行迹.csv|银狼|行迹类型#7",
+          "source": "角色行迹.csv",
+          "role": "银狼",
+          "field": "行迹类型",
+          "score": 0.7642,
+          "text": "角色名：银狼；行迹类型：属性加成"
+        },
+        {
+          "doc_id": "角色晋阶.csv|银狼|晋阶阶段#1",
+          "source": "角色晋阶.csv",
+          "role": "银狼",
+          "field": "晋阶阶段",
+          "score": 0.7499,
+          "text": "角色名：银狼；晋阶阶段：1级属性/晋阶所需材料"
+        },
+        {
+          "doc_id": "角色故事.csv|银狼|故事标题#1",
+          "source": "角色故事.csv",
+          "role": "银狼",
+          "field": "故事标题",
+          "score": 0.7407,
+          "text": "角色名：银狼；故事标题：其一"
+        },
+        {
+          "doc_id": "角色行迹.csv|银狼|行迹类型#4",
+          "source": "角色行迹.csv",
+          "role": "银狼",
+          "field": "行迹类型",
+          "score": 0.7301,
+          "text": "角色名：银狼；行迹类型：天赋"
+        },
+        {
+          "doc_id": "角色行迹.csv|银狼|行迹描述#4",
+          "source": "角色行迹.csv",
+          "role": "银狼",
+          "field": "行迹描述",
+          "score": 0.7228,
+          "text": "角色名：银狼；行迹描述：银狼能够制造：攻击力降低【5%/10%】、防御力降低【4%/8%】、速度降低【3%/6%】3种【缺陷】。银狼每次施放攻击后有【60%/72%】的基础概率给受到攻击的敌方目标植入1个随机【缺陷】，持续3回合。\n（标签：妨害）"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 1.74,
+      "category": "confusable",
+      "expected": "量子",
+      "hit": false,
+      "cite": true,
+      "correct": false
+    },
+    {
+      "question": "银狼LV.999 的命途是什么？",
+      "answer": "银狼LV.999 的命途是：欢愉。  \n答案出自片段1。",
+      "retrieved": [
+        {
+          "doc_id": "角色基础信息.csv|银狼LV.999|命途#1",
+          "source": "角色基础信息.csv",
+          "role": "银狼LV.999",
+          "field": "命途",
+          "score": 0.8128,
+          "text": "角色名：银狼LV.999；命途：欢愉"
+        },
+        {
+          "doc_id": "配队推荐.csv|银狼LV.999|位置#3",
+          "source": "配队推荐.csv",
+          "role": "银狼LV.999",
+          "field": "位置",
+          "score": 0.7959,
+          "text": "角色名：银狼LV.999；位置：生存"
+        },
+        {
+          "doc_id": "角色故事.csv|银狼LV.999|故事标题#1",
+          "source": "角色故事.csv",
+          "role": "银狼LV.999",
+          "field": "故事标题",
+          "score": 0.7958,
+          "text": "角色名：银狼LV.999；故事标题：其一"
+        },
+        {
+          "doc_id": "配队推荐.csv|银狼LV.999|位置#1",
+          "source": "配队推荐.csv",
+          "role": "银狼LV.999",
+          "field": "位置",
+          "score": 0.7913,
+          "text": "角色名：银狼LV.999；位置：主C"
+        },
+        {
+          "doc_id": "遗器推荐.csv|银狼LV.999|方案序号#1",
+          "source": "遗器推荐.csv",
+          "role": "银狼LV.999",
+          "field": "方案序号",
+          "score": 0.7912,
+          "text": "角色名：银狼LV.999；方案序号：1"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 1.04,
+      "category": "confusable",
+      "expected": "欢愉",
+      "hit": true,
+      "cite": false,
+      "correct": true
+    },
+    {
+      "question": "花火 的属性是什么？",
+      "answer": "花火的属性是：量子。  \n答案出自片段4。",
+      "retrieved": [
+        {
+          "doc_id": "角色行迹.csv|花火|行迹类型#7",
+          "source": "角色行迹.csv",
+          "role": "花火",
+          "field": "行迹类型",
+          "score": 0.7451,
+          "text": "角色名：花火；行迹类型：属性加成"
+        },
+        {
+          "doc_id": "角色基础信息.csv|火花|属性#1",
+          "source": "角色基础信息.csv",
+          "role": "火花",
+          "field": "属性",
+          "score": 0.7325,
+          "text": "角色名：火花；属性：火"
+        },
+        {
+          "doc_id": "角色行迹.csv|火花|行迹类型#8",
+          "source": "角色行迹.csv",
+          "role": "火花",
+          "field": "行迹类型",
+          "score": 0.7047,
+          "text": "角色名：火花；行迹类型：属性加成"
+        },
+        {
+          "doc_id": "角色基础信息.csv|花火|属性#1",
+          "source": "角色基础信息.csv",
+          "role": "花火",
+          "field": "属性",
+          "score": 0.7031,
+          "text": "角色名：花火；属性：量子"
+        },
+        {
+          "doc_id": "角色晋阶.csv|花火|晋阶阶段#1",
+          "source": "角色晋阶.csv",
+          "role": "花火",
+          "field": "晋阶阶段",
+          "score": 0.702,
+          "text": "角色名：花火；晋阶阶段：1级属性/晋阶所需材料"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 1.42,
+      "category": "confusable",
+      "expected": "量子",
+      "hit": true,
+      "cite": true,
+      "correct": true
+    },
+    {
+      "question": "火花 的命途是什么？",
+      "answer": "火花的命途是 **欢愉**。  \n答案出自：**片段1**。",
+      "retrieved": [
+        {
+          "doc_id": "角色基础信息.csv|火花|命途#1",
+          "source": "角色基础信息.csv",
+          "role": "火花",
+          "field": "命途",
+          "score": 0.7053,
+          "text": "角色名：火花；命途：欢愉"
+        },
+        {
+          "doc_id": "角色故事.csv|火花|故事标题#1",
+          "source": "角色故事.csv",
+          "role": "火花",
+          "field": "故事标题",
+          "score": 0.6686,
+          "text": "角色名：火花；故事标题：其一"
+        },
+        {
+          "doc_id": "角色基础信息.csv|火花|属性#1",
+          "source": "角色基础信息.csv",
+          "role": "火花",
+          "field": "属性",
+          "score": 0.6651,
+          "text": "角色名：火花；属性：火"
+        },
+        {
+          "doc_id": "配队推荐.csv|火花|位置#3",
+          "source": "配队推荐.csv",
+          "role": "火花",
+          "field": "位置",
+          "score": 0.6624,
+          "text": "角色名：火花；位置：生存"
+        },
+        {
+          "doc_id": "角色故事.csv|火花|故事标题#2",
+          "source": "角色故事.csv",
+          "role": "火花",
+          "field": "故事标题",
+          "score": 0.6599,
+          "text": "角色名：火花；故事标题：其二"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 1.14,
+      "category": "confusable",
+      "expected": "欢愉",
+      "hit": true,
+      "cite": true,
+      "correct": true
+    },
+    {
+      "question": "知更鸟 的命途是什么？",
+      "answer": "知更鸟的命途是：**同谐**。  \n答案出自 **片段1**。",
+      "retrieved": [
+        {
+          "doc_id": "角色基础信息.csv|知更鸟|命途#1",
+          "source": "角色基础信息.csv",
+          "role": "知更鸟",
+          "field": "命途",
+          "score": 0.7476,
+          "text": "角色名：知更鸟；命途：同谐"
+        },
+        {
+          "doc_id": "角色故事.csv|知更鸟|故事标题#1",
+          "source": "角色故事.csv",
+          "role": "知更鸟",
+          "field": "故事标题",
+          "score": 0.7336,
+          "text": "角色名：知更鸟；故事标题：其一"
+        },
+        {
+          "doc_id": "角色故事.csv|知更鸟|故事标题#2",
+          "source": "角色故事.csv",
+          "role": "知更鸟",
+          "field": "故事标题",
+          "score": 0.7272,
+          "text": "角色名：知更鸟；故事标题：其二"
+        },
+        {
+          "doc_id": "角色故事.csv|知更鸟|故事标题#4",
+          "source": "角色故事.csv",
+          "role": "知更鸟",
+          "field": "故事标题",
+          "score": 0.7071,
+          "text": "角色名：知更鸟；故事标题：其四"
+        },
+        {
+          "doc_id": "配队推荐.csv|知更鸟|位置#4",
+          "source": "配队推荐.csv",
+          "role": "知更鸟",
+          "field": "位置",
+          "score": 0.7015,
+          "text": "角色名：知更鸟；位置：生存"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 1.12,
+      "category": "confusable",
+      "expected": "同谐",
+      "hit": true,
+      "cite": true,
+      "correct": true
+    },
+    {
+      "question": "知更鸟•晴歌 的属性是什么？",
+      "answer": "知更鸟•晴歌的属性是：**风**。  \n答案出自：**片段2**。",
+      "retrieved": [
+        {
+          "doc_id": "角色行迹.csv|知更鸟•晴歌|行迹类型#9",
+          "source": "角色行迹.csv",
+          "role": "知更鸟•晴歌",
+          "field": "行迹类型",
+          "score": 0.7814,
+          "text": "角色名：知更鸟•晴歌；行迹类型：属性加成"
+        },
+        {
+          "doc_id": "角色基础信息.csv|知更鸟•晴歌|属性#1",
+          "source": "角色基础信息.csv",
+          "role": "知更鸟•晴歌",
+          "field": "属性",
+          "score": 0.7814,
+          "text": "角色名：知更鸟•晴歌；属性：风"
+        },
+        {
+          "doc_id": "角色行迹.csv|知更鸟•晴歌|行迹类型#4",
+          "source": "角色行迹.csv",
+          "role": "知更鸟•晴歌",
+          "field": "行迹类型",
+          "score": 0.7501,
+          "text": "角色名：知更鸟•晴歌；行迹类型：天赋"
+        },
+        {
+          "doc_id": "角色故事.csv|知更鸟•晴歌|故事标题#2",
+          "source": "角色故事.csv",
+          "role": "知更鸟•晴歌",
+          "field": "故事标题",
+          "score": 0.7355,
+          "text": "角色名：知更鸟•晴歌；故事标题：其二"
+        },
+        {
+          "doc_id": "角色故事.csv|知更鸟•晴歌|故事标题#1",
+          "source": "角色故事.csv",
+          "role": "知更鸟•晴歌",
+          "field": "故事标题",
+          "score": 0.7347,
+          "text": "角色名：知更鸟•晴歌；故事标题：一"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 0.86,
+      "category": "confusable",
+      "expected": "风",
+      "hit": true,
+      "cite": true,
+      "correct": true
+    },
+    {
+      "question": "刃 的属性是什么？",
+      "answer": "刃的属性是：风。  \n答案出自：片段2（角色基础信息.csv）。",
+      "retrieved": [
+        {
+          "doc_id": "角色行迹.csv|刃|行迹类型#7",
+          "source": "角色行迹.csv",
+          "role": "刃",
+          "field": "行迹类型",
+          "score": 0.7237,
+          "text": "角色名：刃；行迹类型：属性加成"
+        },
+        {
+          "doc_id": "角色基础信息.csv|刃|属性#1",
+          "source": "角色基础信息.csv",
+          "role": "刃",
+          "field": "属性",
+          "score": 0.7032,
+          "text": "角色名：刃；属性：风"
+        },
+        {
+          "doc_id": "遗器推荐.csv|刃|主词条#1",
+          "source": "遗器推荐.csv",
+          "role": "刃",
+          "field": "主词条",
+          "score": 0.6852,
+          "text": "角色名：刃；主词条：【躯干】暴击/爆伤【脚部】生命值/速度【位面球】风属性伤害/生命值【连结绳】生命值"
+        },
+        {
+          "doc_id": "角色故事.csv|刃|故事标题#1",
+          "source": "角色故事.csv",
+          "role": "刃",
+          "field": "故事标题",
+          "score": 0.6851,
+          "text": "角色名：刃；故事标题：其一"
+        },
+        {
+          "doc_id": "角色行迹.csv|刃|行迹描述#5",
+          "source": "角色行迹.csv",
+          "role": "刃",
+          "field": "行迹描述",
+          "score": 0.682,
+          "text": "角色名：刃；行迹描述：立即攻击敌人，进入战斗后消耗等同于刃生命上限20%的生命值，同时对敌方全体造成等同于刃生命上限40%的风属性伤害。\n若当前生命值不足，施放秘技时刃的当前生命值降低至1点。\n（标签：削韧20）"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 1.08,
+      "category": "confusable",
+      "expected": "风",
+      "hit": true,
+      "cite": true,
+      "correct": true
+    },
+    {
+      "question": "千冶•刃 的命途是什么？",
+      "answer": "千冶•刃的命途是：**虚无**。  \n答案出自：**片段1**。",
+      "retrieved": [
+        {
+          "doc_id": "角色基础信息.csv|千冶•刃|命途#1",
+          "source": "角色基础信息.csv",
+          "role": "千冶•刃",
+          "field": "命途",
+          "score": 0.7558,
+          "text": "角色名：千冶•刃；命途：虚无"
+        },
+        {
+          "doc_id": "角色故事.csv|千冶•刃|故事标题#1",
+          "source": "角色故事.csv",
+          "role": "千冶•刃",
+          "field": "故事标题",
+          "score": 0.7375,
+          "text": "角色名：千冶•刃；故事标题：其一"
+        },
+        {
+          "doc_id": "遗器推荐.csv|千冶•刃|主词条#1",
+          "source": "遗器推荐.csv",
+          "role": "千冶•刃",
+          "field": "主词条",
+          "score": 0.7362,
+          "text": "角色名：千冶•刃；主词条：【躯干】暴击率>暴击伤害【脚部】速度/生命值提高【位面球】生命值提高>火属性伤害提高【连结绳】充能效率提升>生命值提高"
+        },
+        {
+          "doc_id": "角色行迹.csv|千冶•刃|行迹描述#16",
+          "source": "角色行迹.csv",
+          "role": "千冶•刃",
+          "field": "行迹描述",
+          "score": 0.7334,
+          "text": "角色名：千冶•刃；行迹描述：生命值上限提高6%\n（标签：角色晋阶6）"
+        },
+        {
+          "doc_id": "角色基础信息.csv|千冶•刃|个人简介#1",
+          "source": "角色基础信息.csv",
+          "role": "千冶•刃",
+          "field": "个人简介",
+          "score": 0.7303,
+          "text": "角色名：千冶•刃；个人简介：身如春木，心若死灰，指尖仍留工匠的火星。\n累世宿怨再度点燃，他许诺将自己与神明一同送往彼岸——\n支离此身，千冶成刃…会铸就何种答案？"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 0.92,
+      "category": "confusable",
+      "expected": "虚无",
+      "hit": true,
+      "cite": true,
+      "correct": true
+    },
+    {
+      "question": "丹恒 的命途是什么？",
+      "answer": "丹恒的命途是：巡猎。\n\n答案出自【片段1】。",
+      "retrieved": [
+        {
+          "doc_id": "角色基础信息.csv|丹恒|命途#1",
+          "source": "角色基础信息.csv",
+          "role": "丹恒",
+          "field": "命途",
+          "score": 0.7385,
+          "text": "角色名：丹恒；命途：巡猎"
+        },
+        {
+          "doc_id": "配队推荐.csv|丹恒|位置#4",
+          "source": "配队推荐.csv",
+          "role": "丹恒",
+          "field": "位置",
+          "score": 0.6961,
+          "text": "角色名：丹恒；位置：生存"
+        },
+        {
+          "doc_id": "角色故事.csv|丹恒|故事标题#1",
+          "source": "角色故事.csv",
+          "role": "丹恒",
+          "field": "故事标题",
+          "score": 0.6889,
+          "text": "角色名：丹恒；故事标题：其一"
+        },
+        {
+          "doc_id": "角色行迹.csv|丹恒|行迹类型#4",
+          "source": "角色行迹.csv",
+          "role": "丹恒",
+          "field": "行迹类型",
+          "score": 0.6768,
+          "text": "角色名：丹恒；行迹类型：天赋"
+        },
+        {
+          "doc_id": "角色行迹.csv|丹恒|成长消耗材料#5",
+          "source": "角色行迹.csv",
+          "role": "丹恒",
+          "field": "成长消耗材料",
+          "score": 0.6672,
+          "text": "角色名：丹恒；成长消耗材料：信用点×128000、逐星之矢×6、命运的足迹×1、毁灭者的末路×1"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 1.04,
+      "category": "confusable",
+      "expected": "巡猎",
+      "hit": true,
+      "cite": true,
+      "correct": true
+    },
+    {
+      "question": "丹恒•饮月 的属性是什么？",
+      "answer": "丹恒•饮月的属性是：虚数。  \n答案出自：片段2。",
+      "retrieved": [
+        {
+          "doc_id": "角色行迹.csv|丹恒•饮月|行迹类型#7",
+          "source": "角色行迹.csv",
+          "role": "丹恒•饮月",
+          "field": "行迹类型",
+          "score": 0.7864,
+          "text": "角色名：丹恒•饮月；行迹类型：属性强化"
+        },
+        {
+          "doc_id": "角色基础信息.csv|丹恒•饮月|属性#1",
+          "source": "角色基础信息.csv",
+          "role": "丹恒•饮月",
+          "field": "属性",
+          "score": 0.7703,
+          "text": "角色名：丹恒•饮月；属性：虚数"
+        },
+        {
+          "doc_id": "光锥推荐.csv|丹恒•饮月|推荐度#2",
+          "source": "光锥推荐.csv",
+          "role": "丹恒•饮月",
+          "field": "推荐度",
+          "score": 0.7669,
+          "text": "角色名：丹恒•饮月；推荐度：★★★★"
+        },
+        {
+          "doc_id": "光锥推荐.csv|丹恒•饮月|推荐度#1",
+          "source": "光锥推荐.csv",
+          "role": "丹恒•饮月",
+          "field": "推荐度",
+          "score": 0.7657,
+          "text": "角色名：丹恒•饮月；推荐度：★★★★★"
+        },
+        {
+          "doc_id": "角色行迹.csv|丹恒•饮月|行迹类型#4",
+          "source": "角色行迹.csv",
+          "role": "丹恒•饮月",
+          "field": "行迹类型",
+          "score": 0.7654,
+          "text": "角色名：丹恒•饮月；行迹类型：天赋"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 0.91,
+      "category": "confusable",
+      "expected": "虚数",
+      "hit": true,
+      "cite": true,
+      "correct": true
+    },
+    {
+      "question": "丹恒•腾荒 的命途是什么？",
+      "answer": "丹恒•腾荒的命途是：存护。  \n答案出自：片段2。",
+      "retrieved": [
+        {
+          "doc_id": "角色故事.csv|丹恒•腾荒|故事标题#1",
+          "source": "角色故事.csv",
+          "role": "丹恒•腾荒",
+          "field": "故事标题",
+          "score": 0.7646,
+          "text": "角色名：丹恒•腾荒；故事标题：其一"
+        },
+        {
+          "doc_id": "角色基础信息.csv|丹恒•腾荒|命途#1",
+          "source": "角色基础信息.csv",
+          "role": "丹恒•腾荒",
+          "field": "命途",
+          "score": 0.7622,
+          "text": "角色名：丹恒•腾荒；命途：存护"
+        },
+        {
+          "doc_id": "配队推荐.csv|丹恒•腾荒|位置#3",
+          "source": "配队推荐.csv",
+          "role": "丹恒•腾荒",
+          "field": "位置",
+          "score": 0.7539,
+          "text": "角色名：丹恒•腾荒；位置：生存"
+        },
+        {
+          "doc_id": "角色故事.csv|丹恒•腾荒|故事标题#2",
+          "source": "角色故事.csv",
+          "role": "丹恒•腾荒",
+          "field": "故事标题",
+          "score": 0.7406,
+          "text": "角色名：丹恒•腾荒；故事标题：其二"
+        },
+        {
+          "doc_id": "角色行迹.csv|丹恒•腾荒|行迹类型#4",
+          "source": "角色行迹.csv",
+          "role": "丹恒•腾荒",
+          "field": "行迹类型",
+          "score": 0.7394,
+          "text": "角色名：丹恒•腾荒；行迹类型：天赋"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 1.25,
+      "category": "confusable",
+      "expected": "存护",
+      "hit": true,
+      "cite": true,
+      "correct": true
+    },
+    {
+      "question": "砂金 的命途是什么？",
+      "answer": "砂金的命途是“存护”。答案出自片段1。",
+      "retrieved": [
+        {
+          "doc_id": "角色基础信息.csv|砂金|命途#1",
+          "source": "角色基础信息.csv",
+          "role": "砂金",
+          "field": "命途",
+          "score": 0.7073,
+          "text": "角色名：砂金；命途：存护"
+        },
+        {
+          "doc_id": "配队推荐.csv|砂金|位置#3",
+          "source": "配队推荐.csv",
+          "role": "砂金",
+          "field": "位置",
+          "score": 0.6916,
+          "text": "角色名：砂金；位置：生存"
+        },
+        {
+          "doc_id": "角色故事.csv|砂金|故事标题#1",
+          "source": "角色故事.csv",
+          "role": "砂金",
+          "field": "故事标题",
+          "score": 0.6904,
+          "text": "角色名：砂金；故事标题：其一"
+        },
+        {
+          "doc_id": "角色故事.csv|砂金|故事标题#2",
+          "source": "角色故事.csv",
+          "role": "砂金",
+          "field": "故事标题",
+          "score": 0.6747,
+          "text": "角色名：砂金；故事标题：其二"
+        },
+        {
+          "doc_id": "角色行迹.csv|砂金|成长消耗材料#5",
+          "source": "角色行迹.csv",
+          "role": "砂金",
+          "field": "成长消耗材料",
+          "score": 0.6621,
+          "text": "角色名：砂金；成长消耗材料：信用点×160000、神体琥珀×8、命运的足迹×1、蛀星孕灾的旧恶×1"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 0.95,
+      "category": "confusable",
+      "expected": "存护",
+      "hit": true,
+      "cite": true,
+      "correct": true
+    },
+    {
+      "question": "砂金•戏浪 的属性是什么？",
+      "answer": "知识库中没有相关信息，无法回答。\n\n依据片段：[片段1]仅提到“行迹类型：属性加成”，[片段3]仅提到“晋阶阶段：1级属性/晋阶所需材料”，均未给出砂金•戏浪的具体属性内容。",
+      "retrieved": [
+        {
+          "doc_id": "角色行迹.csv|砂金•戏浪|行迹类型#8",
+          "source": "角色行迹.csv",
+          "role": "砂金•戏浪",
+          "field": "行迹类型",
+          "score": 0.7913,
+          "text": "角色名：砂金•戏浪；行迹类型：属性加成"
+        },
+        {
+          "doc_id": "角色故事.csv|砂金•戏浪|故事标题#1",
+          "source": "角色故事.csv",
+          "role": "砂金•戏浪",
+          "field": "故事标题",
+          "score": 0.7835,
+          "text": "角色名：砂金•戏浪；故事标题：其一"
+        },
+        {
+          "doc_id": "角色晋阶.csv|砂金•戏浪|晋阶阶段#1",
+          "source": "角色晋阶.csv",
+          "role": "砂金•戏浪",
+          "field": "晋阶阶段",
+          "score": 0.7704,
+          "text": "角色名：砂金•戏浪；晋阶阶段：1级属性/晋阶所需材料"
+        },
+        {
+          "doc_id": "光锥推荐.csv|砂金•戏浪|推荐度#1",
+          "source": "光锥推荐.csv",
+          "role": "砂金•戏浪",
+          "field": "推荐度",
+          "score": 0.7651,
+          "text": "角色名：砂金•戏浪；推荐度：★★★★★"
+        },
+        {
+          "doc_id": "角色故事.csv|砂金•戏浪|故事标题#2",
+          "source": "角色故事.csv",
+          "role": "砂金•戏浪",
+          "field": "故事标题",
+          "score": 0.7647,
+          "text": "角色名：砂金•戏浪；故事标题：其二"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 2.2,
+      "category": "confusable",
+      "expected": "量子",
+      "hit": false,
+      "cite": true,
+      "correct": false
+    },
+    {
+      "question": "开拓者•存护 的属性是什么？",
+      "answer": "知识库中没有相关信息，无法回答。  \n片段1仅提到“行迹类型：属性加成”，但没有给出开拓者•存护的具体属性种类或数值。",
+      "retrieved": [
+        {
+          "doc_id": "角色行迹.csv|开拓者•存护|行迹类型#7",
+          "source": "角色行迹.csv",
+          "role": "开拓者•存护",
+          "field": "行迹类型",
+          "score": 0.798,
+          "text": "角色名：开拓者•存护；行迹类型：属性加成"
+        },
+        {
+          "doc_id": "角色基础信息.csv|开拓者•存护|命途#1",
+          "source": "角色基础信息.csv",
+          "role": "开拓者•存护",
+          "field": "命途",
+          "score": 0.7935,
+          "text": "角色名：开拓者•存护；命途：存护"
+        },
+        {
+          "doc_id": "配队推荐.csv|开拓者•存护|位置#4",
+          "source": "配队推荐.csv",
+          "role": "开拓者•存护",
+          "field": "位置",
+          "score": 0.7809,
+          "text": "角色名：开拓者•存护；位置：生存"
+        },
+        {
+          "doc_id": "角色行迹.csv|开拓者•存护|行迹类型#4",
+          "source": "角色行迹.csv",
+          "role": "开拓者•存护",
+          "field": "行迹类型",
+          "score": 0.7799,
+          "text": "角色名：开拓者•存护；行迹类型：天赋"
+        },
+        {
+          "doc_id": "角色晋阶.csv|开拓者•存护|晋阶阶段#1",
+          "source": "角色晋阶.csv",
+          "role": "开拓者•存护",
+          "field": "晋阶阶段",
+          "score": 0.7777,
+          "text": "角色名：开拓者•存护；晋阶阶段：1级属性/晋阶所需材料"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 2.2,
+      "category": "confusable",
+      "expected": "火",
+      "hit": false,
+      "cite": true,
+      "correct": false
+    },
+    {
+      "question": "开拓者•记忆 的命途是什么？",
+      "answer": "开拓者•记忆的命途是：**记忆**。答案出自**片段1**。",
+      "retrieved": [
+        {
+          "doc_id": "角色基础信息.csv|开拓者•记忆|命途#1",
+          "source": "角色基础信息.csv",
+          "role": "开拓者•记忆",
+          "field": "命途",
+          "score": 0.7772,
+          "text": "角色名：开拓者•记忆；命途：记忆"
+        },
+        {
+          "doc_id": "配队推荐.csv|开拓者•记忆|位置#4",
+          "source": "配队推荐.csv",
+          "role": "开拓者•记忆",
+          "field": "位置",
+          "score": 0.7199,
+          "text": "角色名：开拓者•记忆；位置：生存"
+        },
+        {
+          "doc_id": "角色故事.csv|开拓者•记忆|故事标题#1",
+          "source": "角色故事.csv",
+          "role": "开拓者•记忆",
+          "field": "故事标题",
+          "score": 0.71,
+          "text": "角色名：开拓者•记忆；故事标题：一"
+        },
+        {
+          "doc_id": "角色行迹.csv|开拓者•记忆|行迹类型#4",
+          "source": "角色行迹.csv",
+          "role": "开拓者•记忆",
+          "field": "行迹类型",
+          "score": 0.7047,
+          "text": "角色名：开拓者•记忆；行迹类型：天赋"
+        },
+        {
+          "doc_id": "角色行迹.csv|开拓者•记忆|行迹类型#8",
+          "source": "角色行迹.csv",
+          "role": "开拓者•记忆",
+          "field": "行迹类型",
+          "score": 0.7031,
+          "text": "角色名：开拓者•记忆；行迹类型：忆灵天赋"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 0.77,
+      "category": "confusable",
+      "expected": "记忆",
+      "hit": true,
+      "cite": true,
+      "correct": true
+    },
+    {
+      "question": "开拓者•欢愉 的属性是什么？",
+      "answer": "知识库中没有相关信息，无法回答。  \n片段1、2、3仅提到“行迹类型：属性加成”“命途：欢愉”“晋阶阶段：1级属性/晋阶所需材料”，未给出开拓者•欢愉的具体属性内容。",
+      "retrieved": [
+        {
+          "doc_id": "角色行迹.csv|开拓者•欢愉|行迹类型#8",
+          "source": "角色行迹.csv",
+          "role": "开拓者•欢愉",
+          "field": "行迹类型",
+          "score": 0.7637,
+          "text": "角色名：开拓者•欢愉；行迹类型：属性加成"
+        },
+        {
+          "doc_id": "角色基础信息.csv|开拓者•欢愉|命途#1",
+          "source": "角色基础信息.csv",
+          "role": "开拓者•欢愉",
+          "field": "命途",
+          "score": 0.7589,
+          "text": "角色名：开拓者•欢愉；命途：欢愉"
+        },
+        {
+          "doc_id": "角色晋阶.csv|开拓者•欢愉|晋阶阶段#1",
+          "source": "角色晋阶.csv",
+          "role": "开拓者•欢愉",
+          "field": "晋阶阶段",
+          "score": 0.75,
+          "text": "角色名：开拓者•欢愉；晋阶阶段：1级属性/晋阶所需材料"
+        },
+        {
+          "doc_id": "光锥推荐.csv|开拓者•欢愉|推荐度#1",
+          "source": "光锥推荐.csv",
+          "role": "开拓者•欢愉",
+          "field": "推荐度",
+          "score": 0.7493,
+          "text": "角色名：开拓者•欢愉；推荐度：★★★★★"
+        },
+        {
+          "doc_id": "光锥推荐.csv|开拓者•欢愉|推荐度#2",
+          "source": "光锥推荐.csv",
+          "role": "开拓者•欢愉",
+          "field": "推荐度",
+          "score": 0.7493,
+          "text": "角色名：开拓者•欢愉；推荐度：★★★★"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 2.22,
+      "category": "confusable",
+      "expected": "雷",
+      "hit": false,
+      "cite": true,
+      "correct": false
+    },
+    {
+      "question": "忘归人 的属性是什么？",
+      "answer": "知识库中没有相关信息，无法回答。  \n片段1仅提到“行迹类型：属性加成”，片段3仅提到“晋阶阶段：1级属性/晋阶所需材料”，均未给出忘归人的具体属性内容。",
+      "retrieved": [
+        {
+          "doc_id": "角色行迹.csv|忘归人|行迹类型#7",
+          "source": "角色行迹.csv",
+          "role": "忘归人",
+          "field": "行迹类型",
+          "score": 0.7481,
+          "text": "角色名：忘归人；行迹类型：属性加成"
+        },
+        {
+          "doc_id": "角色故事.csv|忘归人|故事标题#1",
+          "source": "角色故事.csv",
+          "role": "忘归人",
+          "field": "故事标题",
+          "score": 0.7052,
+          "text": "角色名：忘归人；故事标题：其一"
+        },
+        {
+          "doc_id": "角色晋阶.csv|忘归人|晋阶阶段#1",
+          "source": "角色晋阶.csv",
+          "role": "忘归人",
+          "field": "晋阶阶段",
+          "score": 0.6998,
+          "text": "角色名：忘归人；晋阶阶段：1级属性/晋阶所需材料"
+        },
+        {
+          "doc_id": "角色故事.csv|忘归人|故事标题#2",
+          "source": "角色故事.csv",
+          "role": "忘归人",
+          "field": "故事标题",
+          "score": 0.6956,
+          "text": "角色名：忘归人；故事标题：其二"
+        },
+        {
+          "doc_id": "角色行迹.csv|忘归人|行迹类型#4",
+          "source": "角色行迹.csv",
+          "role": "忘归人",
+          "field": "行迹类型",
+          "score": 0.6939,
+          "text": "角色名：忘归人；行迹类型：天赋"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 1.94,
+      "category": "confusable",
+      "expected": "火",
+      "hit": false,
+      "cite": true,
+      "correct": false
+    },
+    {
+      "question": "停云 的命途是什么？",
+      "answer": "停云的命途是：同谐。答案出自片段1。",
+      "retrieved": [
+        {
+          "doc_id": "角色基础信息.csv|停云|命途#1",
+          "source": "角色基础信息.csv",
+          "role": "停云",
+          "field": "命途",
+          "score": 0.7156,
+          "text": "角色名：停云；命途：同谐"
+        },
+        {
+          "doc_id": "角色故事.csv|停云|故事标题#1",
+          "source": "角色故事.csv",
+          "role": "停云",
+          "field": "故事标题",
+          "score": 0.6859,
+          "text": "角色名：停云；故事标题：其一"
+        },
+        {
+          "doc_id": "配队推荐.csv|停云|位置#3",
+          "source": "配队推荐.csv",
+          "role": "停云",
+          "field": "位置",
+          "score": 0.6775,
+          "text": "角色名：停云；位置：生存"
+        },
+        {
+          "doc_id": "遗器推荐.csv|停云|主词条#1",
+          "source": "遗器推荐.csv",
+          "role": "停云",
+          "field": "主词条",
+          "score": 0.6759,
+          "text": "角色名：停云；主词条：【躯干】生命/防御/攻击【脚部】速度【位面球】攻击力【连结绳】能量恢复效率"
+        },
+        {
+          "doc_id": "配队推荐.csv|停云|推荐角色#6",
+          "source": "配队推荐.csv",
+          "role": "停云",
+          "field": "推荐角色",
+          "score": 0.6738,
+          "text": "角色名：停云；推荐角色：停云"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 1.0,
+      "category": "confusable",
+      "expected": "同谐",
+      "hit": true,
+      "cite": true,
+      "correct": true
+    },
+    {
+      "question": "玲可 的属性是什么？",
+      "answer": "知识库中没有相关信息，无法回答。片段1仅显示玲可的“行迹类型：属性加成”，未给出具体属性内容。",
+      "retrieved": [
+        {
+          "doc_id": "角色行迹.csv|玲可|行迹类型#7",
+          "source": "角色行迹.csv",
+          "role": "玲可",
+          "field": "行迹类型",
+          "score": 0.7342,
+          "text": "角色名：玲可；行迹类型：属性加成"
+        },
+        {
+          "doc_id": "角色晋阶.csv|玲可|晋阶阶段#1",
+          "source": "角色晋阶.csv",
+          "role": "玲可",
+          "field": "晋阶阶段",
+          "score": 0.7252,
+          "text": "角色名：玲可；晋阶阶段：1级属性/晋阶所需材料"
+        },
+        {
+          "doc_id": "角色故事.csv|玲可|故事标题#1",
+          "source": "角色故事.csv",
+          "role": "玲可",
+          "field": "故事标题",
+          "score": 0.7084,
+          "text": "角色名：玲可；故事标题：其一"
+        },
+        {
+          "doc_id": "角色故事.csv|玲可|故事标题#2",
+          "source": "角色故事.csv",
+          "role": "玲可",
+          "field": "故事标题",
+          "score": 0.6913,
+          "text": "角色名：玲可；故事标题：其二"
+        },
+        {
+          "doc_id": "配队推荐.csv|玲可|推荐角色#9",
+          "source": "配队推荐.csv",
+          "role": "玲可",
+          "field": "推荐角色",
+          "score": 0.6895,
+          "text": "角色名：玲可；推荐角色：玲可"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 2.06,
+      "category": "confusable",
+      "expected": "量子",
+      "hit": false,
+      "cite": true,
+      "correct": false
+    },
+    {
+      "question": "白露 的属性是什么？",
+      "answer": "白露的属性是：**雷**。  \n答案出自：**片段3**。",
+      "retrieved": [
+        {
+          "doc_id": "角色行迹.csv|白露|行迹类型#7",
+          "source": "角色行迹.csv",
+          "role": "白露",
+          "field": "行迹类型",
+          "score": 0.7503,
+          "text": "角色名：白露；行迹类型：属性加成"
+        },
+        {
+          "doc_id": "角色晋阶.csv|白露|晋阶阶段#1",
+          "source": "角色晋阶.csv",
+          "role": "白露",
+          "field": "晋阶阶段",
+          "score": 0.7123,
+          "text": "角色名：白露；晋阶阶段：1级属性/晋阶所需材料"
+        },
+        {
+          "doc_id": "角色基础信息.csv|白露|属性#1",
+          "source": "角色基础信息.csv",
+          "role": "白露",
+          "field": "属性",
+          "score": 0.6956,
+          "text": "角色名：白露；属性：雷"
+        },
+        {
+          "doc_id": "光锥推荐.csv|白露|推荐度#1",
+          "source": "光锥推荐.csv",
+          "role": "白露",
+          "field": "推荐度",
+          "score": 0.6945,
+          "text": "角色名：白露；推荐度：★★★★★"
+        },
+        {
+          "doc_id": "角色故事.csv|白露|故事标题#1",
+          "source": "角色故事.csv",
+          "role": "白露",
+          "field": "故事标题",
+          "score": 0.6933,
+          "text": "角色名：白露；故事标题：其一"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 1.08,
+      "category": "confusable",
+      "expected": "雷",
+      "hit": true,
+      "cite": true,
+      "correct": true
+    },
+    {
+      "question": "布洛妮娅 的属性是什么？",
+      "answer": "布洛妮娅的属性是**风**。  \n答案出自：**片段2**。",
+      "retrieved": [
+        {
+          "doc_id": "角色行迹.csv|布洛妮娅|行迹类型#7",
+          "source": "角色行迹.csv",
+          "role": "布洛妮娅",
+          "field": "行迹类型",
+          "score": 0.7707,
+          "text": "角色名：布洛妮娅；行迹类型：属性加成"
+        },
+        {
+          "doc_id": "角色基础信息.csv|布洛妮娅|属性#1",
+          "source": "角色基础信息.csv",
+          "role": "布洛妮娅",
+          "field": "属性",
+          "score": 0.7613,
+          "text": "角色名：布洛妮娅；属性：风"
+        },
+        {
+          "doc_id": "角色晋阶.csv|布洛妮娅|晋阶阶段#1",
+          "source": "角色晋阶.csv",
+          "role": "布洛妮娅",
+          "field": "晋阶阶段",
+          "score": 0.7483,
+          "text": "角色名：布洛妮娅；晋阶阶段：1级属性/晋阶所需材料"
+        },
+        {
+          "doc_id": "角色行迹.csv|布洛妮娅|行迹类型#4",
+          "source": "角色行迹.csv",
+          "role": "布洛妮娅",
+          "field": "行迹类型",
+          "score": 0.7317,
+          "text": "角色名：布洛妮娅；行迹类型：天赋"
+        },
+        {
+          "doc_id": "角色故事.csv|布洛妮娅|故事标题#1",
+          "source": "角色故事.csv",
+          "role": "布洛妮娅",
+          "field": "故事标题",
+          "score": 0.7298,
+          "text": "角色名：布洛妮娅；故事标题：其一"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 1.24,
+      "category": "confusable",
+      "expected": "风",
+      "hit": true,
+      "cite": true,
+      "correct": true
+    },
+    {
+      "question": "星期日 的属性是什么？",
+      "answer": "星期日的属性是**虚数**。  \n答案出自：**片段2**。",
+      "retrieved": [
+        {
+          "doc_id": "角色行迹.csv|星期日|行迹类型#7",
+          "source": "角色行迹.csv",
+          "role": "星期日",
+          "field": "行迹类型",
+          "score": 0.6916,
+          "text": "角色名：星期日；行迹类型：属性加成"
+        },
+        {
+          "doc_id": "角色基础信息.csv|星期日|属性#1",
+          "source": "角色基础信息.csv",
+          "role": "星期日",
+          "field": "属性",
+          "score": 0.6412,
+          "text": "角色名：星期日；属性：虚数"
+        },
+        {
+          "doc_id": "角色行迹.csv|星期日|行迹类型#4",
+          "source": "角色行迹.csv",
+          "role": "星期日",
+          "field": "行迹类型",
+          "score": 0.6336,
+          "text": "角色名：星期日；行迹类型：天赋"
+        },
+        {
+          "doc_id": "角色故事.csv|星期日|故事标题#1",
+          "source": "角色故事.csv",
+          "role": "星期日",
+          "field": "故事标题",
+          "score": 0.6329,
+          "text": "角色名：星期日；故事标题：其一"
+        },
+        {
+          "doc_id": "遗器推荐.csv|星期日|推荐指数#1",
+          "source": "遗器推荐.csv",
+          "role": "星期日",
+          "field": "推荐指数",
+          "score": 0.6205,
+          "text": "角色名：星期日；推荐指数：★★★★★"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 0.91,
+      "category": "confusable",
+      "expected": "虚数",
+      "hit": true,
+      "cite": true,
+      "correct": true
+    },
+    {
+      "question": "姬子 的实装日期是哪天？",
+      "answer": "姬子的实装日期是 **2023/04/26**，答案出自 **片段1**。",
+      "retrieved": [
+        {
+          "doc_id": "角色基础信息.csv|姬子|实装日期#1",
+          "source": "角色基础信息.csv",
+          "role": "姬子",
+          "field": "实装日期",
+          "score": 0.7729,
+          "text": "角色名：姬子；实装日期：2023/04/26"
+        },
+        {
+          "doc_id": "角色基础信息.csv|姬子•启行|实装日期#1",
+          "source": "角色基础信息.csv",
+          "role": "姬子•启行",
+          "field": "实装日期",
+          "score": 0.7091,
+          "text": "角色名：姬子•启行；实装日期：2026/07/15"
+        },
+        {
+          "doc_id": "角色基础信息.csv|艾丝妲|实装日期#1",
+          "source": "角色基础信息.csv",
+          "role": "艾丝妲",
+          "field": "实装日期",
+          "score": 0.6127,
+          "text": "角色名：艾丝妲；实装日期：2023/04/26"
+        },
+        {
+          "doc_id": "角色基础信息.csv|星期日|实装日期#1",
+          "source": "角色基础信息.csv",
+          "role": "星期日",
+          "field": "实装日期",
+          "score": 0.6035,
+          "text": "角色名：星期日；实装日期：2024/12/04"
+        },
+        {
+          "doc_id": "光锥推荐.csv|姬子|光锥名称#3",
+          "source": "光锥推荐.csv",
+          "role": "姬子",
+          "field": "光锥名称",
+          "score": 0.5905,
+          "text": "角色名：姬子；光锥名称：今日亦是和平的一日"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 0.93,
+      "category": "confusable",
+      "expected": "2023/04/26",
+      "hit": true,
+      "cite": true,
+      "correct": true
+    },
+    {
+      "question": "姬子•启行 的实装日期是哪天？",
+      "answer": "姬子•启行的实装日期是 **2026/07/15**。  \n答案出自 **片段1**。",
+      "retrieved": [
+        {
+          "doc_id": "角色基础信息.csv|姬子•启行|实装日期#1",
+          "source": "角色基础信息.csv",
+          "role": "姬子•启行",
+          "field": "实装日期",
+          "score": 0.8259,
+          "text": "角色名：姬子•启行；实装日期：2026/07/15"
+        },
+        {
+          "doc_id": "角色基础信息.csv|姬子|实装日期#1",
+          "source": "角色基础信息.csv",
+          "role": "姬子",
+          "field": "实装日期",
+          "score": 0.6973,
+          "text": "角色名：姬子；实装日期：2023/04/26"
+        },
+        {
+          "doc_id": "遗器推荐.csv|姬子•启行|方案序号#1",
+          "source": "遗器推荐.csv",
+          "role": "姬子•启行",
+          "field": "方案序号",
+          "score": 0.6933,
+          "text": "角色名：姬子•启行；方案序号：1"
+        },
+        {
+          "doc_id": "光锥推荐.csv|姬子•启行|推荐度#1",
+          "source": "光锥推荐.csv",
+          "role": "姬子•启行",
+          "field": "推荐度",
+          "score": 0.6878,
+          "text": "角色名：姬子•启行；推荐度：★★★★★"
+        },
+        {
+          "doc_id": "角色故事.csv|姬子•启行|故事编号#1",
+          "source": "角色故事.csv",
+          "role": "姬子•启行",
+          "field": "故事编号",
+          "score": 0.686,
+          "text": "角色名：姬子•启行；故事编号：1"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 1.26,
+      "category": "confusable",
+      "expected": "2026/07/15",
+      "hit": true,
+      "cite": true,
+      "correct": true
+    },
+    {
+      "question": "佩拉 的属性是什么？",
+      "answer": "知识库中没有相关信息，无法回答。  \n片段1仅显示佩拉的“行迹类型：属性加成”，片段2仅显示“晋阶阶段：1级属性/晋阶所需材料”，均未列出具体属性内容。",
+      "retrieved": [
+        {
+          "doc_id": "角色行迹.csv|佩拉|行迹类型#7",
+          "source": "角色行迹.csv",
+          "role": "佩拉",
+          "field": "行迹类型",
+          "score": 0.7488,
+          "text": "角色名：佩拉；行迹类型：属性加成"
+        },
+        {
+          "doc_id": "角色晋阶.csv|佩拉|晋阶阶段#1",
+          "source": "角色晋阶.csv",
+          "role": "佩拉",
+          "field": "晋阶阶段",
+          "score": 0.7026,
+          "text": "角色名：佩拉；晋阶阶段：1级属性/晋阶所需材料"
+        },
+        {
+          "doc_id": "角色行迹.csv|佩拉|行迹类型#4",
+          "source": "角色行迹.csv",
+          "role": "佩拉",
+          "field": "行迹类型",
+          "score": 0.6979,
+          "text": "角色名：佩拉；行迹类型：天赋"
+        },
+        {
+          "doc_id": "角色故事.csv|佩拉|故事标题#1",
+          "source": "角色故事.csv",
+          "role": "佩拉",
+          "field": "故事标题",
+          "score": 0.6877,
+          "text": "角色名：佩拉；故事标题：其一"
+        },
+        {
+          "doc_id": "角色行迹.csv|佩拉|行迹类型#1",
+          "source": "角色行迹.csv",
+          "role": "佩拉",
+          "field": "行迹类型",
+          "score": 0.6851,
+          "text": "角色名：佩拉；行迹类型：普攻"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 1.61,
+      "category": "confusable",
+      "expected": "冰",
+      "hit": false,
+      "cite": true,
+      "correct": false
+    },
+    {
+      "question": "桑博 的属性是什么？",
+      "answer": "桑博的属性是：**风**。  \n答案出自：**片段2**。",
+      "retrieved": [
+        {
+          "doc_id": "角色行迹.csv|桑博|行迹类型#7",
+          "source": "角色行迹.csv",
+          "role": "桑博",
+          "field": "行迹类型",
+          "score": 0.73,
+          "text": "角色名：桑博；行迹类型：属性加成"
+        },
+        {
+          "doc_id": "角色基础信息.csv|桑博|属性#1",
+          "source": "角色基础信息.csv",
+          "role": "桑博",
+          "field": "属性",
+          "score": 0.7244,
+          "text": "角色名：桑博；属性：风"
+        },
+        {
+          "doc_id": "角色晋阶.csv|桑博|晋阶阶段#1",
+          "source": "角色晋阶.csv",
+          "role": "桑博",
+          "field": "晋阶阶段",
+          "score": 0.7021,
+          "text": "角色名：桑博；晋阶阶段：1级属性/晋阶所需材料"
+        },
+        {
+          "doc_id": "角色故事.csv|桑博|故事标题#1",
+          "source": "角色故事.csv",
+          "role": "桑博",
+          "field": "故事标题",
+          "score": 0.6994,
+          "text": "角色名：桑博；故事标题：其一"
+        },
+        {
+          "doc_id": "角色故事.csv|桑博|故事标题#2",
+          "source": "角色故事.csv",
+          "role": "桑博",
+          "field": "故事标题",
+          "score": 0.6818,
+          "text": "角色名：桑博；故事标题：其二"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 0.91,
+      "category": "confusable",
+      "expected": "风",
+      "hit": true,
+      "cite": true,
+      "correct": true
+    },
+    {
+      "question": "翡翠 的命途是什么？",
+      "answer": "翡翠的命途是「智识」。  \n答案出自片段1。",
+      "retrieved": [
+        {
+          "doc_id": "角色基础信息.csv|翡翠|命途#1",
+          "source": "角色基础信息.csv",
+          "role": "翡翠",
+          "field": "命途",
+          "score": 0.7041,
+          "text": "角色名：翡翠；命途：智识"
+        },
+        {
+          "doc_id": "配队推荐.csv|翡翠|位置#4",
+          "source": "配队推荐.csv",
+          "role": "翡翠",
+          "field": "位置",
+          "score": 0.6578,
+          "text": "角色名：翡翠；位置：生存"
+        },
+        {
+          "doc_id": "角色故事.csv|翡翠|故事标题#1",
+          "source": "角色故事.csv",
+          "role": "翡翠",
+          "field": "故事标题",
+          "score": 0.6314,
+          "text": "角色名：翡翠；故事标题：其一"
+        },
+        {
+          "doc_id": "角色行迹.csv|翡翠|行迹类型#4",
+          "source": "角色行迹.csv",
+          "role": "翡翠",
+          "field": "行迹类型",
+          "score": 0.6178,
+          "text": "角色名：翡翠；行迹类型：天赋"
+        },
+        {
+          "doc_id": "角色行迹.csv|翡翠|成长消耗材料#5",
+          "source": "角色行迹.csv",
+          "role": "翡翠",
+          "field": "成长消耗材料",
+          "score": 0.6169,
+          "text": "角色名：翡翠；成长消耗材料：信用点×160000、精致色稿×8、命运的足迹×1、同愿的遗音×1"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 1.19,
+      "category": "confusable",
+      "expected": "智识",
+      "hit": true,
+      "cite": true,
+      "correct": true
+    },
+    {
+      "question": "托帕&账账 的命途是什么？",
+      "answer": "托帕&账账的命途是：**巡猎**。  \n答案出自：**片段1**。",
+      "retrieved": [
+        {
+          "doc_id": "角色基础信息.csv|托帕&账账|命途#1",
+          "source": "角色基础信息.csv",
+          "role": "托帕&账账",
+          "field": "命途",
+          "score": 0.7477,
+          "text": "角色名：托帕&账账；命途：巡猎"
+        },
+        {
+          "doc_id": "配队推荐.csv|托帕&账账|位置#3",
+          "source": "配队推荐.csv",
+          "role": "托帕&账账",
+          "field": "位置",
+          "score": 0.722,
+          "text": "角色名：托帕&账账；位置：生存"
+        },
+        {
+          "doc_id": "角色故事.csv|托帕&账账|故事标题#1",
+          "source": "角色故事.csv",
+          "role": "托帕&账账",
+          "field": "故事标题",
+          "score": 0.719,
+          "text": "角色名：托帕&账账；故事标题：其一"
+        },
+        {
+          "doc_id": "角色故事.csv|托帕&账账|故事标题#2",
+          "source": "角色故事.csv",
+          "role": "托帕&账账",
+          "field": "故事标题",
+          "score": 0.7104,
+          "text": "角色名：托帕&账账；故事标题：其二"
+        },
+        {
+          "doc_id": "角色行迹.csv|托帕&账账|行迹类型#4",
+          "source": "角色行迹.csv",
+          "role": "托帕&账账",
+          "field": "行迹类型",
+          "score": 0.6992,
+          "text": "角色名：托帕&账账；行迹类型：天赋"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 1.17,
+      "category": "confusable",
+      "expected": "巡猎",
+      "hit": true,
+      "cite": true,
+      "correct": true
+    },
+    {
+      "question": "远坂凛 的命途是什么？",
+      "answer": "远坂凛的命途是：**智识**。\n\n答案出自：**片段1**（角色基础信息.csv）。",
+      "retrieved": [
+        {
+          "doc_id": "角色基础信息.csv|远坂凛|命途#1",
+          "source": "角色基础信息.csv",
+          "role": "远坂凛",
+          "field": "命途",
+          "score": 0.7283,
+          "text": "角色名：远坂凛；命途：智识"
+        },
+        {
+          "doc_id": "角色故事.csv|远坂凛|故事标题#1",
+          "source": "角色故事.csv",
+          "role": "远坂凛",
+          "field": "故事标题",
+          "score": 0.7115,
+          "text": "角色名：远坂凛；故事标题：其一"
+        },
+        {
+          "doc_id": "角色行迹.csv|远坂凛|行迹类型#4",
+          "source": "角色行迹.csv",
+          "role": "远坂凛",
+          "field": "行迹类型",
+          "score": 0.7104,
+          "text": "角色名：远坂凛；行迹类型：天赋"
+        },
+        {
+          "doc_id": "配队推荐.csv|远坂凛|位置#4",
+          "source": "配队推荐.csv",
+          "role": "远坂凛",
+          "field": "位置",
+          "score": 0.7015,
+          "text": "角色名：远坂凛；位置：生存"
+        },
+        {
+          "doc_id": "角色行迹.csv|远坂凛|行迹类型#3",
+          "source": "角色行迹.csv",
+          "role": "远坂凛",
+          "field": "行迹类型",
+          "score": 0.7014,
+          "text": "角色名：远坂凛；行迹类型：终结技"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 0.65,
+      "category": "confusable",
+      "expected": "智识",
+      "hit": true,
+      "cite": true,
+      "correct": true
+    },
+    {
+      "question": "黑天鹅 的属性是什么？",
+      "answer": "黑天鹅的属性是：风。  \n答案出自【片段2】。",
+      "retrieved": [
+        {
+          "doc_id": "角色行迹.csv|黑天鹅|行迹类型#7",
+          "source": "角色行迹.csv",
+          "role": "黑天鹅",
+          "field": "行迹类型",
+          "score": 0.7495,
+          "text": "角色名：黑天鹅；行迹类型：属性加成"
+        },
+        {
+          "doc_id": "角色基础信息.csv|黑天鹅|属性#1",
+          "source": "角色基础信息.csv",
+          "role": "黑天鹅",
+          "field": "属性",
+          "score": 0.7292,
+          "text": "角色名：黑天鹅；属性：风"
+        },
+        {
+          "doc_id": "角色行迹.csv|黑天鹅|行迹类型#4",
+          "source": "角色行迹.csv",
+          "role": "黑天鹅",
+          "field": "行迹类型",
+          "score": 0.7195,
+          "text": "角色名：黑天鹅；行迹类型：天赋"
+        },
+        {
+          "doc_id": "角色故事.csv|黑天鹅|故事标题#1",
+          "source": "角色故事.csv",
+          "role": "黑天鹅",
+          "field": "故事标题",
+          "score": 0.7163,
+          "text": "角色名：黑天鹅；故事标题：其一"
+        },
+        {
+          "doc_id": "遗器推荐.csv|黑天鹅|主词条#1",
+          "source": "遗器推荐.csv",
+          "role": "黑天鹅",
+          "field": "主词条",
+          "score": 0.7076,
+          "text": "角色名：黑天鹅；主词条：【躯干】效果命中/攻击力【脚部】速度【位面球】风属性伤害【连结绳】攻击力"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 1.26,
+      "category": "confusable",
+      "expected": "风",
+      "hit": true,
+      "cite": true,
+      "correct": true
+    },
+    {
+      "question": "开拓者·毁灭 的属性是什么？",
+      "answer": "开拓者·毁灭 的属性是：物理。  \n答案出自【片段5】。",
+      "retrieved": [
+        {
+          "doc_id": "角色基础信息.csv|开拓者·毁灭|命途#1",
+          "source": "角色基础信息.csv",
+          "role": "开拓者·毁灭",
+          "field": "命途",
+          "score": 0.775,
+          "text": "角色名：开拓者·毁灭；命途：毁灭"
+        },
+        {
+          "doc_id": "角色故事.csv|开拓者·毁灭|故事标题#1",
+          "source": "角色故事.csv",
+          "role": "开拓者·毁灭",
+          "field": "故事标题",
+          "score": 0.7745,
+          "text": "角色名：开拓者·毁灭；故事标题：一"
+        },
+        {
+          "doc_id": "配队推荐.csv|开拓者·毁灭|位置#3",
+          "source": "配队推荐.csv",
+          "role": "开拓者·毁灭",
+          "field": "位置",
+          "score": 0.7697,
+          "text": "角色名：开拓者·毁灭；位置：生存"
+        },
+        {
+          "doc_id": "遗器推荐.csv|开拓者·毁灭|主词条#1",
+          "source": "遗器推荐.csv",
+          "role": "开拓者·毁灭",
+          "field": "主词条",
+          "score": 0.7673,
+          "text": "角色名：开拓者·毁灭；主词条：【躯干】暴击/爆伤【脚部】攻击/速度【位面球】物理属性伤害【连结绳】攻击/回能"
+        },
+        {
+          "doc_id": "角色基础信息.csv|开拓者·毁灭|属性#1",
+          "source": "角色基础信息.csv",
+          "role": "开拓者·毁灭",
+          "field": "属性",
+          "score": 0.7656,
+          "text": "角色名：开拓者·毁灭；属性：物理"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 0.76,
+      "category": "confusable",
+      "expected": "物理",
+      "hit": true,
+      "cite": true,
+      "correct": true
+    }
+  ]
+}
