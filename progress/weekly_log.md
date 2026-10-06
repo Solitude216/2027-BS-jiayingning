@@ -1,14 +1,12 @@
 # progress / weekly_log
 
-> 周志按图片模板（Week XX 代码练习与项目推进）填写。
-
 ---
 
-# Week 01 项目推进
+# Week 01 仓库初步构建与知识库和测试集构建
 
 ## 1. 本周任务
 - 明确毕业论文课题（基于大语言模型的游戏知识问答与辅助）
-- 搭建 GitHub 仓库（2027-BS-game）并确定目录结构
+- 搭建 GitHub 仓库（2027-BS-jiayingning）并确定目录结构
 - 构建游戏知识库（整理《崩坏：星穹铁道》角色数据为 CSV）
 - 构建并冻结初步测试集
 
@@ -39,7 +37,7 @@ python scripts/1_data_prep/生成角色基础信息csv.py
 
 ---
 
-# Week 02 项目推进
+# Week 02 Baseline与主实验的实现
 
 ## 1. 本周任务
 - 确认课题与研究问题，阅读并确认参考文献
@@ -69,7 +67,7 @@ python evaluation/run_eval.py --method vector
 - 完成课题与研究问题确认，阅读并整理参考文献列表与阅读笔记
 - 跑通无RAG基线：总体准确率 0.333、拒答率 0.000（从不拒答，暴露幻觉问题）
 - 跑通主实验：RAG-BM25 总体 0.750、RAG-向量总体 0.808；向量语义区分更强、BM25 字面略优
-- 完成冻结测试集（v1.0，2026-10-05）与逐题参考答案核验（80/80 一致）
+- 完成冻结测试集与逐题参考答案核验（80/80 一致）
 
 ## 6. 未解决问题
 - 字段级切块下"属性类"问题系统性检索错位（噪声块压制目标字段）
@@ -81,9 +79,8 @@ python evaluation/run_eval.py --method vector
 # Week 03 项目推进
 
 ## 1. 本周任务
-- 按 2027-BS-game 仓库结构补充本地 C:\毕业论文 目录
 - 撰写实验设计文档（docs/03-design/experiment_design.md）
-- 撰写《Baseline 与问题分析报告》（results/baseline_report.docx）
+- 撰写《Baseline 与问题分析报告》
 - 补充实验记录（experiments/baseline、exp01-retrieval-method）与 README
 
 ## 2. 如何运行
@@ -95,15 +92,11 @@ python evaluation/run_eval.py --method vector
 
 ## 3. 输入
 - results/summary.md、eval_*.json（真实实验结果）
-- 仓库结构参考（2027-BS-game main 分支）
 
 ## 4. 输出
-- 目录重构后的 C:\毕业论文（configs/data/docs/evaluation/experiments/knowledge_base/progress/results/scripts/src/thesis）
 - docs/03-design/experiment_design.md、README.md
-- results/baseline_report.docx（5-7 页，含目录与三线表）
 
 ## 5. 本周完成情况
-- 完成仓库目录补充与 README 按毕业论文模板重写
 - 完成实验设计文档与《Baseline 与问题分析报告》（含三方案结果、问题归因、下一步）
 - 完成 baseline 备注结论、exp01 主实验记录（EXP-001）与测试集校验脚本
 
