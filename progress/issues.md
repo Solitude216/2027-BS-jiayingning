@@ -9,7 +9,7 @@
 - [x] 搭建本地 RAG 链路（bge-small-zh 嵌入 + 向量/BM25 检索 + 生成）
 - [x] 无RAG vs RAG、检索方法对比（BM25 / 向量）
 - [x] 评价答案正确性、知识命中率、引用准确性（results/summary.md）
-- [x] 撰写 Baseline 与问题分析报告（results/baseline_report.docx）
+- [x] 撰写 Baseline 与问题分析报告
 
 ## 待办
 - [ ] 消融/性能测试：切分粒度（row/field）、top_k（3/5/10）、去重、混合检索
