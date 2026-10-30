@@ -56,7 +56,7 @@ python scripts/summarize_matrix.py                                   # 汇总主
 明细：`results/tables/matrix_*.json`、`eval_vector_field_k5_ec_20261030_131904.json`；汇总 `results/tables/matrix_summary.json`。
 
 ## Conclusion
-1. **评测体系四项修复**：citation_accuracy（弱指标改名 source_role_match + 真引用指标解析"片段N"）、hit_knowledge（金标准三元组判定）、无 RAG 跳过检索均已解决；answer_correct 的规则+同义词+多答案已实现，**人工双检抽审仍待补**。
+1. **评测体系四项修复**：citation_accuracy（弱指标改名 source_role_match + 真引用指标解析"片段N"）、hit_knowledge（金标准三元组判定）、无 RAG 跳过检索均已解决；answer_correct 规则+同义词+多答案已实现，并经 25 题分层抽样人工双检（一致率 100%，见 `answer-correct-doublecheck.md`）。
 2. **知识组织方式影响最大**：entity-grouped(0.958) ≫ field(0.850) ≫ row(0.575)；row 整行切块把多字段混在一段，可答/易混暴跌。
 3. **混合 RRF 优于单路**：0.933 > 向量 0.850 > BM25 0.783；易混淆类 0.771→0.943，词法与语义互补。
 4. **top-k 扫描**：总体 k3<k5<k10，但引用精度随 k 下降（0.917→0.833→0.783），k5 为平衡点。
@@ -64,7 +64,7 @@ python scripts/summarize_matrix.py                                   # 汇总主
 6. **实体消歧无效（诚实负面结论）**：加约束后易混淆类仍为 27/35=0.771，与不加约束完全相同；可回答类也完全一致（0.778）。问题文本已写出完整角色名、检索已命中正确角色，剩余 8 道错题（三月七、银狼、砂金·戏浪、开拓者·存护/欢愉、忘归人、玲可、佩拉）错在**字段级生成**（命途/属性答错），不在检索到错误实体。后续应转向生成端（字段化 prompt、结构化答案约束）。
 
 ## Problems
-- answer_correct 已实现规则匹配，但抽一部分人工双检尚未做，需补 20~30 题核对表。
+- answer_correct 规则匹配经 25 题分层抽样人工双检一致率 100%，评测口径可信（见 `answer-correct-doublecheck.md`）。
 - 实体约束对"问题中已明确点名角色"的题天然无增量；本测试集易混题均直接写出完整角色名，约束退化为确认。
 - 事后过滤存在误删风险：实体名写法不一致（如"开拓者·毁灭"点号全半角差异）会清空结果，是不能回答类略降的原因之一。
 - 初版实体约束每抽到新实体即重建全语料索引（4723 篇重嵌），120 题跑数小时、日志截断进程被回收；已改为建一次索引+查询时切换 `entity_filter`，单配置降至约 15 分钟。
