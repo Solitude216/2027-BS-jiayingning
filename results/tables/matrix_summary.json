@@ -1,0 +1,272 @@
+{
+  "no_rag": {
+    "label": "无RAG（纯LLM）",
+    "chunk_mode": "—",
+    "stats": {
+      "answerable": {
+        "n": 45,
+        "acc": 0.4,
+        "hit_rate": 0.0,
+        "cite": 0.0
+      },
+      "unanswerable": {
+        "n": 40,
+        "acc": 0.05,
+        "hit_rate": 0.0,
+        "cite": 0.0
+      },
+      "confusable": {
+        "n": 35,
+        "acc": 0.6857,
+        "hit_rate": 0.0,
+        "cite": 0.0
+      },
+      "overall": {
+        "n": 120,
+        "acc": 0.3667,
+        "hit_rate": 0.0,
+        "cite": 0.0
+      }
+    }
+  },
+  "vector_field_k5": {
+    "label": "向量·field·k5",
+    "chunk_mode": "field",
+    "stats": {
+      "answerable": {
+        "n": 45,
+        "acc": 0.7778,
+        "hit_rate": 0.8444,
+        "cite": 1.0
+      },
+      "unanswerable": {
+        "n": 40,
+        "acc": 1.0,
+        "hit_rate": 0.0,
+        "cite": 0.5
+      },
+      "confusable": {
+        "n": 35,
+        "acc": 0.7714,
+        "hit_rate": 0.7714,
+        "cite": 1.0
+      },
+      "overall": {
+        "n": 120,
+        "acc": 0.85,
+        "hit_rate": 0.5417,
+        "cite": 0.8333
+      }
+    }
+  },
+  "bm25_field_k5": {
+    "label": "BM25·field·k5",
+    "chunk_mode": "field",
+    "stats": {
+      "answerable": {
+        "n": 45,
+        "acc": 0.8,
+        "hit_rate": 0.8667,
+        "cite": 1.0
+      },
+      "unanswerable": {
+        "n": 40,
+        "acc": 0.925,
+        "hit_rate": 0.0,
+        "cite": 0.4
+      },
+      "confusable": {
+        "n": 35,
+        "acc": 0.6,
+        "hit_rate": 0.5429,
+        "cite": 0.9143
+      },
+      "overall": {
+        "n": 120,
+        "acc": 0.7833,
+        "hit_rate": 0.4833,
+        "cite": 0.775
+      }
+    }
+  },
+  "hybrid_field_k5_rrf": {
+    "label": "混合RRF·field·k5",
+    "chunk_mode": "field",
+    "stats": {
+      "answerable": {
+        "n": 45,
+        "acc": 0.9111,
+        "hit_rate": 1.0,
+        "cite": 0.9778
+      },
+      "unanswerable": {
+        "n": 40,
+        "acc": 0.95,
+        "hit_rate": 0.0,
+        "cite": 0.45
+      },
+      "confusable": {
+        "n": 35,
+        "acc": 0.9429,
+        "hit_rate": 0.9429,
+        "cite": 1.0
+      },
+      "overall": {
+        "n": 120,
+        "acc": 0.9333,
+        "hit_rate": 0.65,
+        "cite": 0.8083
+      }
+    }
+  },
+  "vector_row_k5": {
+    "label": "向量·row·k5",
+    "chunk_mode": "row",
+    "stats": {
+      "answerable": {
+        "n": 45,
+        "acc": 0.4222,
+        "hit_rate": 0.1556,
+        "cite": 0.7333
+      },
+      "unanswerable": {
+        "n": 40,
+        "acc": 0.975,
+        "hit_rate": 0.0,
+        "cite": 0.35
+      },
+      "confusable": {
+        "n": 35,
+        "acc": 0.3143,
+        "hit_rate": 0.0571,
+        "cite": 0.6286
+      },
+      "overall": {
+        "n": 120,
+        "acc": 0.575,
+        "hit_rate": 0.075,
+        "cite": 0.575
+      }
+    }
+  },
+  "vector_entity_k5": {
+    "label": "向量·entity-grouped·k5",
+    "chunk_mode": "entity",
+    "stats": {
+      "answerable": {
+        "n": 45,
+        "acc": 0.9556,
+        "hit_rate": 0.9778,
+        "cite": 0.9778
+      },
+      "unanswerable": {
+        "n": 40,
+        "acc": 0.95,
+        "hit_rate": 0.0,
+        "cite": 0.775
+      },
+      "confusable": {
+        "n": 35,
+        "acc": 0.9714,
+        "hit_rate": 0.9714,
+        "cite": 0.9714
+      },
+      "overall": {
+        "n": 120,
+        "acc": 0.9583,
+        "hit_rate": 0.65,
+        "cite": 0.9083
+      }
+    }
+  },
+  "vector_field_k3": {
+    "label": "向量·field·k3",
+    "chunk_mode": "field",
+    "stats": {
+      "answerable": {
+        "n": 45,
+        "acc": 0.7111,
+        "hit_rate": 0.7778,
+        "cite": 1.0
+      },
+      "unanswerable": {
+        "n": 40,
+        "acc": 0.975,
+        "hit_rate": 0.0,
+        "cite": 0.75
+      },
+      "confusable": {
+        "n": 35,
+        "acc": 0.7143,
+        "hit_rate": 0.7143,
+        "cite": 1.0
+      },
+      "overall": {
+        "n": 120,
+        "acc": 0.8,
+        "hit_rate": 0.5,
+        "cite": 0.9167
+      }
+    }
+  },
+  "vector_field_k10": {
+    "label": "向量·field·k10",
+    "chunk_mode": "field",
+    "stats": {
+      "answerable": {
+        "n": 45,
+        "acc": 0.8,
+        "hit_rate": 0.8889,
+        "cite": 0.9778
+      },
+      "unanswerable": {
+        "n": 40,
+        "acc": 1.0,
+        "hit_rate": 0.0,
+        "cite": 0.375
+      },
+      "confusable": {
+        "n": 35,
+        "acc": 0.8571,
+        "hit_rate": 0.8571,
+        "cite": 1.0
+      },
+      "overall": {
+        "n": 120,
+        "acc": 0.8833,
+        "hit_rate": 0.5833,
+        "cite": 0.7833
+      }
+    }
+  },
+  "vector_field_k5_ec": {
+    "label": "向量·field·k5·实体约束",
+    "chunk_mode": "field",
+    "stats": {
+      "answerable": {
+        "n": 45,
+        "acc": 0.7778,
+        "hit_rate": 0.8444,
+        "cite": 0.9778
+      },
+      "unanswerable": {
+        "n": 40,
+        "acc": 0.975,
+        "hit_rate": 0.0,
+        "cite": 0.35
+      },
+      "confusable": {
+        "n": 35,
+        "acc": 0.7714,
+        "hit_rate": 0.7714,
+        "cite": 1.0
+      },
+      "overall": {
+        "n": 120,
+        "acc": 0.8417,
+        "hit_rate": 0.5417,
+        "cite": 0.775
+      }
+    }
+  }
+}

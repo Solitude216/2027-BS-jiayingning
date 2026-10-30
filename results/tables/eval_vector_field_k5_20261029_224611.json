@@ -1,0 +1,369 @@
+{
+  "testset": "2027-BS-game 游戏知识问答测试集 v1",
+  "method": "vector",
+  "chunk_mode": "field",
+  "top_k": 5,
+  "entity_constraint": false,
+  "generated_at": "2026-10-29 22:46:11",
+  "stats": {
+    "answerable": {
+      "n": 6,
+      "correct": 5,
+      "answer_accuracy": 0.8333,
+      "hit_rate": 0.8333,
+      "citation_accuracy": 0.8333
+    },
+    "unanswerable": {},
+    "confusable": {},
+    "overall": {
+      "n": 6,
+      "overall_accuracy": 0.8333,
+      "hit_rate": 0.8333,
+      "citation_accuracy": 0.8333
+    }
+  },
+  "results": [
+    {
+      "question": "Archer 的属性是什么？",
+      "answer": "Archer 的属性是**量子**。答案出自**片段3**。",
+      "retrieved": [
+        {
+          "doc_id": "角色行迹.csv|Archer|行迹类型#7",
+          "source": "角色行迹.csv",
+          "role": "Archer",
+          "field": "行迹类型",
+          "score": 0.7131,
+          "text": "角色名：Archer；行迹类型：属性加成"
+        },
+        {
+          "doc_id": "角色晋阶.csv|Archer|晋阶阶段#1",
+          "source": "角色晋阶.csv",
+          "role": "Archer",
+          "field": "晋阶阶段",
+          "score": 0.7036,
+          "text": "角色名：Archer；晋阶阶段：1级属性/晋阶所需材料"
+        },
+        {
+          "doc_id": "角色基础信息.csv|Archer|属性#1",
+          "source": "角色基础信息.csv",
+          "role": "Archer",
+          "field": "属性",
+          "score": 0.6822,
+          "text": "角色名：Archer；属性：量子"
+        },
+        {
+          "doc_id": "角色故事.csv|Archer|故事标题#1",
+          "source": "角色故事.csv",
+          "role": "Archer",
+          "field": "故事标题",
+          "score": 0.669,
+          "text": "角色名：Archer；故事标题：其一"
+        },
+        {
+          "doc_id": "角色行迹.csv|Archer|行迹描述#1",
+          "source": "角色行迹.csv",
+          "role": "Archer",
+          "field": "行迹描述",
+          "score": 0.6678,
+          "text": "角色名：Archer；行迹描述：对指定敌方单体造成等同于Archer【50%/100%】攻击力的量子属性伤害。\n（标签：回能 20、技能点 +1、单攻、削韧 10）"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 1.63,
+      "category": "answerable",
+      "expected": "量子",
+      "gold_role": "Archer",
+      "gold_field": "属性",
+      "extracted_entity": null,
+      "hit": true,
+      "source_role_match": true,
+      "cite": true,
+      "correct": true
+    },
+    {
+      "question": "Saber 的命途是什么？",
+      "answer": "Saber 的命途是「毁灭」，答案出自片段1。",
+      "retrieved": [
+        {
+          "doc_id": "角色基础信息.csv|Saber|命途#1",
+          "source": "角色基础信息.csv",
+          "role": "Saber",
+          "field": "命途",
+          "score": 0.7285,
+          "text": "角色名：Saber；命途：毁灭"
+        },
+        {
+          "doc_id": "角色行迹.csv|Saber|行迹描述#16",
+          "source": "角色行迹.csv",
+          "role": "Saber",
+          "field": "行迹描述",
+          "score": 0.682,
+          "text": "角色名：Saber；行迹描述：生命值上限提高6%\n（标签：角色晋阶6）"
+        },
+        {
+          "doc_id": "角色行迹.csv|Saber|行迹描述#12",
+          "source": "角色行迹.csv",
+          "role": "Saber",
+          "field": "行迹描述",
+          "score": 0.671,
+          "text": "角色名：Saber；行迹描述：生命值上限提高4%\n（标签：角色晋阶3）"
+        },
+        {
+          "doc_id": "配队推荐.csv|Saber|位置#3",
+          "source": "配队推荐.csv",
+          "role": "Saber",
+          "field": "位置",
+          "score": 0.6483,
+          "text": "角色名：Saber；位置：生存"
+        },
+        {
+          "doc_id": "角色故事.csv|Saber|故事标题#1",
+          "source": "角色故事.csv",
+          "role": "Saber",
+          "field": "故事标题",
+          "score": 0.6408,
+          "text": "角色名：Saber；故事标题：其一"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 1.01,
+      "category": "answerable",
+      "expected": "毁灭",
+      "gold_role": "Saber",
+      "gold_field": "命途",
+      "extracted_entity": null,
+      "hit": true,
+      "source_role_match": true,
+      "cite": true,
+      "correct": true
+    },
+    {
+      "question": "万敌 属于哪个阵营？",
+      "answer": "万敌属于**悬锋城**。答案出自**片段1**。",
+      "retrieved": [
+        {
+          "doc_id": "角色基础信息.csv|万敌|阵营#1",
+          "source": "角色基础信息.csv",
+          "role": "万敌",
+          "field": "阵营",
+          "score": 0.7097,
+          "text": "角色名：万敌；阵营：悬锋城"
+        },
+        {
+          "doc_id": "配队推荐.csv|万敌|位置#1",
+          "source": "配队推荐.csv",
+          "role": "万敌",
+          "field": "位置",
+          "score": 0.6975,
+          "text": "角色名：万敌；位置：主C"
+        },
+        {
+          "doc_id": "配队推荐.csv|万敌|位置#4",
+          "source": "配队推荐.csv",
+          "role": "万敌",
+          "field": "位置",
+          "score": 0.693,
+          "text": "角色名：万敌；位置：生存"
+        },
+        {
+          "doc_id": "配队推荐.csv|万敌|推荐角色#1",
+          "source": "配队推荐.csv",
+          "role": "万敌",
+          "field": "推荐角色",
+          "score": 0.6909,
+          "text": "角色名：万敌；推荐角色：万敌"
+        },
+        {
+          "doc_id": "角色行迹.csv|万敌|行迹类型#7",
+          "source": "角色行迹.csv",
+          "role": "万敌",
+          "field": "行迹类型",
+          "score": 0.6821,
+          "text": "角色名：万敌；行迹类型：属性加成"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 1.23,
+      "category": "answerable",
+      "expected": "悬锋城",
+      "gold_role": "万敌",
+      "gold_field": "阵营",
+      "extracted_entity": null,
+      "hit": true,
+      "source_role_match": true,
+      "cite": true,
+      "correct": true
+    },
+    {
+      "question": "三月七 的星级是多少？",
+      "answer": "三月七的星级是**四星**，答案出自**片段1**。",
+      "retrieved": [
+        {
+          "doc_id": "角色基础信息.csv|三月七|星级#1",
+          "source": "角色基础信息.csv",
+          "role": "三月七",
+          "field": "星级",
+          "score": 0.7419,
+          "text": "角色名：三月七；星级：四星"
+        },
+        {
+          "doc_id": "遗器推荐.csv|三月七|推荐指数#1",
+          "source": "遗器推荐.csv",
+          "role": "三月七",
+          "field": "推荐指数",
+          "score": 0.6902,
+          "text": "角色名：三月七；推荐指数：★★★★★"
+        },
+        {
+          "doc_id": "遗器推荐.csv|三月七|推荐指数#2",
+          "source": "遗器推荐.csv",
+          "role": "三月七",
+          "field": "推荐指数",
+          "score": 0.688,
+          "text": "角色名：三月七；推荐指数：★★★★"
+        },
+        {
+          "doc_id": "角色晋阶.csv|三月七|晋阶阶段#7",
+          "source": "角色晋阶.csv",
+          "role": "三月七",
+          "field": "晋阶阶段",
+          "score": 0.6816,
+          "text": "角色名：三月七；晋阶阶段：70级晋阶"
+        },
+        {
+          "doc_id": "光锥推荐.csv|三月七|推荐度#1",
+          "source": "光锥推荐.csv",
+          "role": "三月七",
+          "field": "推荐度",
+          "score": 0.6802,
+          "text": "角色名：三月七；推荐度：★★★★★"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 1.01,
+      "category": "answerable",
+      "expected": "四星",
+      "gold_role": "三月七",
+      "gold_field": "星级",
+      "extracted_entity": null,
+      "hit": true,
+      "source_role_match": true,
+      "cite": true,
+      "correct": true
+    },
+    {
+      "question": "卡芙卡 的属性与命途分别是什么？",
+      "answer": "知识库中没有相关信息，无法回答。检索片段1-5均未提供卡芙卡的属性与命途。",
+      "retrieved": [
+        {
+          "doc_id": "角色行迹.csv|卡芙卡|行迹类型#7",
+          "source": "角色行迹.csv",
+          "role": "卡芙卡",
+          "field": "行迹类型",
+          "score": 0.7342,
+          "text": "角色名：卡芙卡；行迹类型：属性加成"
+        },
+        {
+          "doc_id": "角色行迹.csv|卡芙卡|行迹名称#11",
+          "source": "角色行迹.csv",
+          "role": "卡芙卡",
+          "field": "行迹名称",
+          "score": 0.7037,
+          "text": "角色名：卡芙卡；行迹名称：生命强化"
+        },
+        {
+          "doc_id": "角色行迹.csv|卡芙卡|行迹名称#10",
+          "source": "角色行迹.csv",
+          "role": "卡芙卡",
+          "field": "行迹名称",
+          "score": 0.7015,
+          "text": "角色名：卡芙卡；行迹名称：效果命中强化"
+        },
+        {
+          "doc_id": "角色行迹.csv|卡芙卡|行迹类型#4",
+          "source": "角色行迹.csv",
+          "role": "卡芙卡",
+          "field": "行迹类型",
+          "score": 0.6905,
+          "text": "角色名：卡芙卡；行迹类型：天赋"
+        },
+        {
+          "doc_id": "角色晋阶.csv|卡芙卡|晋阶阶段#1",
+          "source": "角色晋阶.csv",
+          "role": "卡芙卡",
+          "field": "晋阶阶段",
+          "score": 0.6892,
+          "text": "角色名：卡芙卡；晋阶阶段：1级属性/晋阶所需材料"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 1.85,
+      "category": "answerable",
+      "expected": "属性为雷，命途为虚无",
+      "gold_role": "卡芙卡",
+      "gold_field": "属性/命途",
+      "extracted_entity": null,
+      "hit": false,
+      "source_role_match": true,
+      "cite": false,
+      "correct": false
+    },
+    {
+      "question": "黑塔 的命途是什么？",
+      "answer": "黑塔的命途是**智识**。答案出自**片段1**。",
+      "retrieved": [
+        {
+          "doc_id": "角色基础信息.csv|黑塔|命途#1",
+          "source": "角色基础信息.csv",
+          "role": "黑塔",
+          "field": "命途",
+          "score": 0.719,
+          "text": "角色名：黑塔；命途：智识"
+        },
+        {
+          "doc_id": "配队推荐.csv|黑塔|位置#3",
+          "source": "配队推荐.csv",
+          "role": "黑塔",
+          "field": "位置",
+          "score": 0.6829,
+          "text": "角色名：黑塔；位置：生存"
+        },
+        {
+          "doc_id": "角色故事.csv|黑塔|故事标题#1",
+          "source": "角色故事.csv",
+          "role": "黑塔",
+          "field": "故事标题",
+          "score": 0.6762,
+          "text": "角色名：黑塔；故事标题：其一"
+        },
+        {
+          "doc_id": "角色基础信息.csv|大黑塔|命途#1",
+          "source": "角色基础信息.csv",
+          "role": "大黑塔",
+          "field": "命途",
+          "score": 0.6727,
+          "text": "角色名：大黑塔；命途：智识"
+        },
+        {
+          "doc_id": "遗器推荐.csv|黑塔|推荐指数#1",
+          "source": "遗器推荐.csv",
+          "role": "黑塔",
+          "field": "推荐指数",
+          "score": 0.6665,
+          "text": "角色名：黑塔；推荐指数：★★★★★"
+        }
+      ],
+      "n_retrieved": 5,
+      "elapsed": 1.12,
+      "category": "answerable",
+      "expected": "智识",
+      "gold_role": "黑塔",
+      "gold_field": "命途",
+      "extracted_entity": null,
+      "hit": true,
+      "source_role_match": true,
+      "cite": true,
+      "correct": true
+    }
+  ]
+}
