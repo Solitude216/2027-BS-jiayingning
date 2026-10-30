@@ -4,7 +4,7 @@
 
 - `baseline/`：无 RAG 基线（直接 LLM 问答），含 `baseline_no_rag.py`、`config.yaml`、`command.txt`、`notes.md`、`metrics.csv`。
 - `exp01-retrieval-method/`：**EXP-001 检索方法主实验**。比较无 RAG / BM25 / 向量 / 混合 RRF，row / field / entity-grouped 三种切块，top-k=3/5/10。主结果表见 `EXP-001-retrieval-method.md`。
-- `exp02/`：**EXP-002 实体约束检索（实体消歧）**。验证针对"黑塔/大黑塔"等易混淆实体的实体约束检索是否有效，并汇总本轮 9 配置矩阵结论。见 `EXP-002-entity-constraint.md`。
+- `exp02-round-summary/`：**EXP-002 实体约束检索（实体消歧）**。验证针对"黑塔/大黑塔"等易混淆实体的实体约束检索是否有效，并汇总本轮 9 配置矩阵结论。见 `EXP-002-entity-constraint.md`。
 
 ## 主结果速览（120 题冻结测试集）
 
