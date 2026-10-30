@@ -69,7 +69,8 @@ class RAG:
         return self.generator
 
     def answer(self, question: str, with_context: bool = True) -> dict:
-        hits = self.retrieve(question)
+        # 真正的 no-RAG baseline：完全不执行检索（不污染响应时间与实验定义）
+        hits = self.retrieve(question) if with_context else []
         if with_context and hits:
             context = "\n\n".join(f"[片段{i+1}](来源:{d.source}, 角色:{d.role or '-'}) {d.text}" for i, (d, s) in enumerate(hits))
         else:

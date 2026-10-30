@@ -41,10 +41,13 @@ def build_documents(csv_dir: str, per_row: bool = True, with_header: bool = True
     """将 CSV 数据转为文档块。
 
     - mode="row"：每个 CSV 行独立成块（字段全量拼接）；
-    - mode="field"：字段级切块，每个 (角色, 字段) 独立成短文档，利于字段类问题的精确召回。
+    - mode="field"：字段级切块，每个 (角色, 字段) 独立成短文档，利于字段类问题的精确召回；
+    - mode="entity"/"entity-grouped"：按角色聚合，把同一角色在所有 CSV 的字段合并为一个文档块。
     - with_header=True：把表头字段名拼进文本，增强字段语义（利于检索命中考题字段）。
     - dedup=True：按文本内容去重（相同文本只保留一条），避免重复行污染检索。
     """
+    if mode in ("entity", "entity-grouped"):
+        return _build_entity_docs(csv_dir)
     docs: list[Doc] = []
     seen = set()
     seen_text = set()
@@ -95,6 +98,35 @@ def build_documents(csv_dir: str, per_row: bool = True, with_header: bool = True
             seen.add(uid)
             field = key_fields[0] if key_fields else ""
             docs.append(Doc(id=uid, text=text, source=fn, role=role, field=field))
+    return docs
+
+
+def _build_entity_docs(csv_dir: str) -> list[Doc]:
+    """entity-grouped：按角色聚合，同一角色在所有 CSV 的字段合并为一个文档块。
+
+    每个角色一个文档（约 93 个），source 记为 ENTITY，field 记为 entity_profile。
+    适用于实体消歧与"该角色整体是什么样"类问题；字段级命中指标在该模式下按角色判定。
+    """
+    by_role: dict[str, list[str]] = {}
+    for raw in load_rows(csv_dir):
+        role = _clean(raw.get("角色名", ""))
+        if not role:
+            continue
+        fn = raw["file"]
+        segs = []
+        for k, v in raw.items():
+            if k == "file" or k == "角色名":
+                continue
+            v = _clean(v)
+            if v:
+                segs.append(f"{k}：{v}")
+        if segs:
+            by_role.setdefault(role, []).append(f"[{fn}] " + "；".join(segs))
+    docs = []
+    for role, segs in by_role.items():
+        text = f"角色：{role}。" + " | ".join(segs)
+        docs.append(Doc(id=f"entity|{role}", text=text, source="ENTITY",
+                        role=role, field="entity_profile"))
     return docs
 
 

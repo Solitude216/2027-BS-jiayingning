@@ -59,9 +59,11 @@ class BM25:
 
 
 class Retriever:
-    def __init__(self, method: str = "vector", top_k: int = 5, model_dir: str | None = None):
+    def __init__(self, method: str = "vector", top_k: int = 5, model_dir: str | None = None,
+                 entity_filter: str | None = None):
         self.method = method
         self.top_k = top_k
+        self.entity_filter = entity_filter  # 若给定，只在角色名匹配该实体的文档中检索
         self.docs: list[Doc] = []
         self._doc_vecs: np.ndarray | None = None
         self._embedder = Embedder(model_dir=model_dir) if method in ("vector", "hybrid") else None
@@ -95,32 +97,47 @@ class Retriever:
             self._doc_vecs = np.load(vp)
 
     # ---------- 检索 ----------
+    @staticmethod
+    def _norm_role(s: str) -> str:
+        return (s or "").replace("•", "·").strip()
+
+    def _match_entity(self, doc: Doc) -> bool:
+        if not self.entity_filter:
+            return True
+        ef = self._norm_role(self.entity_filter)
+        return self._norm_role(doc.role) == ef
+
+    def _finalize(self, ranked: list[tuple[int, float]], k: int) -> list[tuple[Doc, float]]:
+        """按实体过滤后截断 top-k；若过滤后为空则回退到未过滤结果。"""
+        filtered = [(i, s) for i, s in ranked if self._match_entity(self.docs[i])]
+        if self.entity_filter and not filtered:
+            filtered = ranked  # 实体未命中时回退，避免空上下文
+        return [(self.docs[i], s) for i, s in filtered[:k]]
+
     def retrieve(self, query: str, top_k: int | None = None) -> list[tuple[Doc, float]]:
         k = top_k or self.top_k
         if self.method == "vector":
             qv = np.asarray(self._embedder.encode([_BGE_QUERY_INSTRUCTION + query])[0], dtype=np.float32)
             sims = self._doc_vecs @ qv
-            idxs = np.argsort(-sims)[:k]
-            return [(self.docs[i], float(sims[i])) for i in idxs]
+            order = list(np.argsort(-sims))
+            ranked = [(i, float(sims[i])) for i in order[:k * 5]]
+            return self._finalize(ranked, k)
         if self.method == "bm25":
-            hits = self._bm25.retrieve(query, k)
-            return [(self.docs[i], s) for i, s in hits]
+            hits = self._bm25.retrieve(query, k * 5)
+            return self._finalize(hits, k)
         if self.method == "hybrid":
+            # RRF（Reciprocal Rank Fusion）：融合向量与 BM25 两路排序
             qv = np.asarray(self._embedder.encode([_BGE_QUERY_INSTRUCTION + query])[0], dtype=np.float32)
             sims = self._doc_vecs @ qv
-            v_rank = {i: r for r, i in enumerate(np.argsort(-sims))}
-            hits = self._bm25.retrieve(query, k * 3)
-            bm = {i: s for i, s in hits}
-            # 对交集做归一化加权
-            best_bm = max(bm.values()) if bm else 1.0
-            best_v = float(sims.max()) if len(sims) else 1.0
-            scores = {}
-            for i, s in bm.items():
-                scores[i] = 0.5 * (s / best_bm) + 0.5 * (float(sims[i]) / best_v)
-            # 补上仅向量命中
-            for r, i in enumerate(np.argsort(-sims)[:k * 3]):
-                if i not in scores:
-                    scores[i] = 0.5 * (float(sims[i]) / best_v)
-            ranked = sorted(scores.items(), key=lambda x: -x[1])[:k]
-            return [(self.docs[i], s) for i, s in ranked]
+            v_order = list(np.argsort(-sims))[:k * 5]
+            bm_hits = self._bm25.retrieve(query, k * 5)
+            bm_order = [i for i, _ in bm_hits]
+            rrf: dict[int, float] = {}
+            RRF_K = 60.0
+            for rank, i in enumerate(v_order):
+                rrf[i] = rrf.get(i, 0.0) + 1.0 / (RRF_K + rank + 1)
+            for rank, i in enumerate(bm_order):
+                rrf[i] = rrf.get(i, 0.0) + 1.0 / (RRF_K + rank + 1)
+            ranked = sorted(rrf.items(), key=lambda x: -x[1])
+            return self._finalize(ranked, k)
         raise ValueError(self.method)
