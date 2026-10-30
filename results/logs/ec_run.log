@@ -1,0 +1,36 @@
+测试集: 2027-BS-game 游戏知识问答测试集 v1 | 总题数: 120 | 方法: vector | 切块: field | top_k: 5
+
+Loading weights:   0%|          | 0/71 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 71/71 [00:00<00:00, 1481.06it/s]
+
+指标: {
+  "answerable": {
+    "n": 45,
+    "correct": 35,
+    "answer_accuracy": 0.7778,
+    "hit_rate": 0.8444,
+    "citation_accuracy": 0.8444
+  },
+  "unanswerable": {
+    "n": 40,
+    "correct": 39,
+    "answer_accuracy": 0.975,
+    "hit_rate": 0.0,
+    "citation_accuracy": 0.35
+  },
+  "confusable": {
+    "n": 35,
+    "correct": 27,
+    "answer_accuracy": 0.7714,
+    "hit_rate": 0.7714,
+    "citation_accuracy": 0.7714
+  },
+  "overall": {
+    "n": 120,
+    "overall_accuracy": 0.8417,
+    "hit_rate": 0.5417,
+    "citation_accuracy": 0.6583
+  }
+}
+
+明细已保存: C:\毕业论文\results\tables\eval_vector_field_k5_ec_20261030_131904.json
