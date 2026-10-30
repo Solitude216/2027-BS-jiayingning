@@ -68,7 +68,7 @@ data/             数据（metadata 元信息、samples 测试集）
 docs/             文档（01选题 / 02文献 / 03设计 / 04会议）
 evaluation/       评测代码与指标（run_eval.py / metrics.py / verify_testset.py）
 experiments/      实验（baseline 无RAG基线、exp01-retrieval-method 检索主实验、exp02 实体约束）
-knowledge_base/   游戏知识库（立绘 / 角色数据csv / 角色数据txt）
+knowledge_base/   游戏知识库（角色数据csv / 角色数据txt）
 progress/         进度（issues / milestones / weekly_log）
 results/          结果（checkpoints 索引 / figures / logs / tables / summary.md）
 scripts/          脚本（1_data_prep / 2_build_index / 3_run）
