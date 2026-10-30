@@ -142,7 +142,10 @@ python evaluation/run_eval.py --method vector
 - 问题4（无RAG 仍检索）：answer() 改为 with_context 为假时不 retrieve
 
 ## 6. 未解决问题
-- answer_correct 规则部分完成
+- 三种切块对比（row / field / entity-grouped）
+- top-k=3/5/10、混合 RRF
+- 实体约束检索
+- 9 配置实验矩阵
 
 ---
 
